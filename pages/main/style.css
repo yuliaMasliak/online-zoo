@@ -1,0 +1,40 @@
+body{
+    min-width: 1600px;
+    margin: 0px auto;
+}
+header {
+    height: 80px;
+    background-color: black;
+    margin: 0px auto;
+}
+.logo{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19.0145px;
+    border: 1.18841px solid #FFFFFF;
+    border-radius: 2px;
+    text-align: center;
+    position: absolute;
+    width: 72.49px;
+    height: 44.91px;
+    left: 220px;
+    margin: 13px;
+    padding: 3.55px 4.75px;
+}
+.nav-ul {
+    display: inline-flex;
+    color: #FFF;
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0px 0px 0px 365px;
+}
+.nav-ul li{
+   margin: 29px 27px;
+}
+.nav-ul >li:last-child {
+    margin-left: 438px
+}
