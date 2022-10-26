@@ -21,6 +21,14 @@ header {
     margin: 13px;
     padding: 3.55px 4.75px;
 }
+.bamboo-icon{
+    position: absolute;
+    width: 11.03px;
+    height: 23.98px;
+    left: 11.23px;
+    top: 22.64px;
+
+}
 .nav-ul {
     display: inline-flex;
     color: #FFF;
@@ -37,4 +45,59 @@ header {
 }
 .nav-ul >li:last-child {
     margin-left: 438px
+}
+.active-nav{
+    color: #FE9013;
+}
+.panda-img{
+    min-width: 1600px;
+    min-height: 780px;
+    background-image: url("/assets/images/giant-panda.png");
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: center center;
+}
+.circle{
+position: absolute;
+width: 465px;
+height: 465px;
+left: calc(50% - 465px/2 + 239.5px);
+top: 92px;
+}
+.panda-text{
+    position: absolute;
+width: 500.31px;
+height: 400px;
+left: calc(50% - 500.31px/2 + 330.15px);
+top: 166px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 106.496px;
+line-height: 75%;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.favorite-yellow-text{
+    color: #FFEE2E
+}
+.watch-btn{
+    position: absolute;
+width: 298px;
+height: 22px;
+left: calc(50% - 298px/2 + 332px);
+top: 626px;
+background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+border-radius: 25px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+padding: 16px 0px 16px 0px;
+text-align: center;
+text-transform: uppercase;
+text-decoration: none;
+color: #FFFFFF;
 }
