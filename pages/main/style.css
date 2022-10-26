@@ -139,12 +139,11 @@ text-align: left;
 padding-left: 100px;
 }
 .gallery{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-margin: 0px 220px 100px 220px;
+display: flex;
+justify-content: space-evenly;
+margin: 0px 220px 0px 220px;
 font-family: 'Roboto';
 font-style: normal;
-
 object-fit: cover;
 align-items: center;
 color: #000000;
@@ -158,7 +157,6 @@ height: 366px;
     border-radius: 5px;
     width: 366px;
     margin-bottom: 20px;
-    align-self: center;
 }
 .blocks-heading{
     text-transform: uppercase;
@@ -187,15 +185,46 @@ padding: 8px 8px 14px 0px;
 height: 37px;
     padding: 8px 8px 14px 0px;
 }
-.flower-left-border img{
+.flower-left-border{
+width: 293px;
+height: 605px;
+display: flex;
+position: relative;
+float: right;
+top: -700px;
+right: -100px
+}
+
+.bottom-flowers{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 234px;
+}
+.palm-left-border img{
     display: flex;
     position: relative;
     float: right;
-    top: -700px
+    width: 368px;
+    height: 275px;
+    top: -40px;
+    left:-90px
 }
 .palm-right-border img{
     display: flex;
     position: relative;
     float: left;
-    top: -350px;
+    width: 880px;
+height: 460px;
+    right: -368px;
+    left: -588px;
+top: -227px;
+}
+.how-tofeed-section {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    display: block;
+    padding: 69px 220px;
+}
+.how-to-feed{
+    text-align: center;
 }
