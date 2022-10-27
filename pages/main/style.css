@@ -367,14 +367,13 @@ font-size: 36px;
 line-height: 130%;
 color: #333B41;
 }
-        .feedbacks{
-            display: flex;
-            justify-content: center;
-            column-gap: 30px;
-						margin-left: 220px;
-						margin-right: 220px;
-        }
-
+.feedbacks{
+display: flex;
+justify-content: center;
+column-gap: 30px;
+margin-left: 220px;
+margin-right: 220px;
+}
 
 .feedback-block{
 background: #F1F3F2;
@@ -457,7 +456,6 @@ margin-left: 10px;
 	display: flex;
  position: relative;
  justify-content: center;
-
 }
 
 .scroll-bar::-webkit-scrollbar {
@@ -504,11 +502,25 @@ color: #FFFFFF;
 line-height: 22px;
 align-items: center;
 }
-.leaf-right-border{
+.leaf-right-border {
 	display: flex;
 	position: relative;
 	justify-content: end;
 	top: -30px;
 	left: 90px;
+	height: 213px;
+}
+.leaf-right-border img{
 	height: 395.45px;
+}
+footer{
+	position: relative;
+	min-width: 1600px;
+	background: #111115;
+	height: 443px;
+}
+.footer-wrapper{
+	display: flex;
+	position: relative;
+	justify-content: center;
 }
