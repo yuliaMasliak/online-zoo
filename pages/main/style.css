@@ -39,6 +39,7 @@ header {
     font-size: 16px;
     line-height: 140%;
     margin: 0px 0px 0px 365px;
+    height: 22px;
 }
 .nav-ul li{
    margin: 29px 27px;
@@ -517,12 +518,16 @@ footer{
 	position: relative;
 	min-width: 1600px;
 	background: #111115;
-	height: 443px;
-    padding: 41px 0px 50px 220px;
+	height: 402px;
+    padding: 41px 220px 0px 220px;
+    margin-top: 20px;
 }
 .footer-grid img{
     width: 82px;
     height: 52px;
+}
+footer .subscribe-block{
+    height: 25px;
 }
 .footer-grid h2{
     position: relative;
@@ -557,7 +562,7 @@ top:-70px;
 margin-left: 1013px;
 }
 footer .donate-footer-btn{
-margin: 84px 0px 60px 0px;
+margin: 25px 0px 40px 0px;
 width: 298px;
 height: 22px;
 background: #FE9013;
@@ -577,3 +582,41 @@ footer .donate-footer-btn a{
     line-height: 22px;
     align-items: center;
     }
+footer .social-medias{
+    list-style: none;
+    padding-left: 0px;
+}
+footer ul li{
+    height: 26px;
+    margin-bottom: 10px;
+}
+footer .sm-name{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #FFFFFF;
+margin: 0px 0px 10px 10px;
+position: relative;
+left: 5px;
+top: -5px;
+}
+footer .nav-ul {
+    position: relative;
+    top: -70px;
+}
+footer .nav-ul .footer-designed-by {
+    margin-left: 230px;
+    width: 240px;
+    height: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    position: relative;
+    justify-content: end;
+    top: -23px;
+}
