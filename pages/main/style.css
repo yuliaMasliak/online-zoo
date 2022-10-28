@@ -223,7 +223,7 @@ header {
 .arrows{
   display: flex;
   justify-content: space-between;
-  margin: 0px 180px;
+  margin: 0px 140px;
   position: relative;
   top: -500px
 }
@@ -383,6 +383,7 @@ min-height: 391px;
 position: relative;
 padding: 15px 15px 19px 16px;
 margin: 5px;
+margin-bottom: 21px;
 border-radius: 20px;
 }
 .feedback-block::after {
@@ -449,10 +450,9 @@ margin-left: 10px;
 }
 .scroll-bar{
 	margin:auto;
-	margin-top: 15x;
 	overflow-x: scroll;
 	scrollbar-width: thin;
-	margin-bottom: 31px;
+	margin-bottom: 53px;
 	width: 40%;
 	display: flex;
  position: relative;
@@ -479,6 +479,7 @@ margin-left: 10px;
 }
 .invisible-part-scrollbar{
 	color:#FFF;
+    height: 0px;
 }
 
 .leave-feedback-btn{
@@ -506,13 +507,13 @@ align-items: center;
 .leaf-right-border {
 	display: flex;
 	position: relative;
-	justify-content: end;
-	top: -30px;
-	left: 90px;
-	height: 213px;
+    justify-content: end;
+	top: -40px;
+    height: 170px;
 }
 .leaf-right-border img{
-	height: 395.45px;
+    height: 295.45px;
+    transform: rotate(35deg);
 }
 footer{
 	position: relative;
@@ -520,7 +521,6 @@ footer{
 	background: #111115;
 	height: 402px;
     padding: 41px 220px 0px 220px;
-    margin-top: 20px;
 }
 .footer-grid img{
     width: 82px;
@@ -586,9 +586,9 @@ footer .social-medias{
     list-style: none;
     padding-left: 0px;
 }
-footer ul li{
+footer .social-medias-li{
     height: 26px;
-    margin-bottom: 10px;
+
 }
 footer .sm-name{
 font-family: 'Roboto';
@@ -604,7 +604,7 @@ top: -5px;
 }
 footer .nav-ul {
     position: relative;
-    top: -70px;
+    top: -65px;
 }
 footer .nav-ul .footer-designed-by {
     margin-left: 230px;
@@ -618,5 +618,9 @@ footer .nav-ul .footer-designed-by {
     display: flex;
     position: relative;
     justify-content: end;
-    top: -23px;
+    top: -18px;
+}
+.social-medias-li {
+    height: 26px;
+    margin: 5px 0px 5px 0px;
 }
