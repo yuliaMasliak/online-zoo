@@ -6,6 +6,8 @@ header {
     height: 80px;
     background-color: black;
     margin: 0px auto;
+    position: relative;
+    min-width: 1600px;
 }
 
 .logo{
