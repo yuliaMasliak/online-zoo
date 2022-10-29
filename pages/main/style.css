@@ -9,8 +9,6 @@ header {
 }
 .logo{
     color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-    font-size: 19.0145px;
     border: 1.18841px solid #FFFFFF;
     border-radius: 2px;
     text-align: center;
@@ -20,6 +18,14 @@ header {
     left: 220px;
     margin: 13px;
     padding: 3.55px 4.75px;
+}
+.logo h1{
+    margin: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
 }
 .bamboo-icon{
     position: absolute;
