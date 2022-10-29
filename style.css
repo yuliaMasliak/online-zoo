@@ -7,6 +7,7 @@ header {
     background-color: black;
     margin: 0px auto;
 }
+
 .logo{
     color: #FFFFFF;
     border: 1.18841px solid #FFFFFF;
@@ -61,6 +62,10 @@ header {
     color: #FFF;
  }
  .nav-ul li a:hover{
+    text-decoration: none;
+    color: #FE9013;
+ }
+ .nav-ul li a:active{
     text-decoration: none;
     color: #FE9013;
  }
@@ -123,6 +128,7 @@ header {
 	backdrop-filter: blur(2px);
 }
 .entry-text{
+    max-width: 1160px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-auto-rows: minmax(100px, auto);
@@ -134,8 +140,11 @@ header {
 	color: #333B41;
 }
 .entry-text h2{
-	font-size: 48px;
-	line-height: 120%;
+	font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
 	margin-bottom: 20px;
 	margin-top: 0px;
 }
@@ -151,9 +160,10 @@ header {
 }
 .entry-text .about-text {
 	text-align: left;
-	padding-left: 100px;
+	padding-left: 84px;
 }
 .gallery{
+    max-width: 1160px;
 	display: flex;
 	justify-content: space-evenly;
 	position: relative;
@@ -274,7 +284,7 @@ padding: 69px;
   }
    .how-to-feed{
     text-align: center;
-    width: 1160px;
+    max-width: 1160px;
     background: rgba(253, 253, 255, 0.52);
     height: 835px;
     border-radius: 20px;
@@ -384,6 +394,7 @@ line-height: 130%;
 color: #333B41;
 }
 .feedbacks{
+    max-width: 1160px;
 display: flex;
 justify-content: center;
 column-gap: 30px;
@@ -532,7 +543,7 @@ align-items: center;
 }
 footer{
 	position: relative;
-	min-width: 1600px;
+	max-width: 1160px;
 	background: #111115;
 	height: 402px;
     padding: 41px 220px 0px 220px;
@@ -553,7 +564,7 @@ font-weight: 400;
 font-size: 24px;
 line-height: 120%;
 color: #FFFFFF;
-margin-left: 1013px;
+margin-left: 792px;
 }
 .footer-grid .text-input{
 width: 228px;
@@ -574,7 +585,7 @@ border-radius: 4px;
 .footer-grid form{
 position: relative;
 top:-70px;
-margin-left: 1013px;
+margin-left: 792px;
 }
 footer .donate-footer-btn{
 margin: 25px 0px 40px 0px;
@@ -620,20 +631,31 @@ top: -5px;
 footer .nav-ul {
     position: relative;
     top: -65px;
+    margin-left: 398px;
+    padding-left: 0px;
 }
 footer .nav-ul .footer-designed-by {
-    margin-left: 230px;
-    width: 240px;
+    margin: 0px;
     height: 21px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 100;
     font-size: 16px;
-    line-height: 130%;
+    line-height: 180%;
     display: flex;
     position: relative;
-    justify-content: end;
-    top: -18px;
+    right: -140px;
+
+}
+footer .nav-ul li{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+}
+footer .nav-ul .last-li{
+    width: 78px;
 }
 .social-medias-li {
     height: 26px;
