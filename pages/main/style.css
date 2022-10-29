@@ -73,7 +73,7 @@ header {
 .panda-img{
     min-width: 1600px;
     min-height: 780px;
-    background-image: url("https://github.com/yuliaMasliak/online-zoo/blob/main/assets/images/giant-panda.png?raw=true");
+    background-image: url("../../assets/images/giant-panda.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center center;
