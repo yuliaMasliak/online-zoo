@@ -74,9 +74,8 @@ header {
     text-decoration: none;
     color: #FE9013;
  }
- .nav-ul li a:active{
-    text-decoration: none;
-    color: #FE9013;
+ .nav-ul li:hover .active-nav{
+    color: #FFF;
  }
 
 .panda-img{
