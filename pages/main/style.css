@@ -2,6 +2,13 @@ body{
     min-width: 1600px;
     margin: 0px auto;
 }
+a{
+    text-decoration: none;
+    color:#FFF;
+}
+a:hover{
+    color:#FE9013;
+}
 header {
     height: 80px;
     background-color: black;
@@ -108,21 +115,26 @@ header {
 .watch-btn{
     position: absolute;
     width: 298px;
-    height: 22px;
-    left: calc(50% - 298px/2 + 332px);
+    height: 54px;
+    left: calc(50% - 298px / 2 + 332px);
     top: 626px;
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
     border-radius: 25px;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
-    padding: 16px 0px 16px 0px;
     text-align: center;
     text-transform: uppercase;
-    text-decoration: none;
-    color: #FFFFFF;
+    color: #ffffff;
+    border: none;
+}
+.watch-btn:hover {
+    color: #f9804b;
+    background: #faecdb;
+    cursor: pointer;
+    border: 1px solid #f9804b;
 }
 .hat-man img{
 	width: 609px;
@@ -179,6 +191,13 @@ header {
 .gallery .gallery-blocks img{
 	width: 366px;
 	height: 366px;
+    border-radius: 5px;
+}
+.gallery .gallery-blocks img:hover{
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 .gallery-blocks{
     border: 1px solid #FE9013;
@@ -192,7 +211,20 @@ header {
     line-height: 140%;
     font-weight: 500;
     margin: 8px 0px 0px 16px;
+    transform: translateY(0px);
+
 }
+.gallery .gallery-blocks:hover .img-info-block{
+    transform: translateY(-60px);
+    transition: all 0.4s ease;
+    background-color: #b5bfc58a;
+    color: white;
+}
+.img-info-block{
+    transform: translateY(0px);
+    transition: all 0.4s ease;
+}
+
 .blocks-paragraph{
     font-weight: 300;
     font-size: 15px;
@@ -223,61 +255,66 @@ header {
 }
 
 .bottom-flowers{
+  width: 1600px;
   display: flex;
-  position: relative;
   justify-content: space-between;
-  height: 160px;
+  margin: 0px auto;
+  position: relative;
+  height: 125px;
+  top:-150px;
 }
-.palm-right-border img{
-    display: flex;
-    position: relative;
-    float: right;
-    width: 368px;
-    height: 275px;
-    top: -114px;
-    left: -30px;
-}
+
 .palm-left-border img{
     display: flex;
     position: relative;
-    float: left;
-    width: 880px;
     height: 460px;
-    right: -368px;
     left: -588px;
-    top: -297px;
+    top:-180px
 }
 .arrows{
   display: flex;
   justify-content: space-between;
   margin: 0px 140px;
   position: relative;
-  top: -500px
+  top: -500px;
 }
     .arrows img{
     width: 62px;
     height: 62px;
     }
-
+    .arrow-btn{
+        border: none;
+        background-color: transparent;
+    }
+    .arrow-btn:hover{
+        cursor: pointer;
+        transition: all 0.4s ease;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 .choose-favorite-btn{
+    display: block;
+    margin:0px auto;
+    margin-top: 30px;
     width: 298px;
-    height: 38px;
+    height: 54px;
     background: #FE9013;
     border-radius: 25px;
-    border-radius: 25px;
+    border: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
-    padding: 16px 0px 0px 0px;
-    position: relative;
-    left: -253px
+    color: #FFF;
     }
-    .choose-favorite-btn a{
-    text-decoration: none;
-    color: #FFFFFF;
+    .choose-favorite-btn:hover{
+        color: #f9804b;
+        background: #faecdb;
+        cursor: pointer;
+        border: 1px solid #f9804b;
     }
 .how-tofeed-section {
 position: relative;
@@ -286,7 +323,7 @@ padding: 69px;
   }
    .how-to-feed{
     text-align: center;
-    max-width: 1160px;
+    width: 1160px;
     background: rgba(253, 253, 255, 0.52);
     height: 835px;
     border-radius: 20px;
@@ -333,6 +370,7 @@ padding: 69px;
 .orange-underline{
     text-decoration: underline;
     text-decoration-color: #FE9013;
+    color: #333B41;
 }
 .how-to-feed h3{
     font-family: 'Roboto';
@@ -363,27 +401,6 @@ width:168px;
     font-size: 16px;
     line-height: 140%;
     color: #333B41;
-}
-.feed-friend-btn{
-    margin: auto;
-    margin-top: 60px;
-    margin-bottom: 59px;
-    width: 298px;
-    background: #FE9013;
-    border-radius: 25px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 16px 0px 16px 0px;
-}
-.feed-friend-btn a{
-text-decoration: none;
-color: #FFFFFF;
-line-height: 22px;
-vertical-align:middle;
 }
 .testomonials h3{
 text-align: center;
@@ -509,29 +526,32 @@ margin-left: 10px;
 	color:#FFF;
     height: 0px;
 }
-
-.leave-feedback-btn{
-display: flex;
-position: relative;
-justify-content: center;
-left: 220px;
-width: 298px;
-background: #FE9013;
-border-radius: 8px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-text-transform: uppercase;
-padding: 16px 0px 16px 0px;
+.scroll-bar:hover{
+    cursor: pointer;
 }
-.leave-feedback-btn a{
-text-align: center;
-text-decoration: none;
-color: #FFFFFF;
-line-height: 22px;
-align-items: center;
-}
+.square-btn{
+    display: block;
+    margin-top: 30px;
+    margin-left: 220px;
+    width: 298px;
+    height: 54px;
+    background: #FE9013;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    }
+    .square-btn:hover{
+        color: #f9804b;
+        background: #faecdb;
+        cursor: pointer;
+        border: 1px solid #f9804b;
+    }
 .leaf-right-border {
 	display: flex;
 	position: relative;
@@ -574,7 +594,7 @@ height: 42px;
 border: 1px solid #874E1C;
 border-radius: 4px;
 background-color: transparent;
-
+color: white;
 }
 .footer-grid .submit-input{
 width: 129px;
@@ -589,27 +609,9 @@ position: relative;
 top:-70px;
 margin-left: 792px;
 }
-footer .donate-footer-btn{
+footer .square-btn{
 margin: 25px 0px 40px 0px;
-width: 298px;
-height: 22px;
-background: #FE9013;
-border-radius: 8px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-text-transform: uppercase;
-padding: 16px 0px 16px 0px;
-text-align: center;
 }
-footer .donate-footer-btn a{
-    text-decoration: none;
-    text-decoration: none;
-    color: #FFFFFF;
-    line-height: 22px;
-    align-items: center;
-    }
 footer .social-medias{
     list-style: none;
     padding-left: 0px;
