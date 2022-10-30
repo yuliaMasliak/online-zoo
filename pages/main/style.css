@@ -565,7 +565,7 @@ margin-left: 10px;
 }
 footer{
 	position: relative;
-	max-width: 1160px;
+	min-width: 1160px;
 	background: #111115;
 	height: 402px;
     padding: 41px 220px 0px 220px;
