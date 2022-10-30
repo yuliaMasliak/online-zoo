@@ -2,6 +2,9 @@ body{
     min-width: 1600px;
     margin: 0px auto;
 }
+a{
+    text-decoration: none;
+}
 header {
     height: 80px;
     background-color: black;
@@ -73,11 +76,12 @@ header {
  }
  .main{
     margin: 50px 220px;
+    min-height: 210px;
  }
 
 footer{
 	position: relative;
-	max-width: 1160px;
+	min-width: 1160px;
 	background: #111115;
 	height: 402px;
     padding: 41px 220px 0px 220px;
