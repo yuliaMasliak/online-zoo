@@ -250,7 +250,7 @@ header {
   position: relative;
   float: right;
   top: -700px;
-  right: -100px
+  right: -100px;
 }
 
 .bottom-flowers{
@@ -493,6 +493,7 @@ left: 37px;
 margin-left: 10px;
 }
 .scroll-bar{
+    max-width: 1600px;
 	margin:auto;
 	overflow-x: scroll;
 	scrollbar-width: thin;
@@ -501,6 +502,11 @@ margin-left: 10px;
 	display: flex;
  position: relative;
  justify-content: center;
+}
+.invisible-part-scrollbar{
+    height: 0px;
+    width: 1600px;
+    margin: 0px 220px;
 }
 
 .scroll-bar::-webkit-scrollbar {
@@ -521,10 +527,7 @@ margin-left: 10px;
 	background-color: #FE9013;
 	border-radius: 5px;
 }
-.invisible-part-scrollbar{
-	color:#FFF;
-    height: 0px;
-}
+
 .scroll-bar:hover{
     cursor: pointer;
 }
