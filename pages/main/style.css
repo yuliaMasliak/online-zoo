@@ -26,7 +26,7 @@ header {
     width: 72.49px;
     height: 44.91px;
     left: 220px;
-    margin: 13px;
+    margin: 13px 0px;
     padding: 3.55px 4.75px;
 }
 .logo h1{
@@ -54,11 +54,11 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
-    margin: 0px 0px 0px 365px;
+    margin: 0px 0px 0px 297px;
     height: 22px;
 }
 .nav-ul li{
-   margin: 29px 27px;
+   margin: 29px 29px;
 }
 .nav-ul >li:last-child {
     margin-left: 438px
@@ -90,14 +90,14 @@ header {
     position: absolute;
     width: 465px;
     height: 465px;
-    left: calc(50% - 465px/2 + 239.5px);
+    left: calc(50% - 465px/2 + 240px);
     top: 92px;
 }
 .panda-text{
     position: absolute;
     width: 500.31px;
     height: 400px;
-    left: calc(50% - 500.31px/2 + 330.15px);
+    left: calc(50% - 500.31px/2 + 331.15px);
     top: 166px;
     font-family: 'Roboto';
     font-style: normal;
@@ -144,8 +144,9 @@ header {
     max-width: 1160px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-auto-rows: minmax(100px, auto);
-	margin: 140px 220px 180px 220px;
+    margin: 0px auto;
+	margin-top: 140px;
+    margin-bottom: 165px;
 	text-align: center;
 	font-family: 'Roboto';
 	font-style: normal;
@@ -157,7 +158,7 @@ header {
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
-    line-height: 120%;
+    line-height: 57.6px;
 	margin-bottom: 20px;
 	margin-top: 0px;
 }
@@ -169,24 +170,29 @@ header {
 	font-size: 24px;
 	line-height: 120%;
 	color: #333B41;
-	margin: 54px 0px 34px 0px;
+	margin: 58px 0px 34px 0px;
 }
 .entry-text .about-text {
 	text-align: left;
-	padding-left: 84px;
+	padding-left: 85px;
+    line-height: 22.4px;
+}
+.wrapper{
+    max-width: 1160px;
+    margin: 0px auto;
+    text-align: center;
 }
 .gallery{
     max-width: 1160px;
-	display: flex;
-	justify-content: space-evenly;
-	position: relative;
-	left: 38px;
+    margin-right: 0px;
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 30px;
-	margin: 0px 220px;
 	font-family: 'Roboto';
 	font-style: normal;
 	color: #000000;
-}
+    }
+
 .gallery .gallery-blocks img{
 	width: 366px;
 	height: 366px;
@@ -209,8 +215,9 @@ header {
     font-size: 16px;
     line-height: 140%;
     font-weight: 500;
-    margin: 8px 0px 0px 16px;
+    margin: 3px 0px 0px 16px;
     transform: translateY(0px);
+    text-align: left;
 
 }
 .gallery .gallery-blocks:hover .img-info-block{
@@ -227,21 +234,22 @@ header {
 .blocks-paragraph{
     font-weight: 300;
     font-size: 15px;
-    margin: 0px 0px 14px 16px;
+    margin: 0px 0px 8px 16px;
 }
 .img-info-block{
     display: flex;
     justify-content: space-between;
+    height: 50px;
 }
 .img-info-block .icon img{
     width: 48px;
     height: 38px;
-    padding: 8px 8px 14px 0px;
+    padding: 8px 8px 12px 0px;
 }
 .img-info-block .icon-banana img{
     width: 33px;
     height: 37px;
-    padding: 8px 8px 14px 0px;
+    padding: 8px 8px 12px 0px;
 }
 .flower-right-border{
   width: 293px;
@@ -249,8 +257,8 @@ header {
   display: flex;
   position: relative;
   float: right;
-  top: -700px;
-  right: -100px;
+  top: -720px;
+  right: -90px;
 }
 
 .bottom-flowers{
@@ -259,23 +267,29 @@ header {
   justify-content: space-between;
   margin: 0px auto;
   position: relative;
-  height: 125px;
-  top:-150px;
+  height: 100px;
+  top:-205px;
 }
 
 .palm-left-border img{
     display: flex;
     position: relative;
     height: 460px;
-    left: -588px;
-    top:-180px
+    left: -565px;
+    top:-155px;
+}
+.palm-right-border img{
+    display: flex;
+    position: relative;
+    top:30px;
+
 }
 .arrows{
   display: flex;
   justify-content: space-between;
-  margin: 0px 140px;
+  margin: 0px 135px;
   position: relative;
-  top: -500px;
+  top: -482px;
 }
     .arrows img{
     width: 62px;
@@ -295,7 +309,7 @@ header {
 .choose-favorite-btn{
     display: block;
     margin:0px auto;
-    margin-top: 30px;
+    margin-top: 0px;
     width: 298px;
     height: 54px;
     background: #FE9013;
@@ -318,7 +332,9 @@ header {
 .how-tofeed-section {
 position: relative;
 background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-padding: 69px;
+
+height: 975px;
+padding-top: 30px;
   }
    .how-to-feed{
     text-align: center;
@@ -326,12 +342,12 @@ padding: 69px;
     background: rgba(253, 253, 255, 0.52);
     height: 835px;
     border-radius: 20px;
-    margin: 0px 220px 0px 220px;
+    margin: 0px auto;
     font-family: 'Roboto';
     font-weight: 400;
     line-height: 120%;
     }
-    .how-to-feed h2{
+    .how-to-feed .head{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -339,8 +355,10 @@ padding: 69px;
     line-height: 120%;
     text-align: center;
     color: #FE9013;
-    padding: 41px 0px 0px 0px;
+    padding-top: 40px;
+    margin-bottom: 33px;
     }
+
     .how-to-feed h4{
         margin: 0px 0px 40px 99px;
         text-align: left;
@@ -365,6 +383,7 @@ padding: 69px;
     text-align: left;
     font-size: 16px;
     color: #333B41;
+    line-height: 130%;
 }
 .orange-underline{
     text-decoration: underline;
@@ -384,23 +403,31 @@ padding: 69px;
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 25px;
+    column-gap: 26px;
+    margin-bottom: 30px;;
 }
 .how-to-feed-cards-div{
 width:168px;
 }
-.how-to-feed-cards span{
-	  align-items: center;
-    display: flex;
-    text-align: left;
-    height:80px;
+.how-to-feed-spans {
+    margin: 0px auto;
+    text-align: center;
+    height: 80px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     color: #333B41;
+    width: 740px;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
 }
+.how-to-feed-spans span{
+    text-align: left;
+}
+
 .testomonials h3{
 text-align: center;
 margin: 140px 0px 47px 0px;
@@ -423,7 +450,7 @@ margin-right: 220px;
 .feedback-block{
 background: #F1F3F2;
 width: 268px;
-min-height: 391px;
+height: 357px;
 position: relative;
 padding: 15px 15px 19px 16px;
 margin: 5px;
@@ -469,13 +496,12 @@ border-radius: 20px;
     font-weight: 300;
     font-size: 15px;
     color: #767474;
-    word-spacing: 4px;
     line-height: 120%;
     margin: 0px auto;
     margin-top: 15px;
     position: relative;
-    top: -20px;
-		width: 237px;
+    top: -30px;
+	width: 237px;
     height: 309px;
 }
 .feedback-block span{
@@ -497,7 +523,7 @@ margin-left: 10px;
 	margin:auto;
 	overflow-x: scroll;
 	scrollbar-width: thin;
-	margin-bottom: 53px;
+	margin-bottom: 25px;
 	width: 40%;
 	display: flex;
  position: relative;
@@ -558,12 +584,36 @@ margin-left: 10px;
 	display: flex;
 	position: relative;
     justify-content: end;
-	top: -40px;
-    height: 170px;
+	top: -35px;
+    right: -110px;
+    height: 180px;
 }
 .leaf-right-border img{
     height: 295.45px;
-    transform: rotate(35deg);
+    transform: rotate(30deg);
+}
+.square-btn-after-scroll{
+    display: block;
+    margin-top: 20px;
+    margin-left: 220px;
+    width: 298px;
+    height: 54px;
+    background: #FE9013;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    }
+    .square-btn-after-scroll:hover{
+        color: #f9804b;
+        background: #faecdb;
+        cursor: pointer;
+        border: 1px solid #f9804b;
 }
 footer{
 	position: relative;
