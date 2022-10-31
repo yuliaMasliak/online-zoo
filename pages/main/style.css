@@ -523,7 +523,7 @@ margin-left: 10px;
 	overflow-x: scroll;
 	scrollbar-width: thin;
 	margin-bottom: 25px;
-	width: 40%;
+	width: 50%;
 	display: flex;
  position: relative;
  justify-content: center;
@@ -594,7 +594,6 @@ margin-left: 10px;
 .square-btn-after-scroll{
     display: block;
     margin-top: 20px;
-    margin-left: 220px;
     width: 298px;
     height: 54px;
     background: #FE9013;
@@ -613,6 +612,14 @@ margin-left: 10px;
         background: #faecdb;
         cursor: pointer;
         border: 1px solid #f9804b;
+}
+.square-btn-after-scroll-block{
+    margin: 0px auto;
+    min-width: 1600px;
+}
+.square-btn-after-scroll-block-div{
+    margin: 0px auto;
+    width: 1160px;
 }
 footer{
 	position: relative;
