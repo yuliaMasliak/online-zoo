@@ -72,7 +72,7 @@ header {
     text-decoration: none;
     color: #FE9013;
  }
- .nav-ul li  .active-nav{
+ .nav-ul li  .active{
     color: #FE9013;
 }
 .nav-ul li::after{
@@ -322,18 +322,15 @@ header {
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
+    color: white;
     }
     .choose-favorite-btn:hover{
         background: #faecdb;
         cursor: pointer;
         border: 1px solid #f9804b;
-    }
-    .choose-favorite-btn a{
-        color: white;
-    }
-    .choose-favorite-btn a:hover{
         color: #FE9013;
     }
+
 .how-tofeed-section {
 position: relative;
 background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -698,14 +695,8 @@ margin-left: 792px;
 }
 footer .square-btn{
 margin: 22px 0px 45px 0px;
-color: #FFF;
 }
-footer .square-btn a{
-    color: #FFF;
-}
-footer .square-btn a:hover{
-    color: #f9804b;
-}
+
 footer .social-medias{
     list-style: none;
     padding-left: 0px;
