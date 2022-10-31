@@ -60,14 +60,12 @@ header {
     margin: 0px 0px 0px 75px;
     height: 22px;
 }
+
 .nav-ul li{
    margin: 29px 29px;
 }
 .nav-ul >li:last-child {
     margin-left: 380px;
-}
-.active-nav{
-    color: #FE9013;
 }
 .nav-ul li a{
     text-decoration: none;
@@ -77,10 +75,12 @@ header {
     text-decoration: none;
     color: #FE9013;
  }
- .nav-ul li:hover .active-nav{
-    color: #FFF;
- }
-
+ .active-nav{
+    color: #FE9013 !important;
+}
+.nav-ul li a:active{
+    color: #FE9013 !important;
+}
 .panda-img{
     min-width: 1600px;
     min-height: 780px;
