@@ -618,8 +618,14 @@ footer{
 	position: relative;
 	min-width: 1600px;
 	background: #111115;
-	height: 402px;
-    padding: 41px 220px 0px 220px;
+	height: 460px;
+    margin: 0px auto;
+}
+.footer-wrapper{
+    margin: 0px auto;
+    max-width: 1160px;
+padding-top: 42px;
+height: 402px;
 }
 .footer-grid img{
     width: 82px;
@@ -640,8 +646,8 @@ color: #FFFFFF;
 margin-left: 792px;
 }
 .footer-grid .text-input{
-width: 228px;
-height: 42px;
+width: 210px;
+height: 40px;
 border: 1px solid #874E1C;
 border-radius: 4px;
 background-color: transparent;
@@ -651,6 +657,7 @@ font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
+margin-right: 5px;
 }
 .footer-grid .submit-input{
 width: 129px;
@@ -659,6 +666,18 @@ color: #000000;
 background-color: #FFFFFF;
 border: 1px solid #FFFFFF;
 border-radius: 4px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #4B9200;
+
+}
+.footer-grid .submit-input:hover{
+    background-color: #FBC5AC;
+    color:#000000;
+    cursor: pointer;
 }
 .footer-grid form{
 position: relative;
