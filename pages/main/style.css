@@ -4,11 +4,8 @@ body{
 }
 a{
     text-decoration: none;
-    color:#FFF;
 }
-a:hover{
-    color:#FE9013;
-}
+
 header {
     height: 80px;
     background-color: black;
@@ -69,18 +66,19 @@ header {
 }
 .nav-ul li a{
     text-decoration: none;
-    color: #FFF;
+    color: white;
  }
  .nav-ul li a:hover{
     text-decoration: none;
     color: #FE9013;
  }
- .active-nav{
-    color: #FE9013 !important;
+ .nav-ul li  .active-nav{
+    color: #FE9013;
 }
-.nav-ul li a:active{
-    color: #FE9013 !important;
+.nav-ul li::after{
+    color: #FE9013;
 }
+
 .panda-img{
     min-width: 1600px;
     min-height: 780px;
@@ -324,13 +322,17 @@ header {
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFF;
     }
     .choose-favorite-btn:hover{
-        color: #f9804b;
         background: #faecdb;
         cursor: pointer;
         border: 1px solid #f9804b;
+    }
+    .choose-favorite-btn a{
+        color: white;
+    }
+    .choose-favorite-btn a:hover{
+        color: #FE9013;
     }
 .how-tofeed-section {
 position: relative;
@@ -696,6 +698,13 @@ margin-left: 792px;
 }
 footer .square-btn{
 margin: 22px 0px 45px 0px;
+color: #FFF;
+}
+footer .square-btn a{
+    color: #FFF;
+}
+footer .square-btn a:hover{
+    color: #f9804b;
 }
 footer .social-medias{
     list-style: none;
