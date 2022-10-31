@@ -16,7 +16,10 @@ header {
     position: relative;
     min-width: 1600px;
 }
-
+.default-width{
+    width: 1160px;
+    margin: 0px auto;
+}
 .logo{
     color: #FFFFFF;
     border: 1.18841px solid #FFFFFF;
@@ -54,14 +57,14 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
-    margin: 0px 0px 0px 297px;
+    margin: 0px 0px 0px 75px;
     height: 22px;
 }
 .nav-ul li{
    margin: 29px 29px;
 }
 .nav-ul >li:last-child {
-    margin-left: 438px
+    margin-left: 380px;
 }
 .active-nav{
     color: #FE9013;
