@@ -226,7 +226,7 @@ margin-right: 0px;
     cursor: pointer;
 }
 
-#custom-list{
+#donate-amount{
 width: 100%;
 display: flex;
 justify-content: space-between;
@@ -240,6 +240,7 @@ text-transform: uppercase;
 color: #333B41;
 margin: 0px auto;
 margin-top: 30px;
+margin-bottom: 50px;
 }
 .dots{
     width: 95%;
@@ -287,6 +288,23 @@ input[type=range]::-webkit-slider-thumb {
     text-transform: uppercase;
     color: #FFF;
     }
+
+    .pay-input{
+    height: 54px;
+    width: 268px;
+    background-color: transparent;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    margin: 0px auto;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #929699;
+padding-left: 9px;
+
+}
     .square-btn-after-scroll:hover{
         color: #f9804b;
         background: #faecdb;
