@@ -1,8 +1,10 @@
 body{
     min-width: 1600px;
     margin: 0px auto;
-}
+    accent-color: #FE9013;
+ }
 a{
+    color: white;
     text-decoration: none;
 }
 
@@ -61,8 +63,19 @@ header {
 .nav-ul li{
    margin: 29px 29px;
 }
-.nav-ul >li:last-child {
-    margin-left: 380px;
+.designed-by {
+    position: relative;
+    top: -20px;
+    left: 970px;
+    color: #FFF;
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0px 0px 0px 85px;
+    height: 22px;
 }
 .nav-ul li a{
     text-decoration: none;
@@ -81,7 +94,7 @@ header {
 
 .panda-img{
     min-width: 1600px;
-    min-height: 390px;
+    height: 390px;
     background-image: url("../../assets/images/giant-panda.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -90,13 +103,12 @@ header {
 .how-tofeed-section {
     position: relative;
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-    height: 1482px;
-    padding-top: 30px;
+    height: 1442px;
+    padding-top: 40px;
       }
 .heading-text{
     max-width: 1160px;
     margin: 0px auto;
-	margin-top: 40px;
     margin-bottom: 60px;
 	text-align: left;
 	color: #FFFFFF;
@@ -107,6 +119,8 @@ font-style: normal;
 font-weight: 400;
 font-size: 36px;
 line-height: 130%;
+margin-top: 0px;
+margin-bottom: 10px;
 }
 .heading-text p{
 	font-family: 'Roboto';
@@ -114,6 +128,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 140%;
+margin-top: 0px;
 }
 .heading-text h2{
     font-family: 'Roboto';
@@ -144,16 +159,18 @@ margin-top: 0px;
     font-size: 24px;
     line-height: 120%;
    text-align: left;
+   margin-bottom: 0px;
     color: #333B41;}
 
 .how-to-feed{
     text-align: center;
     width: 976px;
     background: rgba(253, 253, 255, 0.52);
-    height: 964px;
+    /* height: 964px; */
     border-radius: 20px;
     margin: 0px auto;
     padding: 40px 92px 62px 92px;
+    margin-bottom: 180px;
     }
 
     .panda{
@@ -162,16 +179,14 @@ margin-top: 0px;
     grid-template-columns: 2fr 1fr 2fr;
     margin: 0px auto;
 	margin-top: 60px;
-    margin-bottom: 80px;
+    margin-bottom: 48px;
 	text-align: center;
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
 	color: #333B41;
     }
-    .panda-block{
-        margin-top: 60px;
-    }
+
     .panda-block h2{
     margin-top: 100px;
     margin-bottom: 10px;
@@ -239,8 +254,11 @@ line-height: 140%;
 text-transform: uppercase;
 color: #333B41;
 margin: 0px auto;
-margin-top: 30px;
+margin-top: 8px;
 margin-bottom: 50px;
+}
+#donate-amount .item{
+    margin-right: 31px;
 }
 .dots{
     width: 95%;
@@ -320,35 +338,85 @@ font-size: 16px;
 line-height: 140%;
 color: #333B41;
 }
-input[type="radio" i] {
+.radio-block input{
+    background: transparent;
+    border: 1px solid #FE9013;
 
     height: 16px;
     width: 16px;
-    background: transparent;
-    border: 1px solid #FE9013;
+    cursor: pointer;
+  }
+  #radio-point-left{
+    margin-right: 35px;
+
+  }
+  .radio-point-right{
+    margin-left: 25px;
   }
 
-    .square-btn-after-scroll:hover{
-        color: #f9804b;
+  .choose-favorite-btn{
+    display: block;
+    margin:0px auto;
+    margin-top: 0px;
+    width: 298px;
+    height: 54px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    }
+    .choose-favorite-btn:hover{
         background: #faecdb;
         cursor: pointer;
         border: 1px solid #f9804b;
-}
-.square-btn-after-scroll-block{
-    margin: 0px auto;
-    min-width: 1600px;
-}
-.square-btn-after-scroll-block-div{
-    margin: 0px auto;
-    width: 1160px;
+        color: #FE9013;
+    }
+.how-to-feed .last-p{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #333B41;
+text-align: center;
+margin-top: 30px;
 }
 footer{
 	position: relative;
 	min-width: 1600px;
 	background: #111115;
-	height: 460px;
+	height: 443px;
     margin: 0px auto;
 }
+.square-btn{
+    display: block;
+    margin-top: 30px;
+    margin-left: 220px;
+    width: 298px;
+    height: 54px;
+    background: #FE9013;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    }
+    .square-btn:hover{
+        color: #f9804b;
+        background: #faecdb;
+        cursor: pointer;
+        border: 1px solid #f9804b;
+    }
 .footer-wrapper{
     margin: 0px auto;
     max-width: 1160px;
