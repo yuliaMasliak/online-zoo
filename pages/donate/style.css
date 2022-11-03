@@ -268,10 +268,19 @@ margin-bottom: 50px;
     margin-top: -13px;
 
     }
-    .dot-btn{
-        height: 10px;
-        width: 10px;
-          }
+    .dot{
+        height: 30px;
+        width: 40px;
+        }
+        .dot:hover{
+
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+            -webkit-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            transform: scale(1.5);
+            background-color: #fcfa8c;
+            }
 
 input[type=range]{
     -webkit-appearance: none;
