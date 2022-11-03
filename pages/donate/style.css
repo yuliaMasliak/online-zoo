@@ -261,25 +261,32 @@ margin-bottom: 50px;
     margin-right: 31px;
 }
 .dots{
-    width: 95%;
+
     display: flex;
     justify-content: space-between;
     margin: 0px auto;
-    margin-top: -13px;
+    margin-top: -14px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     }
     .dot{
-        height: 30px;
-        width: 40px;
+        height: 20px;
+        width: 20px;
+
         }
         .dot:hover{
-
             cursor: pointer;
-            transition: all 0.4s ease-in-out;
-            -webkit-transform: scale(1.5);
-            -ms-transform: scale(1.5);
-            transform: scale(1.5);
-            background-color: #fcfa8c;
+            transition: width 2s, height 2s;
+            transition-timing-function: ease-in-out;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            background-color: #FFEE2E;
+            border-radius: 50%;
+            display: flex;
+            position: relative;
+            top: -1px;
             }
 
 input[type=range]{
@@ -499,9 +506,8 @@ footer .social-medias{
 }
 footer .social-medias-li{
     height: 30px;
-
 }
-footer .sm-name{
+footer .sm-link{
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -512,6 +518,14 @@ margin: 0px 0px 10px 10px;
 position: relative;
 left: 3px;
 top: -6px;
+}
+footer .social-medias-li img{
+    position: relative;
+    top: 6px;
+    margin-right: 10px;
+}
+footer .sm-link:hover{
+color: #FE9013;
 }
 footer .nav-ul {
     position: relative;
