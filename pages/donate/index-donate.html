@@ -89,7 +89,7 @@
     </div>
 
     <form action="pay">
-      <input type="number" placeholder="Another amount" class="pay-input">
+      <input type="number" placeholder="Another amount" maxlength="4" class="pay-input" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
     </form>
 
     <div class="radio-block">
