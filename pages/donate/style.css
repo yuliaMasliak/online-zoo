@@ -308,6 +308,26 @@ padding-left: 9px;
 padding-right: 9px;
 margin-bottom: 25px;
 }
+.radio-block{
+    margin-bottom: 31px;
+
+}
+.period-text{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #333B41;
+}
+input[type="radio" i] {
+
+    height: 16px;
+    width: 16px;
+    background: transparent;
+    border: 1px solid #FE9013;
+  }
+
     .square-btn-after-scroll:hover{
         color: #f9804b;
         background: #faecdb;
