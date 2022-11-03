@@ -700,11 +700,14 @@ footer .social-medias{
     list-style: none;
     padding-left: 0px;
 }
+footer .social-medias{
+    list-style: none;
+    padding-left: 0px;
+}
 footer .social-medias-li{
     height: 30px;
-
 }
-footer .sm-name{
+footer .sm-link{
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -715,6 +718,14 @@ margin: 0px 0px 10px 10px;
 position: relative;
 left: 3px;
 top: -6px;
+}
+footer .social-medias-li img{
+    position: relative;
+    top: 6px;
+    margin-right: 10px;
+}
+footer .sm-link:hover{
+color: #FE9013;
 }
 footer .nav-ul {
     position: relative;
