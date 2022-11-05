@@ -334,7 +334,6 @@ header {
 .how-tofeed-section {
 position: relative;
 background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-
 height: 975px;
 padding-top: 30px;
   }
@@ -701,11 +700,14 @@ footer .social-medias{
     list-style: none;
     padding-left: 0px;
 }
+footer .social-medias{
+    list-style: none;
+    padding-left: 0px;
+}
 footer .social-medias-li{
     height: 30px;
-
 }
-footer .sm-name{
+footer .sm-link{
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -716,6 +718,14 @@ margin: 0px 0px 10px 10px;
 position: relative;
 left: 3px;
 top: -6px;
+}
+footer .social-medias-li img{
+    position: relative;
+    top: 6px;
+    margin-right: 10px;
+}
+footer .sm-link:hover{
+color: #FE9013;
 }
 footer .nav-ul {
     position: relative;
