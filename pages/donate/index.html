@@ -67,36 +67,43 @@
 
     <div class="dots">
 
-            <div class="dot"><a href="#"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot"></a></div>
-           <div class="dot"><a href="#"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot"></a></div>
-           <div class="dot"><a href="#"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot"></a></div>
-           <div class="dot"><a href="#"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot"></a></div>
-           <div class="dot"><a href="#"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot"></a></div>
-           <div class="dot"><a href="#"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot"></a></div>
-           <div class="dot"><a href="#"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot"></a></div>
-           <div class="dot"><a href="#"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot"></a></div>
+            <div class="dot"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot" class="dot-img">
+            <div class="item">$5000</div>
+            </div>
+            <div class="dot"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot">
+                <div class="item">$2000</div>
+                </div>
+                <div class="dot"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot">
+                    <div class="item">$1000</div>
+                    </div>
+                    <div class="dot"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot">
+                        <div class="item">$500</div>
+                        </div>
+                        <div class="dot"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot">
+                            <div class="item">$250</div>
+                            </div>
+                            <div class="dot"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot">
+                                <div class="item">$100</div>
+                                </div>
+                                <div class="dot"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot">
+                                    <div class="item">$50</div>
+                                    </div>
+                                    <div class="dot"><img src="../../assets/icons/donate-dot-yellow.png" alt="yellow-dot">
+                                        <div class="item">$25</div>
+                                        </div>
     </div>
 </div>
-<div id="donate-amount">
-            <div class="item">$ 5000</div>
-            <div class="item">$ 2000</div>
-            <div class="item">$ 1000</div>
-            <div class="item">$ 500</div>
-            <div class="item">$ 250</div>
-            <div class="item">$ 100</div>
-            <div class="item">$ 50</div>
-            <div class="item">$ 25</div>
-    </div>
+
 
     <form action="pay">
       <input type="number" placeholder="Another amount" maxlength="4" class="pay-input" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
     </form>
 
     <div class="radio-block">
-        <input type="radio" name="period" id="monthly" value="monthly" >
+        <input type="radio" name="period" id="monthly" value="monthly" class="radio-point">
         <label for="monthly" class="period-text" id="radio-point-left" >Monthly</label>
 
-        <input type="radio" name="period" id="once" value="once" class="radio-point-right" checked="checked">
+        <input type="radio" name="period" id="once" value="once" class="radio-point" checked="checked">
         <label for="once" class="period-text">Once</label>
 </div>
      <a href="#"><button class="choose-favorite-btn">Feed a friend now</button></a>
@@ -113,7 +120,7 @@
            </div>
         <div class="subscribe-block"><h2>Subscribe to our news</h2>
         <form action="submit">
-            <input type="email" class="text-input" placeholder="Enter your email">
+            <input type="email" class="text-input" placeholder="Enter your email" required>
             <input type="submit" value="Submit" class="submit-input" disabled="disabled">
         </form>
         </div>
