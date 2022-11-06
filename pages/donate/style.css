@@ -231,9 +231,6 @@ margin-right: 0px;
 }
 
 #donate-amount{
-
-
-
 margin: 0px auto;
 margin-top: 8px;
 margin-bottom: 50px;
@@ -242,7 +239,6 @@ margin-bottom: 50px;
 .dots{
 width: 108%;
 padding-right: 10px;
-
 display: grid;
 grid-template-columns: repeat(8, 1fr);
 grid-template-rows: 1fr;
@@ -259,12 +255,12 @@ font-size: 26px;
 line-height: 140%;
 text-transform: uppercase;
 color: #333B41;
-    }
+}
 
  .dot:hover{
  cursor: pointer;
  color:#f9804b
-            }
+}
         .dot:hover img{
             transform: scale(1);
             background-color: transparent;
@@ -273,14 +269,17 @@ color: #333B41;
             outline-offset: 7px;
             border-radius: 50%;
             position: relative;
-
-left: -2px
+            left: -2px;
+            }
+            .dot:hover .item{
+            position: relative;
+            top: -2px;
             }
 .dot .item{
     display: flex;
     position: relative;
     left: -20px;
-    margin-top: 12px;
+    margin-top: 6px;
 }
 input[type=range]{
     -webkit-appearance: none;
