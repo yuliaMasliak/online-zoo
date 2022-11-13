@@ -362,7 +362,8 @@ color: #333B41;
     cursor: pointer;
   }
   .radio-point:checked {
-    background: #F9804B;
+    background: #4B9200;
+    border: 1px solid #4B9200;
 }
   #radio-point-left{
     margin-right: 20px;
