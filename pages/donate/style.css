@@ -27,7 +27,6 @@ header {
     position: absolute;
     width: 72.49px;
     height: 44.91px;
-    left: 220px;
     margin: 13px 0px;
     padding: 3.55px 4.75px;
 }
@@ -48,7 +47,8 @@ header {
 
 }
 .nav-ul {
-    display: inline-flex;
+    display: flex;
+    width: 100%;
     color: #FFF;
     list-style: none;
     font-family: 'Roboto';
@@ -63,8 +63,15 @@ header {
 .nav-ul li{
    margin: 29px 29px;
 }
-.nav-ul >li:last-child {
-    margin-left: 380px;
+.designed-by {
+  float:right;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  align-items: center;
+  margin-top: 7px;
 }
 .nav-ul li a{
     text-decoration: none;
@@ -562,4 +569,57 @@ footer .nav-ul .last-li{
 .social-medias-li {
     height: 26px;
     margin: 5px 0px 5px 0px;
+}
+
+@media screen and (max-width: 1000px) {
+.default-width{
+    max-width: 940px;
+    margin-left: 30px;
+}
+.logo{
+    margin-right: 39px;
+}
+.nav-ul li{
+    margin: 29px 24px;
+ }
+ .panda-img{
+    position: relative;
+    left: -172px;
+ }
+ section{
+    max-width: 1000px;
+ }
+.heading-text{
+    max-width: 939px;
+    margin: 0 auto;
+}
+.how-tofeed-section{
+    height: 1293px;
+}
+.how-to-feed{
+    margin-bottom: 30px;
+    max-width: 851px;
+    padding: 30px 44px 45px 47px;
+}
+.heading-text h3{
+    width: 778px;
+    margin-bottom: 30px;
+    }
+    .heading-text p{
+     line-height:22.4px;
+     margin-top: 0px;
+        }
+        .heading-text h2{
+            margin-bottom: 40px;
+            }
+.how-to-feed p{
+margin-top: 0px;
+}
+.how-to-feed h2{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    }
+    .panda-block{
+    align-items: center;
+    }
 }
