@@ -171,7 +171,7 @@ margin-top: 0px;
     .panda{
     display: grid;
     width: 568px;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 30% 10% 60%;
     margin: 0px auto;
 	margin-top: 60px;
     margin-bottom: 48px;
@@ -616,10 +616,59 @@ footer .nav-ul .last-li{
 margin-top: 0px;
 }
 .how-to-feed h2{
-    margin-top: 0px;
     margin-bottom: 10px;
     }
     .panda-block{
-    align-items: center;
+        align-items:center;
     }
+.range{
+    width: 810px;
+    padding: 0px;
+    margin: 0px auto;
+}
+.slider{
+    width: 785px;
+}
+.panda{
+    margin-bottom: 40px;
+}
+legend{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.pay-input{
+    width: 250px;
+    margin-top: 95px;
+}
+#once{
+    margin-left: 5px;
+}
+.footer-wrapper{
+    max-width: 940px;
+    margin-left: 30px;
+}
+footer .sm-link{
+    margin-left: 0px;
+}
+.footer-grid form{
+    margin-left: 541px;
+}
+.footer-grid h2{
+    margin-left: 541px;
+}
+footer .nav-ul{
+    margin-left: 304px;
+    text-align: left;
+}
+#active-links-footer li{
+    margin-left: 0px;
+    margin-right: 48px;
+}
+footer .nav-ul .footer-designed-by{
+    margin-left: 75px;
+    right: -30px;
+}
+.panda-block .x{
+display: flex;
+}
 }
