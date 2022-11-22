@@ -626,9 +626,6 @@ margin-top: 0px;
     padding: 0px;
     margin: 0px auto;
 }
-.slider{
-    width: 785px;
-}
 .panda{
     margin-bottom: 40px;
 }
@@ -670,5 +667,6 @@ footer .nav-ul .footer-designed-by{
 }
 .panda-block .x{
 display: flex;
+
 }
 }
