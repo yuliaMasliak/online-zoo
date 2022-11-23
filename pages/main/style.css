@@ -102,6 +102,7 @@ display: none;
     background-image: url("../../assets/images/giant-panda.png");
     background-color:#000000;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 .circle{
@@ -153,7 +154,9 @@ display: none;
     cursor: pointer;
     border: 1px solid #f9804b;
 }
-.hat-man img{
+.hat-man {
+    background: url("../../assets/images/bamboo-cap.png");
+    background-size: cover;
 	width: 609px;
 	height: 403px;
 	backdrop-filter: blur(2px);
@@ -783,6 +786,7 @@ footer .nav-ul .last-li{
 }
 
 @media screen and (max-width: 1000px) {
+
 header{
     z-index: 1;
 }
@@ -801,9 +805,11 @@ header{
          }
 
 .panda-img{
+    max-width: 1000px;
     background-image: url("../../assets/images/giant-panda-1000px.png");
     height: 584px;
     margin: 0 auto;
+    background-size: contain;
     background-position: left;
 }
 .circle{
@@ -873,15 +879,14 @@ footer .nav-ul{
         height: 427px;
     }
     .hat-man{
-        width: 455px;
         height: 408px;
-        padding-top: 10px;
+        width: 455px;
+        margin-top: 10px;
+        /* background: url("../../assets/images/bamboo-cap-1000px.png"); */
+        background-position: cover;
+        background-position: center;
     }
-    .hat-man img{
-        max-width: 100%;
-        max-height: 100%;
-        margin: auto;
-        display: block;}
+
 
     .entry-text .about-text{
         padding-left: 31px;
