@@ -427,7 +427,10 @@ padding-top: 30px;
     justify-content: center;
     align-items: center;
     column-gap: 26px;
-    margin-bottom: 30px;;
+    margin-bottom: 30px;
+}
+.arrow-640{
+    display: none;
 }
 .how-to-feed-cards-div{
 width:168px;
@@ -784,9 +787,17 @@ footer .nav-ul .last-li{
     height: 26px;
     margin: 5px 0px 5px 0px;
 }
+.social-medias-640{
+    display: none;
+}
 
 @media screen and (max-width: 1000px) {
-
+    html {
+        height: 100%;
+    }
+    body {
+        min-height: 100%;
+    }
 header{
     z-index: 1;
 }
@@ -882,7 +893,6 @@ footer .nav-ul{
         height: 408px;
         width: 455px;
         margin-top: 10px;
-        /* background: url("../../assets/images/bamboo-cap-1000px.png"); */
         background-position: cover;
         background-position: center;
     }
@@ -961,13 +971,13 @@ footer .nav-ul{
           }
     .how-to-feed h4{
         margin-bottom: 20px;
-        min-width: 843px;
+        max-width: 843px;
     }
     .how-to-feed h5{
              max-width: 813px;
     }
     .how-to-feed p{
-            min-width: 823px;
+            max-width: 823px;
         margin-bottom: 0px;
     }
     .how-to-feed h4,.how-to-feed h5,.how-to-feed p{
@@ -1025,9 +1035,16 @@ section{
     width: 239.98px;
 height: 235.62px;
 }
+
 }
 
 @media screen and (max-width: 640px) {
+    html {
+        height: 100%;
+    }
+    body {
+        min-height: 100%;
+    }
     header{
         z-index: 1;
         height: 34px;
@@ -1133,6 +1150,7 @@ line-height: 120%;
         }
         main{
             max-width: 640px;
+            max-height: 1415px;
         }
         .wrapper{
             width: 600px;
@@ -1175,122 +1193,174 @@ line-height: 120%;
         .palm-left-border img{
             height: 202px;
             width: 386px;
-            left: -192px;
-            top: 105px;
+            left: -250px;
+            top: 39px;
             }
         .palm-right-border img{
-            width: 241px;
-            height: 180px;
-            right: 591px;
-            top: 130px;
+            width: 175px;
+height: 131px;
+right: 955px;
+top: 112px;
         }
 
         .how-tofeed-section{
-            max-width: 1000px;
-            height: 846px;
+            max-width: 640px;
+            height: 761px;
+            padding-top: 20px;
         }
         .how-to-feed{
-            max-width: 940px;
-            height: 796px;
+            max-width: 640px;
+            height: 741px;
         }
         .how-to-feed .head{
             margin-top: 0px;
-            padding-top: 30px;
+            padding-top: 10px;
             margin-bottom: 20px;
+            font-size: 42px;
               }
         .how-to-feed h4{
             margin-bottom: 20px;
-            min-width: 843px;
-        }
-        .how-to-feed h5{
-                 max-width: 813px;
-        }
+            height: 52px;
+            font-weight: 400;
+font-size: 22px;
+              }
+
         .how-to-feed p{
-                min-width: 823px;
-            margin-bottom: 0px;
+           margin-bottom: 0px;
         }
         .how-to-feed h4,.how-to-feed h5,.how-to-feed p{
-            margin-left: 49px;
+            margin-left: 20px;
+            margin-right: 20px;
+           max-width: 600px;
         }
         .how-to-feed h3{
-            margin-top: 40px;
+            margin-top: 35px;
+            margin-bottom: 0px;
+         }
+
+         .how-to-feed-cards{
+            max-width: 600px;
+            flex: 100%;
+            margin: 0 auto;
+            margin-right: 32px;
+            margin-left: 20px;
+            column-gap: 20px;
+         }
+         .arrow{
+            display: none;
+         }
+         .arrow-640{
+            margin: 0 auto;
+            max-width: 300px;
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            left: -12px;
+            height: 17px;
          }
     .how-to-feed-spans{
-        margin-bottom: 30px;
+        text-align: left;
+        max-width: 600px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        height:fit-content;
     }
+    .how-to-feed-spans span{
+        width: 168px;
+        height:fit-content;
+    }
+
+
     section{
-        max-width: 1000px;
+        max-width: 640px;
     }
     .testomonials{
-        height: 740px;
+        height: 610px;
     }
     .testomonials h3{
-        margin-top: 100px;
+        margin-top: 60px;
         margin-bottom: 30px;
     }
     .feedbacks > :last-child{
         display: none;
     }
     .feedbacks {
-        max-width: 940px;
+        flex-direction: column;
+        max-width: 640px;
+
     }
     .feedback-block p {
-        width: 255px;
-        height: 309px;
+        width: 553px;
+        margin-left: 0px;
+        margin-top: 15px;
+        font-size: 15px;
+        max-height: 38px;
+        overflow: hidden;
     }
     .feedback-block{
-        height: 353px;
+        max-height: 90px;
+        width: 553px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 11px 29px 8px 18px;
+    }
+
+
+    .square-btn-after-scroll-block-div{
+        max-width: 640px;
+        margin: 0 auto;
     }
     .square-btn-after-scroll{
-        margin-top: 53px;
-    }
-    .square-btn-after-scroll-block{
-        max-width: 1000px;
-    }
-    .square-btn-after-scroll-block-div{
-        max-width: 940px;
+        width: 240px;
+        margin: 0 auto;
+        margin-top: 30px;
     }
     .scroll-bar{
-        margin: 0px auto;
-        max-width: 940px;
-        width: 390px;
+       display: none;
     }
     .leaf-right-border {
-        top: -50px;
-        right: -90px;
-        height: 180px;
+        top: -30px;
+        right: -60px;
     }
     .leaf-right-border img {
-        width: 239.98px;
-    height: 235.62px;
+        width: 149.88px;
+        height: 147.15px;
     }
+footer{
+    max-height: 282px;
+}
     .footer-wrapper{
-        max-width: 940px;
-        margin-left: 30px;
+        max-height: 270px;
+        max-width: 640px;
+        margin: 0px 20px;
+        padding-top: 12px;
     }
-    footer .sm-link{
-        margin-left: 0px;
+    footer .square-btn{
+        margin-top: 32px;
     }
-    .footer-grid form{
-        margin-left: 541px;
+    footer .sm-link, .subscribe-block{
+       display: none;
     }
-    .footer-grid h2{
-        margin-left: 541px;
-    }
+footer .social-medias{
+   display: none;
+}
     footer .nav-ul{
-        margin-left: 291px;
+        display: flex;
         text-align: left;
+        margin-left: 0px;
+        top: 50px
     }
     #active-links-footer li{
         margin-left: 0px;
-        margin-right: 48px;
+        margin-right: 37px;
     }
     .footer-designed-by{
         display: flex;
         position: relative;
         float: right;
-       left: 30px;;
-        top: -90px;
+       left: -10px;
+        top: -20px;
         margin-right: 31px;
         color: white;
         font-family: 'Roboto';
@@ -1298,5 +1368,20 @@ line-height: 120%;
         font-weight: 100;
         font-size: 16px;
         line-height: 180%;
+    }
+    footer .social-medias-640{
+        display: flex;
+        position: relative;
+        top: -225px;
+        float: right;
+        right: -210px;
+        flex-direction: column;
+        width: 60px;
+    }
+    footer .social-medias-640 ul {
+        list-style: none;
+    }
+    footer .social-medias-640 ul li{
+        margin-bottom: 15px;
     }
     }
