@@ -573,6 +573,9 @@ footer .nav-ul .last-li{
 .burger{
     display: none;
 }
+.social-medias-640{
+    display: none;
+}
 
 @media screen and (max-width: 1000px) {
 .default-width{
@@ -749,13 +752,13 @@ top: -20px;
         margin: 0 auto;
     }
     .how-tofeed-section{
-        height: 1293px;
+        height: 1300px;
         padding-top: 30px;
     }
     .how-to-feed{
         margin-bottom: 30px;
-        max-width: 851px;
-        padding: 30px 44px 45px 47px;
+        max-width: 600px;
+        padding: 30px 0px;
     }
     .heading-text h3{
         width: 600px;
@@ -767,6 +770,7 @@ top: -20px;
         .heading-text p{
          line-height:22.4px;
          margin-top: 0px;
+
             }
             .heading-text h2{
                 margin-bottom: 30px;
@@ -774,59 +778,106 @@ top: -20px;
                 }
     .how-to-feed p{
     margin-top: 0px;
+    text-align: center;
     }
     .how-to-feed h2{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         }
         .panda-block{
             align-items:center;
         }
     .range{
-        width: 810px;
+        width: 600px;
         padding: 0px;
         margin: 0px auto;
     }
+    .slider{
+        width: 524px;
+    }
+    .dots > div:nth-child(1) {
+        display: none;
+    }
+    .dots > div:nth-child(2) {
+        display: none;
+    }
+    .dots > div:nth-child(3) {
+        display: none;
+    }
     .panda{
+        margin-top: 45px;
         margin-bottom: 40px;
     }
     legend{
-        margin-bottom: 15px;
-        margin-left: 15px;
+        margin-bottom: 7px;
+        margin-left: 10px;
     }
+    .dots{
+        width: 1070px;
+        padding-left: 20px;
+        }
+
     .pay-input{
-        width: 250px;
+        width: 176px;
+        height: 40px;
         margin-top: 95px;
     }
     #once{
         margin-left: 5px;
     }
-    .footer-wrapper{
-        max-width: 940px;
-        margin-left: 30px;
+    footer{
+        max-height: 282px;
     }
-    footer .sm-link{
-        margin-left: 0px;
+        .footer-wrapper{
+            max-height: 270px;
+            max-width: 640px;
+            margin: 0px 20px;
+            padding-top: 12px;
+        }
+        footer .square-btn{
+            margin-top: 32px;
+        }
+        footer .sm-link, .subscribe-block{
+           display: none;
+        }
+    footer .social-medias{
+       display: none;
     }
-    .footer-grid form{
-        margin-left: 541px;
-    }
-    .footer-grid h2{
-        margin-left: 541px;
-    }
-    footer .nav-ul{
-        margin-left: 304px;
-        text-align: left;
-    }
-    #active-links-footer li{
-        margin-left: 0px;
-        margin-right: 48px;
-    }
-    footer .nav-ul .footer-designed-by{
-        margin-left: 75px;
-        right: -30px;
-    }
-    .panda-block .x{
-    display: flex;
-
-    }
+        footer .nav-ul{
+            display: flex;
+            text-align: left;
+            margin-left: 0px;
+            top: 25px;
+        }
+        #active-links-footer li{
+            margin-left: 0px;
+            margin-right: 37px;
+        }
+        .footer-designed-by{
+            display: flex;
+            position: relative;
+            float: right;
+           left: 35px;
+            top: -10px;
+            margin-right: 31px;
+            color: white;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 16px;
+            line-height: 180%;
+        }
+        footer .sm-640{
+            display: flex;
+            position: relative;
+            top: -25px;
+            width: 60px;
+            left: 550px;
+            top: -280px;
+        }
+        footer .sm-640 ul {
+            list-style: none;
+        }
+        footer .sm-640 ul li{
+            margin-bottom: 15px;
+        }
     }
