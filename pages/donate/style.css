@@ -88,12 +88,12 @@ header {
     color: #FE9013;
 }
 .panda-img{
-    min-width: 1600px;
+    max-width: 1600px;
     height: 390px;
     background-image: url("../../assets/images/giant-panda.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center center;
+    background-position: center;
 }
 .how-tofeed-section {
     position: relative;
@@ -570,6 +570,9 @@ footer .nav-ul .last-li{
     height: 26px;
     margin: 5px 0px 5px 0px;
 }
+.burger{
+    display: none;
+}
 
 @media screen and (max-width: 1000px) {
 .default-width{
@@ -579,13 +582,20 @@ footer .nav-ul .last-li{
 .logo{
     margin-right: 39px;
 }
+
 .nav-ul li{
     margin: 29px 24px;
  }
  .panda-img{
+    background-image: url("../../assets/images/giant-panda.png");
+    max-height: 390px;
+    margin: 0px auto;
     position: relative;
     left: -172px;
- }
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
  section{
     max-width: 1000px;
  }
@@ -670,3 +680,153 @@ display: flex;
 
 }
 }
+
+@media screen and (max-width: 640px) {
+
+    html {
+        height: 100%;
+    }
+    body {
+        min-height: 100%;
+    }
+    header{
+        z-index: 1;
+        height: 34px;
+        max-width: 640px;
+    }
+
+        .default-width{
+            max-width: 640px;
+           margin: 0px auto;
+           margin-left: 15px;
+        }
+.logo{
+    border-color: #000000;
+    font-family: 'Roboto';
+font-style: normal;
+width: 46.86px;
+height: 29.03px;
+display: flex;
+top: -20px;
+}
+.logo h1{
+    font-weight: 400;
+    font-size: 12.2899px;
+    line-height: 120%;
+    margin-top: 3px;
+}
+.bamboo-icon{
+    height: 13px;
+    top: 20px;
+    left: 6px;
+}
+.burger{
+            max-width: 605px;
+            display: block;
+            display: flex;
+            justify-content: end;
+            padding-top: 11px;
+
+        }
+        .nav-ul, .designed-by {
+                display: none;
+             }
+
+    .panda-img{
+        background-image: url("../../assets/images/giant-panda.png");
+    max-height: 335px;
+    margin: 0px auto;
+    position: relative;
+    left: -372px;
+    background-repeat: no-repeat;
+    }
+
+     section{
+        max-width: 640px;
+     }
+    .heading-text{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .how-tofeed-section{
+        height: 1293px;
+        padding-top: 30px;
+    }
+    .how-to-feed{
+        margin-bottom: 30px;
+        max-width: 851px;
+        padding: 30px 44px 45px 47px;
+    }
+    .heading-text h3{
+        width: 600px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        }
+        .heading-text p{
+         line-height:22.4px;
+         margin-top: 0px;
+            }
+            .heading-text h2{
+                margin-bottom: 30px;
+                margin-top: 30px;
+                }
+    .how-to-feed p{
+    margin-top: 0px;
+    }
+    .how-to-feed h2{
+        margin-bottom: 10px;
+        }
+        .panda-block{
+            align-items:center;
+        }
+    .range{
+        width: 810px;
+        padding: 0px;
+        margin: 0px auto;
+    }
+    .panda{
+        margin-bottom: 40px;
+    }
+    legend{
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+    .pay-input{
+        width: 250px;
+        margin-top: 95px;
+    }
+    #once{
+        margin-left: 5px;
+    }
+    .footer-wrapper{
+        max-width: 940px;
+        margin-left: 30px;
+    }
+    footer .sm-link{
+        margin-left: 0px;
+    }
+    .footer-grid form{
+        margin-left: 541px;
+    }
+    .footer-grid h2{
+        margin-left: 541px;
+    }
+    footer .nav-ul{
+        margin-left: 304px;
+        text-align: left;
+    }
+    #active-links-footer li{
+        margin-left: 0px;
+        margin-right: 48px;
+    }
+    footer .nav-ul .footer-designed-by{
+        margin-left: 75px;
+        right: -30px;
+    }
+    .panda-block .x{
+    display: flex;
+
+    }
+    }
