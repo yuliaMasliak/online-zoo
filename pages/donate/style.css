@@ -88,12 +88,13 @@ header {
     color: #FE9013;
 }
 .panda-img{
+    margin: 0px auto;
     max-width: 1600px;
     height: 390px;
     background-image: url("../../assets/images/giant-panda.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+    background-size: cover;
+    background-position: center center;
 }
 .how-tofeed-section {
     position: relative;
@@ -573,7 +574,7 @@ footer .nav-ul .last-li{
 .burger{
     display: none;
 }
-.social-medias-640{
+.sm-640{
     display: none;
 }
 
@@ -680,8 +681,8 @@ footer .nav-ul .footer-designed-by{
 }
 .panda-block .x{
 display: flex;
-
 }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -724,6 +725,7 @@ top: -20px;
     left: 6px;
 }
 .burger{
+    cursor: pointer;
             max-width: 605px;
             display: block;
             display: flex;
@@ -731,9 +733,25 @@ top: -20px;
             padding-top: 11px;
 
         }
-        .nav-ul, .designed-by {
+        .nav-ul-show {
+                display: flex;
+                width: 100%;
+                color: rgb(207, 19, 19);
+                list-style: none;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 140%;
+                height: 22px;
+            }
+        .nav-ul {
+            display: none;
+             }
+             .designed-by {
                 display: none;
              }
+
 
     .panda-img{
         background-image: url("../../assets/images/giant-panda.png");

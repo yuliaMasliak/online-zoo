@@ -15,9 +15,13 @@ footerBtns[i].addEventListener("click", handleClick);
 
   function handleClick(event) {
    event.preventDefault();
-//   let currentBtn = document.getElementsByClassName("active");
-//   currentBtn[0].className = currentBtn[0].className.replace(" active", "");
-//   footerBtns[i].className += " active";
   };
 
+}
+
+let burger = document.querySelector(".burger");
+burger.addEventListener("click", openMenu);
+function openMenu(event){
+    let navigation = document.querySelector(".nav-ul");
+    navigation.classList.toggle(".nav-ul-show");
 }
