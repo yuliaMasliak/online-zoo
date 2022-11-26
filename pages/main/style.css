@@ -1639,40 +1639,41 @@ margin-left: 10px;
 
 
         section{
-            max-width: 640px;
-        }
+            max-width: 320px;
+                   }
         .choose-favorite-btn{
             margin-top: 23px;
         }
         .testomonials{
-            height: 610px;
+            height: 550px;
         }
         .testomonials h3{
-            margin-top: 60px;
-            margin-bottom: 30px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 24px;
         }
         .feedbacks > :last-child{
             display: none;
         }
         .feedbacks {
             flex-direction: column;
-            max-width: 640px;
-
-        }
+            max-width: 320px;
+           }
         .feedback-block p {
-            width: 553px;
+            width: 232px;
             margin-left: 0px;
             margin-top: 15px;
             font-size: 15px;
+            line-height: 18px;
             max-height: 38px;
             overflow: hidden;
         }
         .feedback-block{
-            max-height: 90px;
-            width: 553px;
-            margin-bottom: 10px;
-            margin-left: 20px;
-            margin-right: 20px;
+            max-height: 109px;
+            width: 252px;
+            margin-bottom: 12px;
+            margin-left: 11px;
+            margin-right: 10px;
             padding: 11px 29px 8px 18px;
         }
 
@@ -1684,30 +1685,33 @@ margin-left: 10px;
         .square-btn-after-scroll{
             width: 240px;
             margin: 0 auto;
-            margin-top: 30px;
+            margin-top: 25px;
         }
         .scroll-bar{
            display: none;
         }
+
         .leaf-right-border {
-            top: -30px;
-            right: -60px;
+left: 30px;
+top: 10px;
+
         }
         .leaf-right-border img {
-            width: 149.88px;
-            height: 147.15px;
+            width: 77.21px;
+            height: 75.81px;
+
         }
     footer{
-        max-height: 282px;
+        max-height: 334px;
     }
         .footer-wrapper{
-            max-height: 270px;
-            max-width: 640px;
+            max-height: 334px;
+            max-width: 294px;
             margin: 0px 20px;
             padding-top: 12px;
         }
-        footer .square-btn{
-            margin-top: 32px;
+        footer .square-btn .footer-grid{
+            margin-top: 34px;
         }
         footer .sm-link, .subscribe-block{
            display: none;
