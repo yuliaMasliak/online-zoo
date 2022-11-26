@@ -167,7 +167,7 @@ display: none;
 	grid-template-columns: 1fr 1fr;
     margin: 0px auto;
 	margin-top: 140px;
-    margin-bottom: 165px;
+    margin-bottom: 150px;
 	text-align: center;
 	font-family: 'Roboto';
 	font-style: normal;
@@ -448,7 +448,8 @@ width:168px;
     width: 740px;
     display:flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 .how-to-feed-spans span{
     text-align: left;
@@ -475,7 +476,7 @@ margin: 0px auto;
 .feedback-block{
 background: #F1F3F2;
 width: 268px;
-height: 357px;
+height: 350px;
 position: relative;
 padding: 15px 15px 19px 16px;
 margin: 5px;
@@ -521,13 +522,12 @@ border-radius: 20px;
     font-weight: 300;
     font-size: 15px;
     color: #767474;
-    line-height: 120%;
+    line-height: 105%;
     margin: 0px auto;
     margin-top: 15px;
     position: relative;
     top: -30px;
 	width: 237px;
-    height: 309px;
 }
 .feedback-block span{
 display: block;
@@ -964,6 +964,9 @@ footer .nav-ul{
         max-width: 940px;
         height: 796px;
     }
+    .how-to-feed-cards{
+        margin-bottom: 35px;
+    }
     .how-to-feed .head{
         margin-top: 0px;
         padding-top: 30px;
@@ -987,7 +990,8 @@ footer .nav-ul{
         margin-top: 40px;
      }
 .how-to-feed-spans{
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 section{
     max-width: 1000px;
@@ -1051,7 +1055,7 @@ height: 235.62px;
         .default-width{
             max-width: 640px;
            margin: 0px auto;
-           margin-left: 20px;
+           margin-left: 15px;
         }
 .logo{
     border-color: #000000;
@@ -1060,7 +1064,7 @@ font-style: normal;
 width: 46.86px;
 height: 29.03px;
 display: flex;
-top: -20px;
+top: -18px;
 }
 .logo h1{
     font-weight: 400;
@@ -1074,7 +1078,7 @@ top: -20px;
     left: 6px;
 }
 .burger{
-            max-width: 590px;
+            max-width: 605px;
             display: block;
             display: flex;
             justify-content: end;
@@ -1248,6 +1252,9 @@ font-size: 22px;
             margin-left: 20px;
             column-gap: 20px;
          }
+         .how-to-feed-spans{
+            min-height: 46px;
+         }
          .arrow{
             display: none;
          }
@@ -1295,14 +1302,14 @@ font-size: 22px;
         width: 553px;
         margin-left: 0px;
         margin-top: 15px;
-        font-size: 15px;
-        max-height: 38px;
+        font-size: 14px;
+        max-height: 42px;
         overflow: hidden;
     }
     .feedback-block{
-        max-height: 90px;
+       height: 85px;
         width: 553px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         margin-left: 20px;
         margin-right: 20px;
         padding: 11px 29px 8px 18px;
@@ -1535,7 +1542,7 @@ position: relative;
                 height: 332px;
                 margin-bottom: 20px;
                         }
-            }
+
             .gallery-blocks img{
                 max-width: 285px;
                 max-height: 285px;
@@ -1568,74 +1575,74 @@ position: relative;
 
             .how-tofeed-section{
                 max-width: 320px;
-                height: 761px;
+                height: 1064px;
                 padding-top: 20px;
             }
             .how-to-feed{
                 max-width: 300px;
-                height: 741px;
+                height: 1042px;
             }
             .how-to-feed .head{
                 margin-top: 0px;
-                padding-top: 10px;
-                margin-bottom: 20px;
-                font-size: 42px;
+                padding-top: 20px;
+                margin-bottom: 10px;
+                font-size: 24px;
                   }
             .how-to-feed h4{
                 margin-bottom: 20px;
                 height: 52px;
                 font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
+    text-align: center;
+margin-left: 10px;
+                margin-right: 10px;
                   }
 
             .how-to-feed p{
                margin-bottom: 0px;
             }
-            .how-to-feed h4,.how-to-feed h5,.how-to-feed p{
-                margin-left: 20px;
-                margin-right: 20px;
-               max-width: 600px;
+            .how-to-feed h5,.how-to-feed p{
+               display: none;
             }
             .how-to-feed h3{
                 margin-top: 35px;
                 margin-bottom: 0px;
+                font-size: 24px;
              }
 
              .how-to-feed-cards{
-                max-width: 600px;
-                flex: 100%;
+                display: flex;
+                flex-direction: column;
                 margin: 0 auto;
-                margin-right: 32px;
-                margin-left: 20px;
                 column-gap: 20px;
              }
              .arrow{
                 display: none;
              }
              .arrow-640{
-                margin: 0 auto;
-                max-width: 300px;
                 display: flex;
-                position: relative;
-                justify-content: space-between;
-                left: -12px;
-                height: 17px;
+                rotate: 85deg;
+                left: 80px;
+                top: 340px;
+                min-width: 340px;
              }
         .how-to-feed-spans{
             text-align: left;
             max-width: 600px;
-            margin-bottom: 40px;
-            margin-top: 30px;
-            height:fit-content;
+            margin-bottom: 18px;
+            margin-top: 7px;
+            height: 46px;
         }
         .how-to-feed-spans span{
             width: 168px;
-            height:fit-content;
-        }
+         }
 
 
         section{
             max-width: 640px;
+        }
+        .choose-favorite-btn{
+            margin-top: 23px;
         }
         .testomonials{
             height: 610px;
