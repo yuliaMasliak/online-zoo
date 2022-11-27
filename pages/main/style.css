@@ -757,8 +757,9 @@ footer .social-medias-li img{
     margin-right: 10px;
 }
 footer .sm-link:hover{
-color: #FE9013;
+    color: rgba(75, 146, 0, 1);
 }
+
 footer .nav-ul {
     position: relative;
     top: -68px;
