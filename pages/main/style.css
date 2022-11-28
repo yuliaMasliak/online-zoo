@@ -1116,7 +1116,7 @@ display: none;
  }
 
 .panda-img{
- max-width: 640px;
+width: 640px;
 max-height: 373px;
 margin: 0 auto;
 margin-left: 0px;

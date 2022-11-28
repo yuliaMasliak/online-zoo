@@ -422,7 +422,7 @@ margin-top: 30px;
 }
 footer{
 	position: relative;
-	min-width: 1600px;
+	max-width: 1600px;
 	background: #111115;
 	height: 443px;
 margin: 0px auto;
@@ -674,6 +674,10 @@ margin-top: 95px;
 #once{
 margin-left: 5px;
 }
+footer{
+  max-width: 1000px;
+  margin: 0px auto;
+}
 .footer-wrapper{
 max-width: 940px;
 margin-left: 30px;
@@ -872,6 +876,7 @@ margin-left: 5px;
 }
 footer{
 max-height: 282px;
+max-width: 640px;
 }
 .footer-wrapper{
 max-height: 270px;
@@ -1104,6 +1109,7 @@ margin-left: 5px;
 }
 footer{
  max-height: 334px;
+ max-width: 320px;
 }
  .footer-wrapper{
  max-height: 318px;
