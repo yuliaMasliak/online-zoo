@@ -656,7 +656,7 @@ margin-left: 10px;
 }
 footer{
 	position: relative;
-	min-width: 1600px;
+	max-width: 1600px;
 	background: #111115;
 	height: 460px;
     margin: 0px auto;
@@ -864,8 +864,13 @@ height: 54px;
 left: calc(50% - 298px/2 + 214px);
 top: 483px;
 }
+footer{
+    max-width: 1000px;
+    margin: 0px auto;
+}
 .footer-wrapper{
 max-width: 940px;
+margin: 0px auto;
 margin-left: 30px;
 }
 footer .sm-link{
@@ -1064,7 +1069,7 @@ height: 100%;
 body {
     max-width: 640px;
 min-height: 100%;
-margin: 0px auto;
+margin: 0px auto;margin: 0px auto;
 }
 header{
     max-width: 640px;
@@ -1147,7 +1152,10 @@ top: 279px;
 .hat-man{
 display: none;
 }
-
+main{
+    max-width: 640px;
+    margin: 0px auto;
+}
 .entry-text{
 margin-top: 60px;
 margin-bottom: 80px;
@@ -1213,6 +1221,8 @@ top: -100px;
 text-align: center;
 }
 .bottom-flowers{
+    max-width: 640px;
+    margin: 0px auto;
 top: -240px;
 height: 63px;
 }
@@ -1225,7 +1235,7 @@ top: 39px;
 .palm-right-border img{
 width: 175px;
 height: 131px;
-right: 955px;
+left: 0px;
 top: 112px;
 }
 
@@ -1358,6 +1368,8 @@ height: 147.15px;
 }
 footer{
 max-height: 282px;
+max-width: 640px;
+margin: 0px auto;
 }
 .footer-wrapper{
 max-height: 270px;
@@ -1730,6 +1742,8 @@ rotate: -10deg;
 }
 footer{
 max-height: 334px;
+max-width: 320px;
+margin: 0px auto;
 }
 .footer-wrapper{
 max-height: 318px;
