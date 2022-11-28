@@ -67,7 +67,7 @@ header {
 }
 
 .nav-ul li{
-   margin-right: 48px;
+   margin-right: 58px;
    margin-left: 0px;
    text-align: left;
 }
@@ -161,6 +161,10 @@ display: none;
     cursor: pointer;
     border: 1px solid #f9804b;
 }
+.default-width{
+    height: 403px;
+    margin-bottom: 180px;
+}
 .hat-man {
     background: url("../../assets/images/bamboo-cap.png");
     background-size: cover;
@@ -174,7 +178,7 @@ display: none;
 	grid-template-columns: 1fr 1fr;
     margin: 0px auto;
 	margin-top: 140px;
-    margin-bottom: 150px;
+    margin-bottom: 163px;
 	text-align: center;
 	font-family: 'Roboto';
 	font-style: normal;
@@ -204,6 +208,9 @@ display: none;
 	text-align: left;
 	padding-left: 85px;
     line-height: 22.4px;
+}
+.entry-text .about-text h3{
+	margin-top: 54px;
 }
 .wrapper{
     max-width: 1160px;
@@ -236,7 +243,7 @@ display: none;
     border: 1px solid #FE9013;
     border-radius: 5px;
     width: 366px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
 }
 .blocks-heading{
     text-transform: uppercase;
@@ -285,7 +292,7 @@ display: none;
   display: flex;
   position: relative;
   float: right;
-  top: -720px;
+  top: -699px;
   right: -90px;
 }
 
@@ -318,7 +325,7 @@ display: none;
   margin: 0px 135px;
   position: relative;
   margin: 0px auto;
-  max-width: 1322px;
+  max-width: 1320px;
   top: -482px;
 }
     .arrows img{
@@ -427,7 +434,8 @@ padding-top: 30px;
     font-size: 36px;
     line-height: 130%;
     color: #333B41;
-    margin-top: 60px;
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
 .how-to-feed-cards{
     display: flex;
@@ -461,7 +469,11 @@ width:168px;
 .how-to-feed-spans span{
     text-align: left;
 }
-
+.arrow{
+    display:flex;
+    position: relative;
+    top: -60px;
+}
 .testomonials h3{
 text-align: center;
 margin: 140px 0px 47px 0px;
@@ -473,7 +485,7 @@ line-height: 130%;
 color: #333B41;
 }
 .feedbacks{
-    max-width: 1160px;
+ max-width: 1160px;
 display: flex;
 justify-content: center;
 column-gap: 30px;
@@ -486,7 +498,7 @@ width: 268px;
 height: 350px;
 position: relative;
 padding: 15px 15px 19px 16px;
-margin: 5px;
+margin: 0px;
 margin-bottom: 21px;
 border-radius: 20px;
 }
@@ -529,12 +541,15 @@ border-radius: 20px;
     font-weight: 300;
     font-size: 15px;
     color: #767474;
-    line-height: 105%;
+    line-height: 120%;
     margin: 0px auto;
     margin-top: 15px;
     position: relative;
     top: -30px;
 	width: 237px;
+    height: 309px;
+    overflow: hidden;
+
 }
 .feedback-block span{
 display: block;
@@ -552,10 +567,10 @@ margin-left: 10px;
 }
 .scroll-bar{
     max-width: 1600px;
-	margin:auto;
+	margin: 0 auto;
 	overflow-x: scroll;
 	scrollbar-width: thin;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 	width: 50%;
 	display: flex;
  position: relative;
@@ -762,7 +777,7 @@ footer .sm-link:hover{
 
 footer .nav-ul {
     position: relative;
-    top: -68px;
+    top: -72px;
     margin-left: 399px;
     padding-left: 0px;
 }
@@ -771,7 +786,7 @@ footer .nav-ul {
     position: relative;
     float: right;
    left: 30px;;
-    top: -90px;
+    top: -95px;
     margin-right: 31px;
     color: white;
     font-family: 'Roboto';
@@ -786,11 +801,9 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 140%;
-margin-right: 54px;
+margin-right: 58px;
 }
-footer .nav-ul .last-li{
-    width: 78px;
-}
+
 .social-medias-li {
     height: 26px;
     margin: 5px 0px 5px 0px;
