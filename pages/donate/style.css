@@ -6,7 +6,7 @@ body {
 }
 
 body{
-min-width: 1600px;
+max-width: 1600px;
 margin: 0px auto;
 accent-color: #FE9013;
  }
@@ -20,7 +20,7 @@ height: 80px;
 background-color: black;
 margin: 0px auto;
 position: relative;
-min-width: 1600px;
+max-width: 1600px;
 }
 .default-width{
 width: 1160px;
@@ -597,6 +597,7 @@ display: none;
 }
 body {
   min-height: 100%;
+  max-width: 1000px;
 }
 .default-width{
 max-width: 940px;
@@ -611,10 +612,10 @@ margin: 29px 24px;
  }
  .panda-img{
 background-image: url("../../assets/images/giant-panda.png");
+width: 1000px;
 max-height: 390px;
 margin: 0px auto;
 position: relative;
-left: -172px;
 background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -720,8 +721,11 @@ height: 100%;
 }
 body {
 min-height: 100%;
+max-width: 640px;
+margin: 0px auto;
 }
 header{
+  margin: 0px auto;
 z-index: 1;
 height: 34px;
 max-width: 640px;
@@ -774,14 +778,20 @@ display: none;
 .panda-img{
 background-image: url("../../assets/images/giant-panda.png");
 max-height: 335px;
+width: 640px;
 margin: 0px auto;
 position: relative;
-left: -372px;
 background-repeat: no-repeat;
 }
 
+main{
+  max-width: 640px;
+  margin: 0px auto;
+   }
+
  section{
 max-width: 640px;
+margin: 0px auto;
  }
 .heading-text{
 max-width: 600px;
@@ -924,14 +934,17 @@ margin-bottom: 15px;
 }
 body {
   min-height: 100%;
+  margin: 0px auto;
 }
 header{
-max-width: 320px;
+width: 320px;
 position: fixed;
+margin: 0px auto;
 }
 .default-width{
 max-width: 310px;
 margin-left: 5px;
+margin: 0px auto;
 }
 .logo{
 top: -18px;
@@ -945,11 +958,13 @@ max-width: 320px;
 .panda-img{
  background: url("../../assets/images/panda_bg-320.png");
  max-height: 187px;
- left: 0px;
- max-width: 766px;
+ margin: 0px auto;
+ width: 320px;
+ background-repeat: no-repeat;
 }
 section{
 max-width: 320px;
+margin: 0px auto;
 }
 .heading-text{
 max-width: 300px;

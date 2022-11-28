@@ -1064,9 +1064,11 @@ height: 100%;
 body {
     max-width: 640px;
 min-height: 100%;
+margin: 0px auto;
 }
 header{
     max-width: 640px;
+    margin: 0px auto;
 z-index: 1;
 height: 34px;
 position: fixed;
@@ -1112,7 +1114,6 @@ display: none;
  max-width: 640px;
 max-height: 373px;
 margin: 0 auto;
-
 margin-left: 0px;
 background-size: cover;
 background-position: center center;
