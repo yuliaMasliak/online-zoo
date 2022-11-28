@@ -725,6 +725,7 @@ header{
 z-index: 1;
 height: 34px;
 max-width: 640px;
+position: fixed;
 }
 
 .default-width{
@@ -926,6 +927,7 @@ body {
 }
 header{
 max-width: 320px;
+position: fixed;
 }
 .default-width{
 max-width: 310px;
