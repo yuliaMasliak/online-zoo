@@ -333,8 +333,8 @@ color: #FFF;
 .pay-input{
 background: url(../../assets/icons/donate-dollar.png) no-repeat scroll 10px 20px;
 background-position-x: 270px;
-height: 54px;
-width: 268px;
+height: 50px;
+width: 250px;
 background-color: transparent;
 border: 1px solid #929699;
 border-radius: 2px;
@@ -347,7 +347,7 @@ line-height: 140%;
 color: #929699;
 padding-left: 9px;
 padding-right: 9px;
-margin-top: 92px;
+margin-top: 98px;
 margin-bottom: 25px;
 }
 .pay-input::-webkit-outer-spin-button,
@@ -356,8 +356,15 @@ margin-bottom: 25px;
   margin: 0;
 }
 .radio-block{
+  width: 270px;
+  display: flex;
+  margin: 0px auto;
 margin-bottom: 31px;
 
+}
+.radio-block-div{
+  margin-left: 14px;
+  margin-right: 45px;
 }
 .period-text{
 font-family: 'Roboto';
@@ -380,12 +387,6 @@ cursor: pointer;
 background: #4B9200;
 border: 1px solid #4B9200;
 }
-  #radio-point-left{
-margin-right: 20px;
-  }
-  #once{
-margin-left: 20px;
-  }
 
   .choose-favorite-btn{
 display: block;
@@ -684,7 +685,7 @@ margin-left: 55px;
   }
 .pay-input{
 width: 250px;
-margin-top: 95px;
+margin-top: 98px;
 }
 #once{
 margin-left: 5px;
@@ -884,12 +885,13 @@ padding-left: 20px;
 }
 
 .pay-input{
-width: 176px;
-height: 40px;
-margin-top: 95px;
+width: 160px;
+height: 38px;
+margin-top: 98px;
 }
-#once{
-margin-left: 5px;
+.radio-block-div{
+  margin-right: 40px;
+  margin-left: 15px;
 }
 footer{
 max-height: 282px;
@@ -1119,13 +1121,12 @@ margin-right: 20px;
  top: -15px;
 }
 .pay-input{
-width: 176px;
-height: 40px;
 margin-top: 50px;
 margin-bottom: 20px;
 }
-#once{
-margin-left: 5px;
+.radio-block-div{
+  padding-left: 4px;
+  margin-right: 33px;
 }
 .how-to-feed .last-p {
   font-size: 15.5px;
