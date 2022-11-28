@@ -6,7 +6,7 @@ body {
     }
 
 body{
-    max-width: 1600px;
+    width: 1600px;
     margin: 0px auto;
 }
 a{
@@ -18,7 +18,7 @@ header {
     background-color: black;
     margin: 0px auto;
     position: relative;
-    max-width: 1600px;
+    width: 1600px;
 }
 .default-width{
     width: 1160px;
@@ -103,7 +103,7 @@ header {
 display: none;
 }
 .panda-img{
-    max-width: 1600px;
+    width: 1600px;
     margin: 0px auto;
     height: 780px;
     background-image: url("../../assets/images/giant-panda.png");
@@ -169,7 +169,7 @@ display: none;
 	backdrop-filter: blur(2px);
 }
 .entry-text{
-    max-width: 1160px;
+    width: 1160px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
     margin: 0px auto;
@@ -656,7 +656,7 @@ margin-left: 10px;
 }
 footer{
 	position: relative;
-	max-width: 1600px;
+	width: 1600px;
 	background: #111115;
 	height: 460px;
     margin: 0px auto;
@@ -1067,19 +1067,19 @@ html {
 height: 100%;
 }
 body {
-    max-width: 640px;
+    width: 640px;
 min-height: 100%;
 margin: 0px auto;margin: 0px auto;
 }
 header{
-    max-width: 640px;
+    width: 640px;
     margin: 0px auto;
 z-index: 1;
 height: 34px;
 position: fixed;
 }
 .default-width{
-max-width: 640px;
+width: 640px;
    margin: 0px auto;
    margin-left: 15px;
 }
@@ -1152,10 +1152,6 @@ top: 279px;
 .hat-man{
 display: none;
 }
-main{
-    max-width: 640px;
-    margin: 0px auto;
-}
 .entry-text{
 margin-top: 60px;
 margin-bottom: 80px;
@@ -1183,8 +1179,9 @@ left: 70px;
 top: 210px;
 }
 main{
-max-width: 640px;
+width: 640px;
 max-height: 1415px;
+margin: 0px auto;
 }
 .wrapper{
 width: 600px;
@@ -1240,12 +1237,12 @@ top: 112px;
 }
 
 .how-tofeed-section{
-max-width: 640px;
+width: 640px;
 height: 761px;
 padding-top: 20px;
 }
 .how-to-feed{
-max-width: 640px;
+width: 640px;
 height: 741px;
 }
 .how-to-feed .head{
@@ -1311,7 +1308,7 @@ height:fit-content;
 
 
 section{
-max-width: 640px;
+width: 640px;
 }
 .testomonials{
 height: 610px;
@@ -1368,7 +1365,7 @@ height: 147.15px;
 }
 footer{
 max-height: 282px;
-max-width: 640px;
+width: 640px;
 margin: 0px auto;
 }
 .footer-wrapper{
@@ -1400,7 +1397,7 @@ margin-right: 37px;
 display: flex;
 position: relative;
 float: right;
-   left: -10px;
+   left: 30px;
 top: -20px;
 margin-right: 31px;
 color: white;
@@ -1415,7 +1412,7 @@ display: flex;
 position: relative;
 top: -225px;
 float: right;
-right: -210px;
+right: -250px;
 flex-direction: column;
 width: 60px;
 }
