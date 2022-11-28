@@ -97,8 +97,8 @@ color: #FE9013;
 .panda-img{
 margin: 0px auto;
 width: 1600px;
-height: 390px;
-background-image: url("../../assets/images/giant-panda.png");
+height: 388px;
+background-image: url("../../assets/images/panda_bg.png");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
@@ -611,9 +611,9 @@ margin-right: 39px;
 margin: 29px 24px;
  }
  .panda-img{
-background-image: url("../../assets/images/giant-panda.png");
-width: 1000px;
-max-height: 390px;
+width: 1600px;
+height: 390px;
+left: -172px;
 margin: 0px auto;
 position: relative;
 background-position: center center;
@@ -764,7 +764,7 @@ font-style: normal;
 width: 46.86px;
 height: 29.03px;
 display: flex;
-top: -20px;
+top: -18px;
 }
 .logo h1{
 font-weight: 400;
@@ -796,13 +796,13 @@ display: none;
 
 
 .panda-img{
-background-image: url("../../assets/images/giant-panda.png");
 height: 369px;
+width: 1200px;
+left: -172px;
 margin: 0px auto;
 position: relative;
 background-repeat: no-repeat;
 background-position: cover;
-left: -190px;
 }
 
 main{
@@ -979,11 +979,10 @@ main{
 width: 320px;
 }
 .panda-img{
- background: url("../../assets/images/panda_bg-320.png");
  height: 221px;
- max-width:320px;
+ width:766.42px;
  margin: 0px auto;
- left: 0px;
+ left: -148.71px;
  background-size:cover;
  background-repeat: no-repeat;
 }
