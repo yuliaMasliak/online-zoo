@@ -6,7 +6,7 @@ body {
 }
 
 body{
-max-width: 1600px;
+width: 1600px;
 margin: 0px auto;
 accent-color: #FE9013;
  }
@@ -20,7 +20,7 @@ height: 80px;
 background-color: black;
 margin: 0px auto;
 position: relative;
-max-width: 1600px;
+width: 1600px;
 }
 .default-width{
 width: 1160px;
@@ -96,7 +96,7 @@ color: #FE9013;
 }
 .panda-img{
 margin: 0px auto;
-max-width: 1600px;
+width: 1600px;
 height: 390px;
 background-image: url("../../assets/images/giant-panda.png");
 background-repeat: no-repeat;
@@ -422,7 +422,7 @@ margin-top: 30px;
 }
 footer{
 	position: relative;
-	max-width: 1600px;
+	width: 1600px;
 	background: #111115;
 	height: 443px;
 margin: 0px auto;
@@ -597,7 +597,7 @@ display: none;
 }
 body {
   min-height: 100%;
-  max-width: 1000px;
+  width: 1000px;
 }
 .default-width{
 max-width: 940px;
@@ -621,7 +621,7 @@ background-repeat: no-repeat;
 background-size: cover;
 }
  section{
-max-width: 1000px;
+width: 1000px;
  }
 .heading-text{
 max-width: 939px;
@@ -632,8 +632,8 @@ height: 1293px;
 }
 .how-to-feed{
 margin-bottom: 30px;
-max-width: 851px;
-padding: 30px 44px 45px 47px;
+width: 940px;
+padding: 20px 0px 45px 0px;
 }
 .heading-text h3{
 width: 778px;
@@ -645,9 +645,11 @@ margin-bottom: 30px;
 }
 .heading-text h2{
 margin-bottom: 40px;
+margin-top: 45px;
 }
 .how-to-feed p{
-margin-top: 0px;
+margin: 0px auto;
+text-align: center;
 }
 .how-to-feed h2{
 margin-bottom: 10px;
@@ -655,18 +657,31 @@ margin-bottom: 10px;
 .panda-block{
 align-items:center;
 }
+.panda-block h2{
+margin-top: 105px;
+  }
 .range{
 width: 810px;
 padding: 0px;
 margin: 0px auto;
 }
 .panda{
-margin-bottom: 40px;
+margin-bottom: 45px;
 }
 legend{
 margin-bottom: 15px;
-margin-left: 15px;
+margin-left: 55px;
 }
+.dots > div:nth-child(1) {
+  display: none;
+  }
+  .slider{
+    width: 785px;
+  }
+  .dots{
+    width: 1030px;
+    padding-left: 6px;
+  }
 .pay-input{
 width: 250px;
 margin-top: 95px;
@@ -675,7 +690,7 @@ margin-top: 95px;
 margin-left: 5px;
 }
 footer{
-  max-width: 1000px;
+  width: 1000px;
   margin: 0px auto;
 }
 .footer-wrapper{
@@ -692,19 +707,20 @@ margin-left: 541px;
 margin-left: 541px;
 }
 footer .nav-ul{
- margin-left: 291px;
+  top: -70px;
+ margin-left: 305px;
  text-align: left;
 }
 #active-links-footer li{
  margin-left: 0px;
  margin-right: 48px;
 }
-.footer-designed-by{
+footer .footer-designed-by{
  display: flex;
  position: relative;
  float: right;
 left: 30px;
- top: -110px;
+ top: -115px;
  margin-right: 31px;
  color: white;
  font-family: 'Roboto';
@@ -725,19 +741,19 @@ height: 100%;
 }
 body {
 min-height: 100%;
-max-width: 640px;
+width: 640px;
 margin: 0px auto;
 }
 header{
   margin: 0px auto;
 z-index: 1;
 height: 34px;
-max-width: 640px;
+width: 640px;
 position: fixed;
 }
 
 .default-width{
-max-width: 640px;
+width: 640px;
 margin: 0px auto;
 margin-left: 15px;
 }
@@ -781,20 +797,21 @@ display: none;
 
 .panda-img{
 background-image: url("../../assets/images/giant-panda.png");
-max-height: 335px;
-width: 640px;
+height: 369px;
 margin: 0px auto;
 position: relative;
 background-repeat: no-repeat;
+background-position: cover;
+left: -190px;
 }
 
 main{
-  max-width: 640px;
+  width: 640px;
   margin: 0px auto;
    }
 
  section{
-max-width: 640px;
+width: 640px;
 margin: 0px auto;
  }
 .heading-text{
@@ -876,7 +893,7 @@ margin-left: 5px;
 }
 footer{
 max-height: 282px;
-max-width: 640px;
+width: 640px;
 }
 .footer-wrapper{
 max-height: 270px;
@@ -907,7 +924,7 @@ footer .footer-designed-by{
 display: flex;
 position: relative;
 float: right;
-left:-15px;
+left: 28px;
 top: -18px;
 margin-right: 31px;
 color: white;
@@ -940,6 +957,7 @@ margin-bottom: 15px;
 body {
   min-height: 100%;
   margin: 0px auto;
+  width: 320px;
 }
 header{
 width: 320px;
@@ -958,17 +976,19 @@ top: -18px;
 padding-right: 5px;
 }
 main{
-max-width: 320px;
+width: 320px;
 }
 .panda-img{
  background: url("../../assets/images/panda_bg-320.png");
- max-height: 187px;
+ height: 221px;
+ max-width:320px;
  margin: 0px auto;
- width: 320px;
+ left: 0px;
+ background-size:cover;
  background-repeat: no-repeat;
 }
 section{
-max-width: 320px;
+width: 320px;
 margin: 0px auto;
 }
 .heading-text{
@@ -1025,7 +1045,7 @@ left: -10px;
  align-items: center;
  justify-content: center;
  margin-top: 20px;
- max-width: 320px;
+ width: 320px;
  margin-bottom: 0px;
 }
 .panda-block h2{
@@ -1103,13 +1123,21 @@ margin-right: 20px;
 width: 176px;
 height: 40px;
 margin-top: 50px;
+margin-bottom: 20px;
 }
 #once{
 margin-left: 5px;
 }
+.how-to-feed .last-p {
+  font-size: 15.5px;
+}
+.radio-block{
+
+  margin-bottom: 27px;
+}
 footer{
  max-height: 334px;
- max-width: 320px;
+ width: 320px;
 }
  .footer-wrapper{
  max-height: 318px;
