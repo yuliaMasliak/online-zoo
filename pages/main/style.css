@@ -909,6 +909,7 @@ line-height: 180%;
 margin-top: 100px;
 margin-bottom: 142px;
 height: 427px;
+width: 940px;
 }
 .hat-man{
 height: 408px;
@@ -926,7 +927,7 @@ padding-left: 31px;
 width: 454px;
 }
 main{
-max-width: 1000px;
+width: 1000px;
 }
 .wrapper{
 width: 940px;
@@ -949,7 +950,7 @@ max-height: 292px;
 }
 .arrows{
 top: -522px;
-width: 291px;
+width: 310px;
 margin: 0px auto;
 }
 .choose-btn-div{
@@ -1014,8 +1015,13 @@ margin-top: 40px;
 margin-top: 30px;
 margin-bottom: 0px;
 }
+.arrow{
+    display: flex;
+    position: relative;
+top: -60px;
+}
 section{
-max-width: 1000px;
+width: 1000px;
 }
 .testomonials{
 height: 740px;
@@ -1032,7 +1038,8 @@ max-width: 940px;
 }
 .feedback-block p {
 width: 255px;
-height: 309px;
+height: 350px;
+line-height: 18px;
 }
 .feedback-block{
 height: 353px;
@@ -1158,7 +1165,7 @@ margin-bottom: 80px;
 height: 367px;
 }
 .entry-text .about-text{
-padding-left: 0px;
+padding-left: 10px;
 }
 
 .about-text h3{
@@ -1322,15 +1329,15 @@ display: none;
 }
 .feedbacks {
 flex-direction: column;
-max-width: 640px;
+width: 640px;
 
 }
 .feedback-block p {
 width: 553px;
 margin-left: 0px;
-margin-top: 15px;
+margin-top: 20px;
 font-size: 14px;
-max-height: 42px;
+max-height: 39px;
 overflow: hidden;
 }
 .feedback-block{
@@ -1453,6 +1460,7 @@ width: 46.86px;
 height: 29.03px;
 display: flex;
 top: -18px;
+left: 5px;
 }
 .logo h1{
 font-weight: 400;
@@ -1524,6 +1532,12 @@ margin-bottom: 85px;
 padding-left: 0px;
 max-width: 297px;
 }
+.entry-text .about-text p{
+    margin-top: 10px;
+    margin-bottom: 19px;
+    line-height: 21.7px;
+    }
+
 .about-text h2{
 margin-top: 25px;
 margin-bottom: 0px;
@@ -1558,15 +1572,13 @@ max-height: 1975px;
 .wrapper{
 width: 320px;
 margin: 0 auto;
-margin-left: 20px;
-margin-right: 20px;
-
+margin-left: 15px;
 }
 
 .gallery{
 display: flex;
    flex-direction: column;
-   margin-bottom: 0px;
+     margin-bottom: 0px;
 }
 
 .gallery-blocks{
@@ -1578,6 +1590,19 @@ margin-bottom: 18px;
 .gallery-blocks img{
 max-width: 285px;
 max-height: 285px;
+}
+.blocks-heading{
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 15px;
+}
+.img-info-block .icon img {
+    width: 37.41px;
+height: 29.62px;
+padding-top: 3px;
+}
+.blocks-paragraph{
+    font-size: 12px;
 }
 .arrows{
 display: none;
@@ -1591,6 +1616,7 @@ text-align: center;
 .bottom-flowers{
 top: -260px;
 height: 63px;
+max-width: 340px;
 }
 .palm-left-border img{
 width: 138px;
@@ -1599,10 +1625,12 @@ left: -75px;
 top: 227px;
 }
 .palm-right-border img{
+    display: flex;
+    position: relative;
 width: 85px;
 height: 71px;
-right:1260px;
 top: 230px;
+right: -10px;
 }
 
 .how-tofeed-section{
