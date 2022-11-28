@@ -1432,18 +1432,18 @@ html {
 height: 100%;
 }
 body {
-    max-width: 320px;
+    width: 320px;
 min-height: 100%;
 }
 header{
     margin: 0px auto;
-    max-width: 320px;
+    width: 320px;
 z-index: 1;
 height: 34px;
 position: fixed;
 }
 .default-width{
-max-width: 320px;
+width: 320px;
    margin: 0px auto;
    margin-left: 10px;
 
@@ -1469,7 +1469,7 @@ top: 20px;
 left: 6px;
 }
 .burger{
-max-width: 300px;
+width: 300px;
 display: block;
 display: flex;
 justify-content: end;
@@ -1481,7 +1481,7 @@ display: none;
  }
 
 .panda-img{
- max-width: 320px;
+width: 320px;
 height: 220px;
 margin: 0 auto;
 
@@ -1555,7 +1555,7 @@ left: 170px;
 top: 230px;
 }
 main{
-max-width: 320px;
+width: 320px;
 max-height: 1975px;
 }
 .wrapper{
@@ -1678,7 +1678,7 @@ width: 168px;
  }
 
 section{
-max-width: 320px;
+width: 320px;
    }
 .choose-favorite-btn{
 margin-top: 23px;
@@ -1696,7 +1696,7 @@ display: none;
 }
 .feedbacks {
 flex-direction: column;
-max-width: 320px;
+width: 320px;
    }
 .feedback-block p {
 width: 280px;
@@ -1718,7 +1718,7 @@ padding: 11px 29px 8px 18px;
 
 
 .square-btn-after-scroll-block-div{
-max-width: 640px;
+width: 320px;
 margin: 0 auto;
 }
 .square-btn-after-scroll{
@@ -1742,7 +1742,7 @@ rotate: -10deg;
 }
 footer{
 max-height: 334px;
-max-width: 320px;
+width: 320px;
 margin: 0px auto;
 }
 .footer-wrapper{
