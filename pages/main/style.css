@@ -6,7 +6,7 @@ body {
     }
 
 body{
-    min-width: 1600px;
+    max-width: 1600px;
     margin: 0px auto;
 }
 a{
@@ -18,7 +18,7 @@ header {
     background-color: black;
     margin: 0px auto;
     position: relative;
-    min-width: 1600px;
+    max-width: 1600px;
 }
 .default-width{
     width: 1160px;
@@ -810,9 +810,12 @@ height: 100%;
 }
 body {
 min-height: 100%;
+max-width: 1000px;
 }
 header{
 z-index: 1;
+max-width: 1000px;
+margin: 0 auto;
 }
 .default-width{
 max-width: 940px;
@@ -1059,9 +1062,11 @@ html {
 height: 100%;
 }
 body {
+    max-width: 640px;
 min-height: 100%;
 }
 header{
+    max-width: 640px;
 z-index: 1;
 height: 34px;
 position: fixed;
@@ -1414,9 +1419,12 @@ html {
 height: 100%;
 }
 body {
+    max-width: 320px;
 min-height: 100%;
 }
 header{
+    margin: 0px auto;
+    max-width: 320px;
 z-index: 1;
 height: 34px;
 position: fixed;
@@ -1461,10 +1469,9 @@ display: none;
 
 .panda-img{
  max-width: 320px;
-max-height: 220px;
+height: 220px;
 margin: 0 auto;
 
-margin-left: 0px;
 background-size: cover;
 background-position: center center;
 }
@@ -1492,7 +1499,7 @@ position: relative;
 width: 298px;
 height: 54px;
 margin: 0 auto;
-top: 205px;
+top: 242px;
 left: 10px;
 }
 .hat-man{
@@ -1501,7 +1508,7 @@ display: none;
 
 .entry-text{
 margin-top: 80px;
-margin-bottom: 80px;
+margin-bottom: 85px;
 }
 .entry-text .about-text{
 padding-left: 0px;
@@ -1555,7 +1562,7 @@ display: flex;
 .gallery-blocks{
 width: 285px;
 height: 332px;
-margin-bottom: 20px;
+margin-bottom: 18px;
 }
 
 .gallery-blocks img{
@@ -1568,11 +1575,11 @@ display: none;
 .choose-btn-div{
 display: flex;
 position: relative;
-top: 0px;
+top: -20px;
 text-align: center;
 }
 .bottom-flowers{
-top: -240px;
+top: -260px;
 height: 63px;
 }
 .palm-left-border img{
@@ -1636,22 +1643,26 @@ display: none;
  }
  .arrow-640{
 display: flex;
-rotate: 85deg;
 left: 80px;
-top: 340px;
+top: 205px;
 min-width: 340px;
+flex-direction: column;
  }
+ .arrow-640-left,   .arrow-640-right{
+    rotate: 85deg;
+    margin-bottom: 216px;
+     }
+
 .how-to-feed-spans{
 text-align: left;
 max-width: 600px;
-margin-bottom: 18px;
-margin-top: 7px;
+margin-bottom: 20px;
+margin-top: 5px;
 height: 46px;
 }
 .how-to-feed-spans span{
 width: 168px;
  }
-
 
 section{
 max-width: 320px;
@@ -1675,7 +1686,7 @@ flex-direction: column;
 max-width: 320px;
    }
 .feedback-block p {
-width: 232px;
+width: 280px;
 margin-left: 0px;
 margin-top: 15px;
 font-size: 15px;
@@ -1686,7 +1697,7 @@ overflow: hidden;
 .feedback-block{
 max-height: 109px;
 width: 252px;
-margin-bottom: 12px;
+margin-bottom: 13px;
 margin-left: 11px;
 margin-right: 10px;
 padding: 11px 29px 8px 18px;
