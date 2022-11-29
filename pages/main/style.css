@@ -103,11 +103,9 @@ header {
 display: none;
 }
 .burger-content{
-    visibility: hidden;
+   display: none;
     }
-    .body-blur{
-        visibility: hidden;
-    }
+
 .panda-img{
     width: 1600px;
     margin: 0px auto;
@@ -117,6 +115,7 @@ display: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 .circle{
     position: absolute;
@@ -1130,15 +1129,16 @@ top: 20px;
 left: 6px;
 }
 .burger{
-max-width: 605px;
-display: block;
+max-width: 20px;
 display: flex;
-justify-content: end;
 padding-top: 11px;
+left: 0600px;
+position: fixed;
+z-index: 3;
 }
 .burger img{
     width: 18px;
-    z-index: 2;
+    float: right;
 }
 .burger-red-cross{
 width: 30px;
@@ -1173,19 +1173,16 @@ padding: 10px 30px;
 .burger-designed-by{
 margin-top: 0px;
 }
-.body-blur-show:not(#unblured){
-    visibility: visible;
-filter: blur(5px);
-}
 .burger-content-show{
-    visibility: visible !important;
+    display: block;
     position: relative;
-    top: -22px;
     width: 640px;
     height: 329px;
     background: #FFFFFF;
     z-index: 2;
-    filter: blur(0) !important;
+    }
+    .blur{
+     filter: blur(15px);
     }
 .nav-ul, .designed-by {
 display: none;

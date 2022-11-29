@@ -18,25 +18,55 @@ footerBtns[i].addEventListener("click", handleClick);
    event.preventDefault();
   };
 }
-//burger menu
 
+//burger menu
 let burger = document.querySelector(".burger");
 let burgerContent = document.querySelector(".burger-content");
 let exitBurger = document.querySelector(".burger-red-cross");
-let bluredBack = document.querySelector("body")
+let headerBlock = document.querySelector("header");
+let mainBlock = document.querySelector("main");
+let panda = document.querySelector(".panda-img");
+let section = document.querySelectorAll("section");
+let footer = document.querySelector("footer");
+
 burger.addEventListener("click", openMenu);
 function openMenu(event){
-  burgerContent.classList.toggle("burger-content-show");
-  bluredBack.classList.toggle("body-blur-show");
+  burgerContent.classList.add("burger-content-show");
+  headerBlock.classList.add("blur");
+  mainBlock.classList.add("blur");
+  panda.classList.add("blur");
+  footer.classList.add("blur");
+  burger.classList.add("blur");
+  section.forEach((sec)=>{sec.classList.add("blur")});
+
  }
  exitBurger.addEventListener("click", closeBurger);
  function closeBurger(event){
-   burgerContent.classList.toggle("burger-content-show");
-   bluredBack.classList.toggle("body-blur-show");
-    }
+   burgerContent.classList.remove("burger-content-show");
+   headerBlock.classList.remove("blur");
+   mainBlock.classList.remove("blur");
+   panda.classList.remove("blur");
+   footer.classList.remove("blur");
+   burger.classList.remove("blur");
+   section.forEach((sec)=>{sec.classList.remove("blur")});
+       }
 
-body.addEventListener("click", (event) => {
-     burgerContent.classList.remove("burger-content-show");
-     body.classList.remove("body-blur-show");
- }
-);
+  mainBlock.addEventListener("click", closeOutside);
+  footer.addEventListener("click", closeOutside);
+  panda.addEventListener("click", closeOutside);
+  headerBlock.addEventListener("click", closeOutside);
+
+  section.forEach((sec)=>{sec.addEventListener("click", closeOutside)});
+
+  function closeOutside (event) {
+     if (burgerContent.classList.contains("burger-content-show")) {
+          burgerContent.classList.remove("burger-content-show");
+          mainBlock.classList.remove("blur");
+   panda.classList.remove("blur");
+   footer.classList.remove("blur");
+   headerBlock.classList.remove("blur");
+   burger.classList.remove("blur");
+   section.forEach((sec)=>{sec.classList.remove("blur")});
+        }
+      };
+
