@@ -21,10 +21,22 @@ footerBtns[i].addEventListener("click", handleClick);
 //burger menu
 
 let burger = document.querySelector(".burger");
-let burgerContent = document.querySelector(".burger-content")
+let burgerContent = document.querySelector(".burger-content");
+let exitBurger = document.querySelector(".burger-red-cross");
+let bluredBack = document.querySelector("body")
 burger.addEventListener("click", openMenu);
 function openMenu(event){
   burgerContent.classList.toggle("burger-content-show");
-  burger.innerHTML = '<h2 class="red-cross">X</h2>';
-  burger.classList.toggle("burger-cross");
+  bluredBack.classList.toggle("body-blur-show");
  }
+ exitBurger.addEventListener("click", closeBurger);
+ function closeBurger(event){
+   burgerContent.classList.toggle("burger-content-show");
+   bluredBack.classList.toggle("body-blur-show");
+    }
+
+body.addEventListener("click", (event) => {
+     burgerContent.classList.remove("burger-content-show");
+     body.classList.remove("body-blur-show");
+ }
+);

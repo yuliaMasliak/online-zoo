@@ -105,6 +105,9 @@ display: none;
 .burger-content{
     visibility: hidden;
     }
+    .body-blur{
+        visibility: hidden;
+    }
 .panda-img{
     width: 1600px;
     margin: 0px auto;
@@ -1097,7 +1100,7 @@ margin: 0px auto;margin: 0px auto;
 header{
     width: 640px;
     margin: 0px auto;
-
+z-index: 1;
 height: 34px;
 position: fixed;
 }
@@ -1133,20 +1136,17 @@ display: flex;
 justify-content: end;
 padding-top: 11px;
 }
-.burger-cross{
+.burger img{
+    width: 18px;
     z-index: 2;
-    }
-.red-cross{
-    color: red;
 }
-.burger-content-show{
-visibility: visible !important;
+.burger-red-cross{
+width: 30px;
 position: relative;
-width: 640px;
-height: 329px;
-background: #FFFFFF;
-z-index: 1;
+float: right;
+padding: 10px 30px;
 }
+
 .burger-logo{
     padding: 10px;
 }
@@ -1173,6 +1173,20 @@ z-index: 1;
 .burger-designed-by{
 margin-top: 0px;
 }
+.body-blur-show:not(#unblured){
+    visibility: visible;
+filter: blur(5px);
+}
+.burger-content-show{
+    visibility: visible !important;
+    position: relative;
+    top: -22px;
+    width: 640px;
+    height: 329px;
+    background: #FFFFFF;
+    z-index: 2;
+    filter: blur(0) !important;
+    }
 .nav-ul, .designed-by {
 display: none;
  }
