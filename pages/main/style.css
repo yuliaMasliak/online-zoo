@@ -105,7 +105,9 @@ display: none;
 .burger-content{
    display: none;
     }
-
+    .blur{
+        filter: blur(15px);
+       }
 .panda-img{
     width: 1600px;
     margin: 0px auto;
@@ -1132,7 +1134,7 @@ left: 6px;
 max-width: 20px;
 display: flex;
 padding-top: 11px;
-left: 0600px;
+left: 600px;
 position: fixed;
 z-index: 3;
 }
@@ -1175,15 +1177,13 @@ margin-top: 0px;
 }
 .burger-content-show{
     display: block;
-    position: relative;
+    position: fixed;
     width: 640px;
     height: 329px;
     background: #FFFFFF;
     z-index: 2;
     }
-    .blur{
-     filter: blur(15px);
-    }
+
 .nav-ul, .designed-by {
 display: none;
  }
@@ -1540,13 +1540,16 @@ top: 20px;
 left: 6px;
 }
 .burger{
-width: 300px;
-display: block;
 display: flex;
-justify-content: end;
 padding-top: 11px;
-
+left: 290px;
 }
+.burger-content-show{
+    width: 320px;
+    height: 329px;
+    background: #FFFFFF;
+    z-index: 2;
+    }
 .nav-ul, .designed-by {
 display: none;
  }
