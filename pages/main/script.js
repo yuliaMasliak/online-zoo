@@ -1,3 +1,4 @@
+//Active nav link switching
 let header = document.getElementById("active-links");
 let btns = header.getElementsByClassName("active-link");
 for (let i = 0; i < btns.length; i++) {
@@ -16,12 +17,14 @@ footerBtns[i].addEventListener("click", handleClick);
   function handleClick(event) {
    event.preventDefault();
   };
-
 }
+//burger menu
 
 let burger = document.querySelector(".burger");
+let burgerContent = document.querySelector(".burger-content")
 burger.addEventListener("click", openMenu);
 function openMenu(event){
-    let navigation = document.querySelector(".nav-ul");
-    navigation.classList.toggle(".nav-ul-show");
-}
+  burgerContent.classList.toggle("burger-content-show");
+  burger.innerHTML = '<h2 class="red-cross">X</h2>';
+  burger.classList.toggle("burger-cross");
+ }

@@ -102,6 +102,9 @@ header {
 .burger{
 display: none;
 }
+.burger-content{
+    visibility: hidden;
+    }
 .panda-img{
     width: 1600px;
     margin: 0px auto;
@@ -1094,7 +1097,7 @@ margin: 0px auto;margin: 0px auto;
 header{
     width: 640px;
     margin: 0px auto;
-z-index: 1;
+
 height: 34px;
 position: fixed;
 }
@@ -1129,7 +1132,46 @@ display: block;
 display: flex;
 justify-content: end;
 padding-top: 11px;
-
+}
+.burger-cross{
+    z-index: 2;
+    }
+.red-cross{
+    color: red;
+}
+.burger-content-show{
+visibility: visible !important;
+position: relative;
+width: 640px;
+height: 329px;
+background: #FFFFFF;
+z-index: 1;
+}
+.burger-logo{
+    padding: 10px;
+}
+.burger-nav-ul{
+    list-style: none;
+}
+.burger-nav-ul {
+   padding-left: 0px;
+   margin-bottom: 0px;
+   margin-top: 16px;
+ }
+.burger-nav-ul li a, .burger-designed-by a{
+   color: #333B41;
+   margin-left: 10px;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 140%;
+}
+.burger-nav-ul li{
+    margin-bottom: 15px;
+}
+.burger-designed-by{
+margin-top: 0px;
 }
 .nav-ul, .designed-by {
 display: none;
