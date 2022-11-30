@@ -71,25 +71,14 @@ function openMenu(event){
       };
 
       //Slider gallery animal pictures
-//       let slides = document.querySelectorAll(".gallery-blocks");
-// let rightArrow = document.querySelector(".right-arrow");
-// console.log(rightArrow)
-// console.log(slides)
-// rightArrow.addEventListener("click", slideGallery);
-// function slideGallery(event){
-//   slides[0].classList.toggle("two");
-//   }
-// console.log(slides[0]);
 
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -105,6 +94,7 @@ function showSlides(n) {
   }
 
   slides[slideIndex-1].style.display = "grid";
+  slides[slideIndex-1].style.transition = "all 2s";
 
 }
 

@@ -220,36 +220,39 @@ display: none;
 	margin-top: 54px;
 }
 .wrapper{
-    max-width: 1160px;
     position: relative;
+    left: 70px;
+    max-width: 1600px;
     margin: 0px auto;
     text-align: center;
+}
+.grid-wrapper{
+    max-width: 1320px;
+    margin: 0px auto;
 }
 
 .gallery{
 display: none;
     position: relative;
-    /* top: -500px; */
     margin: 0px auto;
     width: 1160px;
    	display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "one two three" "four five six";
-	grid-gap: 30px;
+   	column-gap: 30px;
 	font-family: 'Roboto';
 	font-style: normal;
 	color: #000000;
     }
-.one{
-    grid-area: one;
-}
-.two{
-    grid-area: two;
-}
-.three{
-    grid-area: three;
-}
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
 .gallery .gallery-blocks img{
 	width: 366px;
 	height: 366px;
@@ -343,21 +346,24 @@ display: none;
 }
 .arrows{
   display: flex;
+  position: relative;
   justify-content: space-between;
   margin: 0px auto;
   position: relative;
-left: -100px;
   width: 1360px;
   top: -482px;
-
+  left: -70px;
+cursor: pointer;
 }
     .arrows img{
     width: 62px;
     height: 62px;
+    cursor: pointer;
     }
     .arrow-btn{
         border: none;
         background-color: transparent;
+        cursor: pointer;
     }
     .arrow-btn:hover{
         cursor: pointer;
