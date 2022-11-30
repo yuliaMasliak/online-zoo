@@ -221,20 +221,35 @@ display: none;
 }
 .wrapper{
     max-width: 1160px;
+    position: relative;
     margin: 0px auto;
     text-align: center;
 }
+
 .gallery{
-    max-width: 1160px;
-    margin-right: 0px;
-	display: grid;
+display: none;
+    position: relative;
+    /* top: -500px; */
+    margin: 0px auto;
+    width: 1160px;
+   	display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 30px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "one two three" "four five six";
+	grid-gap: 30px;
 	font-family: 'Roboto';
 	font-style: normal;
 	color: #000000;
     }
-
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
 .gallery .gallery-blocks img{
 	width: 366px;
 	height: 366px;
@@ -329,11 +344,12 @@ display: none;
 .arrows{
   display: flex;
   justify-content: space-between;
-  margin: 0px 135px;
-  position: relative;
   margin: 0px auto;
-  max-width: 1320px;
+  position: relative;
+left: -100px;
+  width: 1360px;
   top: -482px;
+
 }
     .arrows img{
     width: 62px;
