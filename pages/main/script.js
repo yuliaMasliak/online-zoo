@@ -109,3 +109,20 @@ function rangeValue(event){
       child.classList.toggle("pos-1");
 }
 
+//Testimonial popup
+
+let feedbackClick = document.querySelectorAll(".feedback-block");
+let feedbacksPopup = document.querySelectorAll(".feedback-block-popup");
+
+if(window.screen.width < 641){
+for(let i=0; i<feedbackClick.length; i++){
+  let point =  feedbackClick[i];
+ point.addEventListener("click", showPopup);
+  function showPopup(event){
+
+    feedbacksPopup[i].classList.toggle("feedback-block-popup-show");
+  }
+}}
+
+
+
