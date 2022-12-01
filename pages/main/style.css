@@ -247,6 +247,7 @@ margin-left: 0px;
 	font-style: normal;
 	color: #000000;
     place-items: center;
+
     }
     .fade {
         animation-name: fade;
@@ -257,11 +258,14 @@ margin-left: 0px;
         from {opacity: .4}
         to {opacity: 1}
       }
+
+
 .gallery .gallery-blocks img{
 	width: 366px;
 	height: 366px;
     border-radius: 5px;
 }
+
 .gallery .gallery-blocks img:hover{
     transition: all 0.3s ease;
     -webkit-transform: scale(1.1);
@@ -550,16 +554,7 @@ column-gap: 30px;
 margin: 0px auto;
 }
 
-.feedback-block{
-background: #F1F3F2;
-width: 268px;
-height: 350px;
-position: relative;
-padding: 15px 15px 19px 16px;
-margin: 0px;
-margin-bottom: 21px;
-border-radius: 20px;
-}
+
 .feedback-block::after {
     content: "";
     position: absolute;
@@ -623,6 +618,7 @@ top: -20px;
 left: 37px;
 margin-left: 10px;
 }
+
 .scroll-bar{
     max-width: 1250px;
 	margin: 0 auto;
@@ -632,15 +628,54 @@ margin-left: 10px;
 }
 .invisible-part-scrollbar{
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 grid-template-rows: 1fr;
 grid-auto-flow: column;
 column-gap: 15px;
 margin-top: 5px;
 margin-left: 5px;
 margin-right: 5px;
-    width: 1160px;
+width: 1160px;
+overflow: hidden;
+/* align-items: center; */
+/* justify-items: center; */
 }
+.feedback-block{
+    background: #F1F3F2;
+    width: 268px;
+    height: 350px;
+    position: relative;
+    padding: 15px 15px 19px 16px;
+    margin: 0px;
+    margin-bottom: 21px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    }
+    #carousel{
+        grid-row: 1 / 2;
+        grid-column: 1 / 12;
+        display: flex;
+        overflow: hidden;
+        grid-auto-flow: column;
+       }
+    /* .pos-1{
+        position: relative;
+        left: -238px;
+    }
+    .pos-2{
+        position: relative;
+        left: -238px;
+    }
+    .pos-3{
+        position: relative;
+        left: -238px;
+    } */
+   input[type="range"]{
+        width: 700px;
+        margin: 0 auto;
+        display: flex;
+    }
 
 .scroll-bar::-webkit-scrollbar {
 	height:8px;
@@ -700,6 +735,8 @@ margin-right: 5px;
     transform: rotate(30deg);
 }
 .square-btn-after-scroll{
+    position: relative;
+    left: 185px;
     display: block;
     margin-top: 20px;
     width: 298px;
@@ -1323,11 +1360,11 @@ margin: 0px auto;
 }
 
 
-.gallery >:nth-child(3)
+.gallery >:nth-child(2)
 {
 display: none;
 }
-.gallery >:nth-child(6)
+.gallery >:nth-child(4)
 {
     display: none;
 }

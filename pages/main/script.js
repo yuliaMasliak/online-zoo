@@ -96,3 +96,16 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "grid";
 }
 
+//Feedbacks scroll
+var range = document.getElementById("range");
+var newValue = range.value;
+
+let carousel = document.getElementById("carousel");
+console.log(carousel);
+range.addEventListener("input", rangeValue);
+function rangeValue(event){
+  carousel.className = "";
+  carousel.classList.add(`pos-${range.value}`);
+  carousel.style.left = `(-${range.value*238})px`
+}
+console.log(newValue);
