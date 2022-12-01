@@ -101,11 +101,13 @@ var range = document.getElementById("range");
 var newValue = range.value;
 
 let carousel = document.getElementById("carousel");
-console.log(carousel);
+
 range.addEventListener("input", rangeValue);
 function rangeValue(event){
-  carousel.className = "";
-  carousel.classList.add(`pos-${range.value}`);
-  carousel.style.left = `(-${range.value*238})px`
+
+  let child = document.querySelector(`#carousel :nth-of-type(${range.value})`);
+  // carousel.classList.add(`pos-${range.value}`);
+
+    child.classList.add("pos-1");
 }
-console.log(newValue);
+

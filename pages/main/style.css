@@ -628,8 +628,9 @@ margin-left: 10px;
 }
 .invisible-part-scrollbar{
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-template-rows: 1fr;
+grid-template-areas: "first second third fourth";
 grid-auto-flow: column;
 column-gap: 15px;
 margin-top: 5px;
@@ -637,10 +638,14 @@ margin-left: 5px;
 margin-right: 5px;
 width: 1160px;
 overflow: hidden;
-/* align-items: center; */
-/* justify-items: center; */
 }
+
+.pos-1{
+    grid-area: first;
+}
+
 .feedback-block{
+
     background: #F1F3F2;
     width: 268px;
     height: 350px;
@@ -652,13 +657,7 @@ overflow: hidden;
     margin-left: 10px;
     border-radius: 20px;
     }
-    #carousel{
-        grid-row: 1 / 2;
-        grid-column: 1 / 12;
-        display: flex;
-        overflow: hidden;
-        grid-auto-flow: column;
-       }
+
     /* .pos-1{
         position: relative;
         left: -238px;
