@@ -1539,9 +1539,13 @@ top: -10px;
 margin-bottom: 30px;
 }
 
-
+.scroll-bar{
+    width: 640px;
+}
 
 .invisible-part-scrollbar{
+    width: 600px;
+    height: 360px;
     grid-auto-flow: row;
 }
 .leaf-right-border {
@@ -1556,7 +1560,7 @@ footer{
 max-height: 282px;
 width: 640px;
 margin: 0px auto;
-margin-top: 110px;
+margin-top: 40px;
 }
 .footer-wrapper{
 max-height: 270px;
