@@ -632,10 +632,10 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-template-rows: 1fr;
 grid-template-areas: "first second third fourth";
 grid-auto-flow: column;
-column-gap: 15px;
+column-gap: 10px;
+margin: 0 auto;
 margin-top: 5px;
-margin-left: 5px;
-margin-right: 5px;
+
 width: 1160px;
 overflow: hidden;
 }
@@ -647,7 +647,7 @@ overflow: hidden;
 .feedback-block{
 
     background: #F1F3F2;
-    width: 268px;
+    width: 228px;
     height: 350px;
     position: relative;
     padding: 15px 15px 19px 16px;
@@ -659,16 +659,16 @@ overflow: hidden;
     }
 
     /* .pos-1{
-        position: relative;
-        left: -238px;
+        grid-column: 1 / 2;
     }
     .pos-2{
-        position: relative;
-        left: -238px;
+        grid-column: 2 / 3;
     }
     .pos-3{
-        position: relative;
-        left: -238px;
+        grid-column: 3 / 4;
+    }
+    .pos-4{
+        grid-column: 4 / 5;
     } */
    input[type="range"]{
         width: 700px;

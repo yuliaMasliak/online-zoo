@@ -108,6 +108,6 @@ function rangeValue(event){
   let child = document.querySelector(`#carousel :nth-of-type(${range.value})`);
   // carousel.classList.add(`pos-${range.value}`);
 
-    child.classList.add("pos-1");
+    child.classList.toggle("pos-1");
 }
 
