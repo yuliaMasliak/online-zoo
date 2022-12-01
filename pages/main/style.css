@@ -622,8 +622,6 @@ margin-left: 10px;
 .scroll-bar{
     max-width: 1250px;
 	margin: 0 auto;
-	overflow-x: scroll;
-	scrollbar-width: thin;
 	margin-bottom: 30px;
 }
 .invisible-part-scrollbar{
@@ -676,7 +674,7 @@ overflow: hidden;
         display: flex;
     }
 
-.scroll-bar::-webkit-scrollbar {
+/* .scroll-bar::-webkit-scrollbar {
 	height:8px;
 	overflow: scroll;
 	border: 1px solid rgba(247, 209, 198, 0.74);
@@ -693,7 +691,7 @@ overflow: hidden;
 	width: 7px;
 	background-color: #FE9013;
 	border-radius: 5px;
-}
+} */
 
 .scroll-bar:hover{
     cursor: pointer;
@@ -1146,18 +1144,21 @@ height: 740px;
 margin-top: 100px;
 margin-bottom: 30px;
 }
-.feedbacks > :last-child{
-display: none;
+.invisible-part-scrollbar{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "first second third";
+    width: 870px;
 }
 .feedbacks {
 max-width: 940px;
 }
 .feedback-block p {
-width: 255px;
+width: 235px;
 height: 350px;
 line-height: 18px;
 }
 .feedback-block{
+    margin-top: 5px;
 height: 353px;
 }
 .square-btn-after-scroll{
@@ -1172,7 +1173,7 @@ max-width: 940px;
 .scroll-bar{
 margin: 0px auto;
 max-width: 940px;
-width: 390px;
+width: 940px;
 }
 .leaf-right-border {
 	top: -50px;
@@ -1517,25 +1518,28 @@ overflow: hidden;
 }
 .feedback-block{
    height: 85px;
-width: 553px;
+width: 513px;
 margin-bottom: 15px;
 margin-left: 20px;
 margin-right: 20px;
 padding: 11px 29px 8px 18px;
 }
 
-
+input[type="range"]{
+    display: none;
+}
 .square-btn-after-scroll-block-div{
 max-width: 640px;
 margin: 0 auto;
 }
 .square-btn-after-scroll{
 width: 240px;
-margin: 0 auto;
 margin-top: 30px;
+top: -10px;
+margin-bottom: 30px;
 }
-.scroll-bar{
-   display: none;
+.invisible-part-scrollbar{
+    grid-auto-flow: row;
 }
 .leaf-right-border {
 top: -30px;
@@ -1549,6 +1553,7 @@ footer{
 max-height: 282px;
 width: 640px;
 margin: 0px auto;
+margin-top: 110px;
 }
 .footer-wrapper{
 max-height: 270px;
