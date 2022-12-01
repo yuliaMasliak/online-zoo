@@ -1538,6 +1538,9 @@ margin-top: 30px;
 top: -10px;
 margin-bottom: 30px;
 }
+
+
+
 .invisible-part-scrollbar{
     grid-auto-flow: row;
 }
@@ -1755,12 +1758,15 @@ max-height: 1975px;
 .wrapper{
 width: 320px;
 margin: 0 auto;
-margin-left: 15px;
+}
+.grid-wrapper{
+    width: 300px;
 }
 
 .gallery{
-display: flex;
-   flex-direction: column;
+  grid-template-columns: 1fr;
+  width: 280px;
+  margin: 0 auto;
      margin-bottom: 0px;
 }
 
@@ -1795,6 +1801,7 @@ display: flex;
 position: relative;
 top: -20px;
 text-align: center;
+width: 320px;
 }
 .bottom-flowers{
 top: -260px;
@@ -1820,6 +1827,7 @@ right: -10px;
 max-width: 320px;
 height: 1064px;
 padding-top: 20px;
+margin-top: 360px;
 }
 .how-to-feed{
 max-width: 300px;
@@ -1923,7 +1931,15 @@ margin-left: 11px;
 margin-right: 10px;
 padding: 11px 29px 8px 18px;
 }
-
+.scroll-bar{
+    width: 320px;
+}
+.invisible-part-scrollbar{
+    width: 320px;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    height: 360px;
+}
 
 .square-btn-after-scroll-block-div{
 width: 320px;
@@ -1933,9 +1949,7 @@ margin: 0 auto;
 width: 240px;
 margin: 0 auto;
 margin-top: 25px;
-}
-.scroll-bar{
-   display: none;
+left: 0px;
 }
 
 .leaf-right-border {
