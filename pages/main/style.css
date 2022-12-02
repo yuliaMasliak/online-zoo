@@ -913,7 +913,9 @@ margin-right: 58px;
 .feedback-block-popup{
     display: none;
 }
-
+.blured-fon1, .blured-fon1, .blured-fon1{
+    display: none;
+}
 
 @media screen and (max-width: 1000px) {
 html {
@@ -1630,10 +1632,11 @@ margin-bottom: 15px;
     height: 428px;
     background-color: #F1F3F2;
 cursor: pointer;
+margin: 0px auto;
 margin-left: 130px;
 margin-top: 130px;
 padding: 20px;
-   z-index: 2;
+   z-index: 3;
     }
     .feedback-block-popup-content{
         display: block;
@@ -1643,7 +1646,8 @@ padding: 20px;
         background-color: #F1F3F2;
         border-radius: 20px;
         border: 1px solid pink;
-        margin: Opx auto;
+        margin: 0px auto;
+        margin-top: 10px;
         cursor: pointer;
         }
         .feedback-block-popup-content p{   font-family: 'Roboto';
@@ -1669,10 +1673,21 @@ color: #767474;
 .cross-popup-feedback{
     position: relative;
     float: right;
+    padding: 5px;
     right: -10px;
     top: -10px;
 }
-
+.blured-fon-show {
+    display: block;
+    position: absolute;
+    width: 640px;
+    height: 640px;
+    background-color: #434d485f;
+cursor: pointer;
+margin: 0px auto;
+padding: 20px;
+   z-index: 2;
+}
 }
 
 

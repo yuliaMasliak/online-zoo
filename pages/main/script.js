@@ -224,8 +224,7 @@ if(range.value == 8){
   child11.style.display = "block";
 }
 }
-console.log(range.value);
-console.log(child11);
+
 
 //Testimonial popup
 
@@ -241,20 +240,25 @@ let secondPopup = document.getElementById("second-popup");
 let thirdPopup = document.getElementById("third-popup");
 
 let crossPopupFeedback = document.querySelectorAll(".cross-popup-feedback");
-
+ let firstFon = document.querySelector(".blured-fon1");
+ let secondFon = document.querySelector(".blured-fon2");
+ let thirdFon = document.querySelector(".blured-fon3");
 
 
 if(window.screen.width < 641){
   firstFeedback.addEventListener("click", ()=>{
       firstPopup.classList.add("feedback-block-popup-show");
+      firstFon.classList.add("blured-fon-show");
     blur();
   });
   secondFeedback.addEventListener("click", ()=>{
      secondPopup.classList.add("feedback-block-popup-show");
+    secondFon.classList.add("blured-fon-show");
     blur();
   });
   thirdFeedback.addEventListener("click", ()=>{
      thirdPopup.classList.add("feedback-block-popup-show");
+    thirdFon.classList.add("blured-fon-show");
     blur();
   });
 
@@ -262,5 +266,24 @@ if(window.screen.width < 641){
     cross.addEventListener("click", ()=>{
     cross.closest(".feedback-block-popup").classList.remove("feedback-block-popup-show");
     unBlur();
+    firstFon.classList.remove("blured-fon-show");
+    secondFon.classList.remove("blured-fon-show");
+    thirdFon.classList.remove("blured-fon-show");
   });
-  }}
+  }
+  firstFon.addEventListener("click", ()=>{
+    firstFon.classList.remove("blured-fon-show");
+    firstPopup.classList.remove("feedback-block-popup-show");
+    unBlur();
+  })
+ secondFon.addEventListener("click", ()=>{
+   secondFon.classList.remove("blured-fon-show");
+   secondPopup.classList.remove("feedback-block-popup-show");
+    unBlur();
+  })
+  thirdFon.addEventListener("click", ()=>{
+    thirdFon.classList.remove("blured-fon-show");
+    thirdPopup.classList.remove("feedback-block-popup-show");
+     unBlur();
+   })
+}
