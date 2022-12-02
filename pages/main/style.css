@@ -169,7 +169,6 @@ display: none;
     border: 1px solid #f9804b;
 }
 .default-width{
-    height: 403px;
     margin-bottom: 180px;
 }
 .hat-man {
@@ -1516,8 +1515,8 @@ width: 553px;
 margin-left: 0px;
 margin-top: 20px;
 font-size: 14px;
-max-height: 39px;
-overflow: hidden;
+height: 39px;
+
 }
 .feedback-block{
    height: 85px;
@@ -1627,14 +1626,56 @@ margin-bottom: 15px;
 .feedback-block-popup-show{
     display: block;
     position: absolute;
-    width: 267px;
-    height: 391px;
+    width: 320px;
+    height: 428px;
     background-color: #F1F3F2;
-    border-radius: 20px;
-    z-index: 2;
-    border: 1px solid pink;
-    margin: Opx auto;
+cursor: pointer;
+margin-left: 130px;
+margin-top: 130px;
+padding: 20px;
+   z-index: 2;
     }
+    .feedback-block-popup-content{
+        display: block;
+        padding: 20px;
+        width: 267px;
+        height: 391px;
+        background-color: #F1F3F2;
+        border-radius: 20px;
+        border: 1px solid pink;
+        margin: Opx auto;
+        cursor: pointer;
+        }
+        .feedback-block-popup-content p{   font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 120%;
+color: #767474;
+}
+.feedback-block-popup-content h4{
+    display: inline;
+    position: relative;
+    top: -29px;
+    left: 10px;
+}
+
+.feedback-block-popup-content span{
+    display: block;
+    position: relative;
+    top: -29px;
+    left: 55px;
+}
+.cross-popup-feedback{
+    position: relative;
+    float: right;
+    right: -10px;
+    top: -10px;
+}
+/* .unblured{
+    filter: blur(0) !important;
+    z-index: 5;
+} */
 }
 
 

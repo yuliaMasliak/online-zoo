@@ -32,24 +32,32 @@ let footer = document.querySelector("footer");
 burger.addEventListener("click", openMenu);
 function openMenu(event){
   burgerContent.classList.add("burger-content-show");
+  blur();
+ }
+ exitBurger.addEventListener("click", closeBurger);
+ function closeBurger(event){
+   burgerContent.classList.remove("burger-content-show");
+   unBlur()
+       }
+
+ function blur(){
   headerBlock.classList.add("blur");
   mainBlock.classList.add("blur");
   panda.classList.add("blur");
   footer.classList.add("blur");
   burger.classList.add("blur");
   section.forEach((sec)=>{sec.classList.add("blur")});
-
  }
- exitBurger.addEventListener("click", closeBurger);
- function closeBurger(event){
-   burgerContent.classList.remove("burger-content-show");
-   headerBlock.classList.remove("blur");
-   mainBlock.classList.remove("blur");
-   panda.classList.remove("blur");
-   footer.classList.remove("blur");
-   burger.classList.remove("blur");
-   section.forEach((sec)=>{sec.classList.remove("blur")});
-       }
+
+  function unBlur(){
+    burgerContent.classList.remove("burger-content-show");
+    headerBlock.classList.remove("blur");
+    mainBlock.classList.remove("blur");
+    panda.classList.remove("blur");
+    footer.classList.remove("blur");
+    burger.classList.remove("blur");
+    section.forEach((sec)=>{sec.classList.remove("blur")});
+  }
 
   mainBlock.addEventListener("click", closeOutside);
   footer.addEventListener("click", closeOutside);
@@ -62,11 +70,7 @@ function openMenu(event){
      if (burgerContent.classList.contains("burger-content-show")) {
           burgerContent.classList.remove("burger-content-show");
           mainBlock.classList.remove("blur");
-   panda.classList.remove("blur");
-   footer.classList.remove("blur");
-   headerBlock.classList.remove("blur");
-   burger.classList.remove("blur");
-   section.forEach((sec)=>{sec.classList.remove("blur")});
+ unBlur();
         }
       };
 
@@ -100,8 +104,6 @@ function showSlides(n) {
 var range = document.getElementById("range");
 var newValue = range.value;
 
-let carousel = document.getElementById("carousel");
-
 range.addEventListener("input", rangeValue);
 function rangeValue(event){
 
@@ -114,15 +116,55 @@ function rangeValue(event){
 let feedbackClick = document.querySelectorAll(".feedback-block");
 let feedbacksPopup = document.querySelectorAll(".feedback-block-popup");
 
-if(window.screen.width < 641){
-for(let i=0; i<feedbackClick.length; i++){
-  let point =  feedbackClick[i];
- point.addEventListener("click", showPopup);
-  function showPopup(event){
+let firstFeedback = document.getElementById("first");
+let secondFeedback = document.getElementById("second");
+let thirdFeedback = document.getElementById("third");
 
-    feedbacksPopup[i].classList.toggle("feedback-block-popup-show");
-  }
-}}
+let firstPopup = document.getElementById("first-popup");
+let secondPopup = document.getElementById("second-popup");
+let thirdPopup = document.getElementById("third-popup");
+let crossPopupFeedback = document.createElement('div');
+crossPopupFeedback.classList.add("cross-popup-feedback");
+crossPopupFeedback.innerHTML = '<img src="./assets/icons/x-popup-feedback.png">';
+
+if(window.screen.width < 641){
+  firstFeedback.addEventListener("click", ()=>{
+    firstPopup.prepend(crossPopupFeedback);
+    firstPopup.classList.add("feedback-block-popup-show");
+    blur();
+  });
+  secondFeedback.addEventListener("click", ()=>{
+    secondPopup.prepend(crossPopupFeedback);
+    secondPopup.classList.add("feedback-block-popup-show");
+    blur();
+  });
+  thirdFeedback.addEventListener("click", ()=>{
+    thirdPopup.prepend(crossPopupFeedback);
+    thirdPopup.classList.add("feedback-block-popup-show");
+    blur();
+  });
+
+  crossPopupFeedback.addEventListener("click", ()=>{
+    crossPopupFeedback.closest(".feedback-block-popup").classList.remove("feedback-block-popup-show");
+    unBlur();
+  });
+
+}
+
+mainBlock.addEventListener("click", closeOutsideFeedback);
+  footer.addEventListener("click", closeOutsideFeedback);
+  panda.addEventListener("click", closeOutsideFeedback);
+  headerBlock.addEventListener("click", closeOutsideFeedback);
+
+  section.forEach((sec)=>{sec.addEventListener("click", closeOutsideFeedback)});
+
+  function closeOutsideFeedback (event) {
+     if (firstPopup.classList.contains("feedback-block-popup-show")) {
+      firstPopup.classList.remove("feedback-block-popup-show");
+      unBlur();
+        }
+      };
+
 
 
 
