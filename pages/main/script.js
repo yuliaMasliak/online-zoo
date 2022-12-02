@@ -123,48 +123,28 @@ let thirdFeedback = document.getElementById("third");
 let firstPopup = document.getElementById("first-popup");
 let secondPopup = document.getElementById("second-popup");
 let thirdPopup = document.getElementById("third-popup");
-let crossPopupFeedback = document.createElement('div');
-crossPopupFeedback.classList.add("cross-popup-feedback");
-crossPopupFeedback.innerHTML = '<img src="./assets/icons/x-popup-feedback.png">';
+
+let crossPopupFeedback = document.querySelectorAll(".cross-popup-feedback");
+
+
 
 if(window.screen.width < 641){
   firstFeedback.addEventListener("click", ()=>{
-    firstPopup.prepend(crossPopupFeedback);
-    firstPopup.classList.add("feedback-block-popup-show");
+      firstPopup.classList.add("feedback-block-popup-show");
     blur();
   });
   secondFeedback.addEventListener("click", ()=>{
-    secondPopup.prepend(crossPopupFeedback);
-    secondPopup.classList.add("feedback-block-popup-show");
+     secondPopup.classList.add("feedback-block-popup-show");
     blur();
   });
   thirdFeedback.addEventListener("click", ()=>{
-    thirdPopup.prepend(crossPopupFeedback);
-    thirdPopup.classList.add("feedback-block-popup-show");
+     thirdPopup.classList.add("feedback-block-popup-show");
     blur();
   });
 
-  crossPopupFeedback.addEventListener("click", ()=>{
-    crossPopupFeedback.closest(".feedback-block-popup").classList.remove("feedback-block-popup-show");
+  for(let cross of crossPopupFeedback){
+    cross.addEventListener("click", ()=>{
+    cross.closest(".feedback-block-popup").classList.remove("feedback-block-popup-show");
     unBlur();
   });
-
-}
-
-mainBlock.addEventListener("click", closeOutsideFeedback);
-  footer.addEventListener("click", closeOutsideFeedback);
-  panda.addEventListener("click", closeOutsideFeedback);
-  headerBlock.addEventListener("click", closeOutsideFeedback);
-
-  section.forEach((sec)=>{sec.addEventListener("click", closeOutsideFeedback)});
-
-  function closeOutsideFeedback (event) {
-     if (firstPopup.classList.contains("feedback-block-popup-show")) {
-      firstPopup.classList.remove("feedback-block-popup-show");
-      unBlur();
-        }
-      };
-
-
-
-
+  }}
