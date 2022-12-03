@@ -287,3 +287,5 @@ if(window.screen.width < 641){
      unBlur();
    })
 }
+
+

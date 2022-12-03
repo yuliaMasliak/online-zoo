@@ -12,7 +12,19 @@
     <title>Donate pages</title>
 </head>
 <body>
+    <div class="burger-content" id="popup">
+        <img src="../../assets/icons/logo-orange.png" alt="logo" class="burger-logo">
+        <img src="../../assets/icons/red-cross.png" alt="red-cross" class="burger-red-cross">
 
+        <ul class="burger-nav-ul" id="active-links">
+            <li><a href="./index.html" class="active-link active">About</a></li>
+            <li> <a href="#" class="active-link">Map</a></li>
+            <li><a href="#" class="active-link">Zoos</a></li>
+            <li><a href="./pages/donate/index.html">Donate</a></li>
+            <li><a href="#" class="active-link">Contact us</a></li>
+            </ul>
+        <p class="burger-designed-by"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" target="_blank">Designed by ©</a></p>
+    </div>
     <header>
         <nav>
             <div class="default-width">
@@ -29,10 +41,10 @@
                 <li><a href="#" class="active-link">Contact us</a></li>
             </ul>
             <p class="designed-by"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" target="_blank">Designed by ©</a></p>
-            <div class="burger"><img src="../../assets/icons/burger.png" alt="burger-menu" width="18">
         </div>
         </nav>
     </header>
+    <div class="burger"><img src="../../assets/icons/burger.png" alt="burger-menu" width="18"></div>
 <main>
 <div class="panda-img"></div>
   <section>
@@ -95,10 +107,39 @@
                                         </div>
     </div>
 </div>
+<div class="dots-checkbox">
+
+    <div class="dot-checkbox"><input type="checkbox" id="checkbox5000" name="checkbox" value="$5000" class="check">
+        <div class="item">$5000</div>
+    </div>
+    <div class="dot-checkbox"><input type="checkbox" id="checkbox2000" name="checkbox" value="$2000" class="check">
+        <div class="item">$2000</div>
+        </div>
+       <div class="dot-checkbox"><input type="checkbox" id="checkbox1000" name="checkbox" value="$1000" class="check">
+        <div class="item">$1000</div>
+        </div>
+
+        <div class="dot-checkbox"><input type="checkbox" id="checkbox500" name="checkbox" value="$500" class="check">
+            <div class="item">$500</div>
+            </div>
+            <div class="dot-checkbox"><input type="checkbox" id="checkbox250" name="checkbox" value="$250" class="check">
+                <div class="item">$250</div>
+                </div>
+                <div class="dot-checkbox"><input type="checkbox" id="checkbox100" name="checkbox" value="$100" class="check">
+                    <div class="item">$100</div>
+                    </div>
+                    <div class="dot-checkbox"><input type="checkbox" id="checkbox50" name="checkbox" value="$50" class="check">
+                        <div class="item">$50</div>
+                        </div>
+                        <div class="dot-checkbox"><input type="checkbox" id="checkbox25" name="checkbox" value="$25" class="check">
+                            <div class="item">$25</div>
+                            </div>
+</div>
 
 
     <form action="pay">
-      <input type="number" placeholder="Another amount" maxlength="4" class="pay-input" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+      <input type="number" maxlength="4" class="pay-input" id="pay-input-id" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+      <img src="../../assets/icons/donate-dollar.png" alt="dollar" class="dollar">
     </form>
 
     <div class="radio-block">
@@ -175,5 +216,5 @@
     </div>
 </footer>
 </body>
-<script src="../main/script.js"></script>
+<script src="./script.js"></script>
 </html>
