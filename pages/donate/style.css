@@ -288,11 +288,15 @@ color: #333B41;
 top:-62px;
 z-index: 2;
 }
-
- /* .dot:hover{
- cursor: pointer;
- color:#f9804b
-}
+/*
+ input[type="range"]:checked {
+  border: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: rgb(223, 37, 43);
+  margin-top: -4px;} */
+/* }
 .dot:hover img{
 transform: scale(1);
 background-color: transparent;
@@ -302,11 +306,11 @@ outline-offset: 7px;
 border-radius: 50%;
 position: relative;
 left: -2px;
-}
+} */
 .dot:hover .item{
 position: relative;
 top: -2px;
-} */
+}
 .dot .item{
 display: flex;
 position: relative;
@@ -328,7 +332,14 @@ input[type=range]::-webkit-slider-thumb {
   width: 18px;
   border-radius: 50%;
   background: rgb(232, 250, 69);
-  margin-top: -4px;
+
+
+border: 2px solid #F9804B;
+outline: 2px solid rgb(253, 123, 2);
+outline-offset: 9px;
+border-radius: 50%;
+position: relative;
+
 }
 
 
