@@ -1178,19 +1178,17 @@ left: -15px;
 }
 
 .range{
-max-width: 300px;
+  width: 499px;
 padding: 0px;
 margin: 0px auto;
 height: 13px;
 border-radius: 0px;
-top: -20px;
+top: -25px;
+left: -201px;
 }
-.slider{
- display: flex;
- position: relative;
-max-width: 260px;
-top: 5px;
-margin: 0 auto;
+input[type=range]::-webkit-slider-thumb {
+  height: 13px;
+  width: 13px;
 }
 .dots > div:nth-child(1) {
 display: none;
@@ -1209,11 +1207,11 @@ margin-left: 0px;
 .dots{
  display: flex;
  position: relative;
- top: -16px;
-width: 282px;
+ top: -55px;
+width: 320px;
 height: 10px;
 justify-content: space-between;
-padding-left: 0px;
+padding-left: 3px;
 padding-right: 0px;
 margin: 0 auto;
 }
@@ -1222,13 +1220,12 @@ margin: 0 auto;
 }
 .item{
 padding-left: 18px;
-margin-right: 20px;
  font-size: 13px;
  top: -15px;
 }
 .pay-input{
-margin-top: 50px;
-margin-bottom: 20px;
+margin-top: 20px;
+margin-bottom: 0px;
 }
 .radio-block-div{
   padding-left: 4px;
