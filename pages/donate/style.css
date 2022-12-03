@@ -717,7 +717,8 @@ align-items:center;
 margin-top: 105px;
   }
 .range{
-width: 810px;
+width: 1070px;
+left: -142px;
 padding: 0px;
 margin: 0px auto;
 }
@@ -735,7 +736,7 @@ margin-left: 55px;
     width: 785px;
   }
   .dots{
-    width: 1030px;
+    width: 1200px;
     padding-left: 6px;
   }
 .pay-input{
