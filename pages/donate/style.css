@@ -741,7 +741,10 @@ margin-left: 55px;
   }
 .pay-input{
 width: 250px;
-margin-top: 98px;
+margin-top: 18px;
+}
+.dollar{
+  left: 585px;
 }
 #once{
 margin-left: 5px;
