@@ -958,12 +958,16 @@ margin-bottom: 20px;
 align-items:center;
 }
 .range{
-width: 600px;
-padding: 0px;
+width: 1000px;
 margin: 0px auto;
+left: -413px;
 }
 .slider{
 width: 524px;
+}
+.dots{
+  padding-left: 5px;
+  width: 1125px;
 }
 .dots > div:nth-child(1) {
 display: none;
@@ -982,15 +986,14 @@ legend{
 margin-bottom: 7px;
 margin-left: 10px;
 }
-.dots{
-width: 1070px;
-padding-left: 20px;
+.dollar{
+  left: 370px;
 }
 
 .pay-input{
 width: 160px;
 height: 38px;
-margin-top: 98px;
+margin-top: 0px;
 }
 .radio-block-div{
   margin-right: 40px;
