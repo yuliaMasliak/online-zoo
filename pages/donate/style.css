@@ -230,7 +230,7 @@ color: #000000;
 }
 .range{
   position: relative;
-width: 930px;
+width: 935px;
 margin: 0px auto;
 height: 27px;
 background: transparent;
@@ -258,12 +258,6 @@ z-index: 3;
   margin:0px auto;
   z-index: 1;
 }
-/* .slider {
-width: 94%;
-border-radius: 5px;
-background: #72828E;
-cursor: pointer;
-} */
 
 #donate-amount{
 margin: 0px auto;
@@ -330,8 +324,8 @@ input[type=range]::-webkit-slider-runnable-track {
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
-  height: 16px;
-  width: 16px;
+  height: 18px;
+  width: 18px;
   border-radius: 50%;
   background: rgb(232, 250, 69);
   margin-top: -4px;

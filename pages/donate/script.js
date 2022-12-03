@@ -76,7 +76,11 @@ let checks = document.querySelectorAll(".check");
 let value = document.getElementById("range");
 console.log(range.value);
 let amountField = document.getElementById("pay-input-id");
-amountField.setAttribute("value", "100");
+amountField.value = 6;
+value.addEventListener("change", ()=>{
+    amountField.value = `${range.value}`;
+})
+
 
 for(let i of checks){
   if(i.checked){
