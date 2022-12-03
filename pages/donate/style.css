@@ -289,7 +289,7 @@ top:-62px;
 z-index: 2;
 }
 
- .dot:hover{
+ /* .dot:hover{
  cursor: pointer;
  color:#f9804b
 }
@@ -306,7 +306,7 @@ left: -2px;
 .dot:hover .item{
 position: relative;
 top: -2px;
-}
+} */
 .dot .item{
 display: flex;
 position: relative;

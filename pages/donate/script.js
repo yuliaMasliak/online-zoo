@@ -74,11 +74,15 @@ function openMenu(event){
 //Amount input
 let checks = document.querySelectorAll(".check");
 let value = document.getElementById("range");
-console.log(range.value);
+console.log(typeof(range.value));
+
 let amountField = document.getElementById("pay-input-id");
 amountField.value = 6;
 value.addEventListener("change", ()=>{
-    amountField.value = `${range.value}`;
+
+    // if (range.value === "6"){amountField.value === "100";}
+    // else if (range.value === 5){amountField.value === 200;}
+       amountField.value = `${range.value}`;
 })
 
 
