@@ -73,7 +73,8 @@ function openMenu(event){
 
 //Amount input
 let checks = document.querySelectorAll(".check");
-
+let value = document.getElementById("range");
+console.log(range.value);
 let amountField = document.getElementById("pay-input-id");
 amountField.setAttribute("value", "100");
 

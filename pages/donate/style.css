@@ -229,21 +229,41 @@ color: #000000;
 
 }
 .range{
-width: 100%;
+  position: relative;
+width: 930px;
+margin: 0px auto;
 height: 27px;
-background: #404950;
+background: transparent;
 border-radius: 4px;
-margin:0px auto;
-margin-right: 0px;
-
+top: -29px;
+z-index: 3;
 }
-
-.slider {
+.line{
+  position: relative;
+  width: 100%;
+  height: 27px;
+  background: grey;
+  border-radius: 4px;
+  margin:0px auto;
+  z-index: 1;
+}
+.line-thin{
+  position: relative;
+  top: -16px;
+  margin: 0 auto;
+  width: 95%;
+  height: 3px;
+  background: whitesmoke;
+  border-radius: 4px;
+  margin:0px auto;
+  z-index: 1;
+}
+/* .slider {
 width: 94%;
 border-radius: 5px;
 background: #72828E;
 cursor: pointer;
-}
+} */
 
 #donate-amount{
 margin: 0px auto;
@@ -252,16 +272,17 @@ margin-bottom: 50px;
 }
 
 .dots{
-width: 108%;
+width: 1050px;
+margin: 0 auto;
 padding-right: 10px;
 display: grid;
+position: relative;
 grid-template-columns: repeat(8, 1fr);
 grid-template-rows: 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 text-align: left;
 margin: 0px auto;
-margin-top: -20px;
 padding-left: 15px;
 font-family: 'Roboto';
 font-style: normal;
@@ -270,6 +291,8 @@ font-size: 26px;
 line-height: 140%;
 text-transform: uppercase;
 color: #333B41;
+top:-62px;
+z-index: 2;
 }
 
  .dot:hover{
@@ -301,15 +324,17 @@ input[type=range]{
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-width: 100%;
-height: 2px;
-border: none;
-border-radius: 3px;
+  -webkit-appearance: none;
 }
 
 input[type=range]::-webkit-slider-thumb {
--webkit-appearance: none;
-display: none;
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: rgb(232, 250, 69);
+  margin-top: -4px;
 }
 
 
@@ -331,7 +356,6 @@ color: #FFF;
 }
 
 .pay-input{
-background: url(../../assets/icons/donate-dollar.png) no-repeat scroll 10px 20px;
 background-position-x: 270px;
 height: 50px;
 width: 250px;
