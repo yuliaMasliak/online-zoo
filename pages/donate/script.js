@@ -78,15 +78,50 @@ console.log(typeof(range.value));
 
 let amountField = document.getElementById("pay-input-id");
 amountField.value = 100;
+let valueSighs = document.querySelectorAll(".item");
 value.addEventListener("change", ()=>{
-  if (range.value === "1"){amountField.value = 5000;}
-  if (range.value === "2"){amountField.value = 2000;}
-  if (range.value === "3"){amountField.value = 1000;}
-  if (range.value === "4"){amountField.value = 500;}
-    if (range.value === "5"){amountField.value = 250;}
-    if (range.value === "6"){amountField.value = 100;}
-    if (range.value === "7"){amountField.value = 50;}
-    if (range.value === "8"){amountField.value = 25;}
+  if (range.value === "1"){amountField.value = 5000;
+    for(let i of valueSighs){
+      i.classList.remove("item-checked");
+    }
+    valueSighs[0].classList.add("item-checked");
+  }
+  if (range.value === "2"){amountField.value = 2000;
+    for(let i of valueSighs){
+      i.classList.remove("item-checked");
+    }
+    valueSighs[1].classList.add("item-checked");
+  }
+  if (range.value === "3"){amountField.value = 1000;
+    for(let i of valueSighs){
+      i.classList.remove("item-checked");
+    }
+    valueSighs[2].classList.add("item-checked");}
+  if (range.value === "4"){amountField.value = 500;
+    for(let i of valueSighs){
+      i.classList.remove("item-checked");
+    }
+    valueSighs[3].classList.add("item-checked");}
+    if (range.value === "5"){amountField.value = 250;
+      for(let i of valueSighs){
+        i.classList.remove("item-checked");
+      }
+      valueSighs[4].classList.add("item-checked");}
+    if (range.value === "6"){amountField.value = 100;
+      for(let i of valueSighs){
+        i.classList.remove("item-checked");
+      }
+      valueSighs[5].classList.add("item-checked");}
+    if (range.value === "7"){amountField.value = 50;
+      for(let i of valueSighs){
+        i.classList.remove("item-checked");
+      }
+      valueSighs[6].classList.add("item-checked");}
+    if (range.value === "8"){amountField.value = 25;
+      for(let i of valueSighs){
+        i.classList.remove("item-checked");
+      }
+      valueSighs[7].classList.add("item-checked");}
 
 })
 

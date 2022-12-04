@@ -289,10 +289,9 @@ top:-62px;
 z-index: 2;
 }
 
-.dot:hover .item{
-position: relative;
-top: -2px;
-}
+.item-checked{
+ color:#FE9013;
+  }
 .dot .item{
 display: flex;
 position: relative;
@@ -314,8 +313,8 @@ input[type=range]::-webkit-slider-thumb {
   width: 18px;
   border-radius: 50%;
   background: rgb(232, 250, 69);
-border: 2px solid #F9804B;
-outline: 2px solid rgb(253, 123, 2);
+border: 3px solid #F9804B;
+outline: 3px solid rgb(253, 123, 2);
 outline-offset: 9px;
 border-radius: 50%;
 position: relative;
@@ -1208,6 +1207,10 @@ padding-left: 18px;
 .pay-input{
 margin-top: 20px;
 margin-bottom: 0px;
+}
+.dollar{
+  left: 210px;
+  top: -30px;
 }
 .radio-block-div{
   padding-left: 4px;
