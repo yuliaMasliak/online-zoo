@@ -134,28 +134,34 @@ amountField.addEventListener("click", ()=>{
  )
 amountField.addEventListener("change", changeRangeValue);
 function changeRangeValue(event){
-  if(amountField.value==="5000"){value.setAttribute("value", "1");
+
+
+  if(amountField.value==="5000"){
+    value.value = "1";
   for(let i of valueSighs){
    i.classList.remove("item-checked");
  }
  valueSighs[0].classList.add("item-checked");
  }
 
-  if(amountField.value==="2000"){value.setAttribute("value", "2");
+  if(amountField.value==="2000"){
+    value.value = "2";
   for(let i of valueSighs){
    i.classList.remove("item-checked");
  }
  valueSighs[1].classList.add("item-checked");
  }
 
-  if(amountField.value==="1000"){value.setAttribute("value", "3");
+  if(amountField.value==="1000"){
+    value.value = "3";
   for(let i of valueSighs){
    i.classList.remove("item-checked");
  }
  valueSighs[2].classList.add("item-checked");
  }
 
-  if(amountField.value==="500"){value.setAttribute("value", "4");
+  if(amountField.value==="500"){
+    value.value = "4";
   for(let i of valueSighs){
    i.classList.remove("item-checked");
  }
@@ -163,21 +169,24 @@ function changeRangeValue(event){
  }
 
 
-  if(amountField.value==="250"){value.setAttribute("value", "5");
+  if(amountField.value==="250"){
+    value.value = "5";
   for(let i of valueSighs){
    i.classList.remove("item-checked");
  }
  valueSighs[4].classList.add("item-checked");
  }
 
-  if(amountField.value==="100"){value.setAttribute("value", "6");
+  if(amountField.value==="100"){
+    value.value = "6";
   for(let i of valueSighs){
    i.classList.remove("item-checked");
  }
  valueSighs[5].classList.add("item-checked");
  }
 
-  if(amountField.value==="50"){value.setAttribute("value", "7");
+  if(amountField.value==="50"){
+    value.value = "7";
   for(let i of valueSighs){
    i.classList.remove("item-checked");
  }
@@ -185,7 +194,7 @@ function changeRangeValue(event){
  }
 
   if(amountField.value==="25"){
-    value.setAttribute("value", "8");
+    value.value = "8";
  for(let i of valueSighs){
   i.classList.remove("item-checked");
 }
