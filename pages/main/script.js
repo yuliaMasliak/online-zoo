@@ -253,11 +253,13 @@ if(window.innerWidth < 641){
     blur();
   });
   secondFeedback.addEventListener("click", ()=>{
+    event.preventDefault();
      secondPopup.classList.add("feedback-block-popup-show");
     secondFon.classList.add("blured-fon-show");
     blur();
   });
   thirdFeedback.addEventListener("click", ()=>{
+    event.preventDefault();
      thirdPopup.classList.add("feedback-block-popup-show");
     thirdFon.classList.add("blured-fon-show");
     blur();
@@ -265,6 +267,7 @@ if(window.innerWidth < 641){
 
   for(let cross of crossPopupFeedback){
     cross.addEventListener("click", ()=>{
+      event.preventDefault();
     cross.closest(".feedback-block-popup").classList.remove("feedback-block-popup-show");
     unBlur();
     firstFon.classList.remove("blured-fon-show");
@@ -273,16 +276,19 @@ if(window.innerWidth < 641){
   });
   }
   firstFon.addEventListener("click", ()=>{
+    event.preventDefault();
     firstFon.classList.remove("blured-fon-show");
     firstPopup.classList.remove("feedback-block-popup-show");
     unBlur();
   })
  secondFon.addEventListener("click", ()=>{
+  event.preventDefault();
    secondFon.classList.remove("blured-fon-show");
    secondPopup.classList.remove("feedback-block-popup-show");
     unBlur();
   })
   thirdFon.addEventListener("click", ()=>{
+    event.preventDefault();
     thirdFon.classList.remove("blured-fon-show");
     thirdPopup.classList.remove("feedback-block-popup-show");
      unBlur();
