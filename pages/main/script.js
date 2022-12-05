@@ -249,20 +249,20 @@ let crossPopupFeedback = document.querySelectorAll(".cross-popup-feedback");
   firstFeedback.addEventListener("click", ()=>{
     if(window.innerWidth < 641){
       firstPopup.classList.add("feedback-block-popup-show");
-      // firstFon.classList.add("blured-fon-show");
+      firstFon.classList.add("blured-fon-show");
     blur();}
   });
 
   secondFeedback.addEventListener("click", ()=>{
     if(window.innerWidth < 641){
      secondPopup.classList.add("feedback-block-popup-show");
-    // secondFon.classList.add("blured-fon-show");
+    secondFon.classList.add("blured-fon-show");
     blur();}
   });
   thirdFeedback.addEventListener("click", ()=>{
     if(window.innerWidth < 641){
      thirdPopup.classList.add("feedback-block-popup-show");
-    // thirdFon.classList.add("blured-fon-show");
+    thirdFon.classList.add("blured-fon-show");
     blur();}
   });
 
@@ -271,29 +271,29 @@ let crossPopupFeedback = document.querySelectorAll(".cross-popup-feedback");
       event.preventDefault();
     cross.closest(".feedback-block-popup").classList.remove("feedback-block-popup-show");
     unBlur();
-    // firstFon.classList.remove("blured-fon-show");
-    // secondFon.classList.remove("blured-fon-show");
-    // thirdFon.classList.remove("blured-fon-show");
+    firstFon.classList.remove("blured-fon-show");
+    secondFon.classList.remove("blured-fon-show");
+    thirdFon.classList.remove("blured-fon-show");
   });
   }
-//   firstFon.addEventListener("click", ()=>{
-//     event.preventDefault();
-//     firstFon.classList.remove("blured-fon-show");
-//     firstPopup.classList.remove("feedback-block-popup-show");
-//     unBlur();
-//   })
-//  secondFon.addEventListener("click", ()=>{
-//   event.preventDefault();
-//    secondFon.classList.remove("blured-fon-show");
-//    secondPopup.classList.remove("feedback-block-popup-show");
-//     unBlur();
-//   })
-//   thirdFon.addEventListener("click", ()=>{
-//     event.preventDefault();
-//     thirdFon.classList.remove("blured-fon-show");
-//     thirdPopup.classList.remove("feedback-block-popup-show");
-//      unBlur();
-//    })
+  firstFon.addEventListener("click", ()=>{
+    event.preventDefault();
+    firstFon.classList.remove("blured-fon-show");
+    firstPopup.classList.remove("feedback-block-popup-show");
+    unBlur();
+  })
+ secondFon.addEventListener("click", ()=>{
+  event.preventDefault();
+   secondFon.classList.remove("blured-fon-show");
+   secondPopup.classList.remove("feedback-block-popup-show");
+    unBlur();
+  })
+  thirdFon.addEventListener("click", ()=>{
+    event.preventDefault();
+    thirdFon.classList.remove("blured-fon-show");
+    thirdPopup.classList.remove("feedback-block-popup-show");
+     unBlur();
+   })
 
 
 
