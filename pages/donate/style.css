@@ -6,7 +6,7 @@ body {
 }
 
 body{
-width: 1600px;
+max-width: 1600px;
 margin: 0px auto;
 accent-color: #FE9013;
  }
@@ -20,10 +20,10 @@ height: 80px;
 background-color: black;
 margin: 0px auto;
 position: relative;
-width: 1600px;
+max-width: 1600px;
 }
 .default-width{
-width: 1160px;
+  max-width: 1160px;
 margin: 0px auto;
 }
 .logo{
@@ -55,7 +55,6 @@ top: 22.64px;
 }
 .nav-ul {
 display: flex;
-width: 100%;
 color: #FFF;
 list-style: none;
 font-family: 'Roboto';
@@ -96,7 +95,7 @@ color: #FE9013;
 }
 .panda-img{
 margin: 0px auto;
-width: 1600px;
+max-width: 1600px;
 height: 388px;
 background-image: url("../../assets/images/panda_bg.png");
 background-repeat: no-repeat;
@@ -167,7 +166,7 @@ color: #333B41;}
 
 .how-to-feed{
 text-align: center;
-width: 976px;
+max-width: 976px;
 background: rgba(253, 253, 255, 0.52);
 /* height: 964px; */
 border-radius: 20px;
@@ -230,7 +229,7 @@ color: #000000;
 }
 .range{
   position: relative;
-width: 935px;
+  width: 931px;
 margin: 0px auto;
 height: 27px;
 background: transparent;
@@ -240,7 +239,6 @@ z-index: 3;
 }
 .line{
   position: relative;
-  width: 100%;
   height: 27px;
   background: grey;
   border-radius: 4px;
@@ -251,7 +249,7 @@ z-index: 3;
   position: relative;
   top: -16px;
   margin: 0 auto;
-  width: 95%;
+max-width: 900px;
   height: 3px;
   background: whitesmoke;
   border-radius: 4px;
@@ -266,9 +264,9 @@ margin-bottom: 50px;
 }
 
 .dots{
-width: 1050px;
+  width: 1040px;
 margin: 0 auto;
-padding-right: 10px;
+
 display: grid;
 position: relative;
 grid-template-columns: repeat(8, 1fr);
@@ -277,7 +275,7 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 text-align: left;
 margin: 0px auto;
-padding-left: 15px;
+padding-left: 20px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
@@ -297,6 +295,7 @@ display: flex;
 position: relative;
 left: -20px;
 margin-top: 6px;
+text-align: right;
 }
 input[type=range]{
 -webkit-appearance: none;
@@ -320,20 +319,7 @@ border-radius: 50%;
 position: relative;
 
 }
-/* .input-range-checked::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: none;
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
-  background: rgb(232, 250, 69);
-border: 3px solid #F9804B;
-outline: 3px solid rgb(253, 123, 2);
-outline-offset: 9px;
-border-radius: 50%;
-position: relative;
 
-} */
 
 .square-btn-after-scroll{
 display: block;
@@ -353,7 +339,6 @@ color: #FFF;
 }
 
 .pay-input{
-background-position-x: 270px;
 height: 50px;
 width: 250px;
 background-color: transparent;
@@ -444,7 +429,7 @@ margin-top: 30px;
 }
 footer{
 	position: relative;
-	width: 1600px;
+	max-width: 1600px;
 	background: #111115;
 	height: 443px;
 margin: 0px auto;
@@ -615,7 +600,7 @@ display: none;
 .dots-checkbox{
   margin: 0px auto;
   margin-top: 70px;
-  width: 960px;
+  max-width: 960px;
   display: flex;
   justify-content: space-between;
 }
@@ -981,7 +966,9 @@ margin-left: 10px;
 .dollar{
   left: 370px;
 }
-
+.line-thin{
+  width: 550px;
+}
 .pay-input{
 width: 160px;
 height: 38px;
@@ -1182,7 +1169,9 @@ height: 138.72px;
 top: -115px;
 left: -15px;
 }
-
+.line-thin{
+  width: 280px;
+}
 .range{
   width: 499px;
 padding: 0px;
@@ -1190,7 +1179,7 @@ margin: 0px auto;
 height: 13px;
 border-radius: 0px;
 top: -25px;
-left: -201px;
+left: -204px;
 }
 input[type=range]::-webkit-slider-thumb {
   height: 13px;
@@ -1214,7 +1203,7 @@ margin-left: 0px;
  display: flex;
  position: relative;
  top: -55px;
-width: 320px;
+width: 316px;
 height: 10px;
 justify-content: space-between;
 padding-left: 3px;
@@ -1261,6 +1250,9 @@ footer{
  }
  footer .logo-img{
  display: none;
+ }
+ footer .sm-640{
+  display: none;
  }
  .logo-320 {
   display: block;
