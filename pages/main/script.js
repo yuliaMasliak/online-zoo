@@ -245,8 +245,9 @@ let crossPopupFeedback = document.querySelectorAll(".cross-popup-feedback");
  let thirdFon = document.querySelector(".blured-fon3");
 
 
-if(window.screen.width < 641){
+if(window.innerWidth < 641){
   firstFeedback.addEventListener("click", ()=>{
+    event.preventDefault();
       firstPopup.classList.add("feedback-block-popup-show");
       firstFon.classList.add("blured-fon-show");
     blur();
