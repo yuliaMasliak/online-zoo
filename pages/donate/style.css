@@ -834,7 +834,7 @@ left: 6px;
   max-width: 20px;
   display: flex;
   padding-top: 11px;
-  left: 600px;
+  left: 590px;
   position: fixed;
   z-index: 3;
   }
@@ -1074,7 +1074,22 @@ top: -18px;
 }
 .burger{
 padding-right: 5px;
+left: 280px;
 }
+.burger-content-show{
+  display: block;
+  position: fixed;
+  width: 320px;
+  height: 329px;
+  background: #FFFFFF;
+  z-index: 2;
+  }
+.burger-red-cross{
+  width: 30px;
+  position: relative;
+  float: right;
+  padding: 10px 30px;
+  }
 main{
 width: 320px;
 }
