@@ -661,9 +661,8 @@ margin-right: 39px;
 margin: 29px 24px;
  }
  .panda-img{
-width: 1600px;
+width: 1000px;
 height: 390px;
-left: -172px;
 margin: 0px auto;
 position: relative;
 background-position: center center;
@@ -895,8 +894,7 @@ display: none;
 
 .panda-img{
 height: 369px;
-width: 1200px;
-left: -172px;
+width: 640px;
 margin: 0px auto;
 position: relative;
 background-repeat: no-repeat;
@@ -1082,9 +1080,8 @@ width: 320px;
 }
 .panda-img{
  height: 221px;
- width:766.42px;
+ width:320px;
  margin: 0px auto;
- left: -148.71px;
  background-size:cover;
  background-repeat: no-repeat;
 }
