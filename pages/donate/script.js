@@ -74,50 +74,52 @@ function openMenu(event){
 //Amount input
 let checks = document.querySelectorAll(".check");
 let value = document.getElementById("range");
-console.log(typeof(range.value));
 
 let amountField = document.getElementById("pay-input-id");
 amountField.value = 100;
+
 let valueSighs = document.querySelectorAll(".item");
+
 value.addEventListener("change", ()=>{
-  if (range.value === "1"){amountField.value = 5000;
+value
+  if (value.value === "1"){amountField.value = 5000;
     for(let i of valueSighs){
       i.classList.remove("item-checked");
     }
     valueSighs[0].classList.add("item-checked");
   }
-  if (range.value === "2"){amountField.value = 2000;
+  if (value.value === "2"){amountField.value = 2000;
     for(let i of valueSighs){
       i.classList.remove("item-checked");
     }
     valueSighs[1].classList.add("item-checked");
   }
-  if (range.value === "3"){amountField.value = 1000;
+  if (value.value === "3"){amountField.value = 1000;
     for(let i of valueSighs){
       i.classList.remove("item-checked");
     }
     valueSighs[2].classList.add("item-checked");}
-  if (range.value === "4"){amountField.value = 500;
+  if (value.value === "4"){amountField.value = 500;
     for(let i of valueSighs){
       i.classList.remove("item-checked");
     }
     valueSighs[3].classList.add("item-checked");}
-    if (range.value === "5"){amountField.value = 250;
+    if (value.value === "5"){amountField.value = 250;
       for(let i of valueSighs){
         i.classList.remove("item-checked");
       }
       valueSighs[4].classList.add("item-checked");}
-    if (range.value === "6"){amountField.value = 100;
+    if (value.value === "6"){amountField.value = 100;
       for(let i of valueSighs){
         i.classList.remove("item-checked");
       }
       valueSighs[5].classList.add("item-checked");}
-    if (range.value === "7"){amountField.value = 50;
+    if (value.value === "7"){amountField.value = 50;
       for(let i of valueSighs){
         i.classList.remove("item-checked");
       }
       valueSighs[6].classList.add("item-checked");}
-    if (range.value === "8"){amountField.value = 25;
+    if (value.value === "8"){amountField.value = 25;
       for(let i of valueSighs){
         i.classList.remove("item-checked");
       }
@@ -125,10 +127,73 @@ value.addEventListener("change", ()=>{
 
 })
 
+amountField.addEventListener("click", ()=>{
+  amountField.value = "";}
+ )
+amountField.addEventListener("change", changeRangeValue);
+function changeRangeValue(event){
+  if(amountField.value==="5000"){value.setAttribute("value", "1");
+  for(let i of valueSighs){
+   i.classList.remove("item-checked");
+ }
+ valueSighs[0].classList.add("item-checked");
+ }
 
-for(let i of checks){
-  if(i.checked){
-    amountField.setAttribute("value", `${i.value}`);
-  }
+  if(amountField.value==="2000"){value.setAttribute("value", "2");
+  for(let i of valueSighs){
+   i.classList.remove("item-checked");
+ }
+ valueSighs[1].classList.add("item-checked");
+ }
+
+  if(amountField.value==="1000"){value.setAttribute("value", "3");
+  for(let i of valueSighs){
+   i.classList.remove("item-checked");
+ }
+ valueSighs[2].classList.add("item-checked");
+ }
+
+  if(amountField.value==="500"){value.setAttribute("value", "4");
+  for(let i of valueSighs){
+   i.classList.remove("item-checked");
+ }
+ valueSighs[3].classList.add("item-checked");
+ }
+
+
+  if(amountField.value==="250"){value.setAttribute("value", "5");
+  for(let i of valueSighs){
+   i.classList.remove("item-checked");
+ }
+ valueSighs[4].classList.add("item-checked");
+ }
+
+  if(amountField.value==="100"){value.setAttribute("value", "6");
+  for(let i of valueSighs){
+   i.classList.remove("item-checked");
+ }
+ valueSighs[5].classList.add("item-checked");
+ }
+
+  if(amountField.value==="50"){value.setAttribute("value", "7");
+  for(let i of valueSighs){
+   i.classList.remove("item-checked");
+ }
+ valueSighs[6].classList.add("item-checked");
+ }
+
+  if(amountField.value==="25"){value.setAttribute("value", "8");
+ for(let i of valueSighs){
+  i.classList.remove("item-checked");
+}
+valueSighs[7].classList.add("item-checked");
+}
 
 }
+
+// for(let i of checks){
+//   if(i.checked){
+//     amountField.setAttribute("value", `${i.value}`);
+//   }
+
+

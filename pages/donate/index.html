@@ -112,7 +112,7 @@
 
 
     <form action="pay">
-      <input type="number" maxlength="4" class="pay-input" id="pay-input-id" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+      <input type="number" maxlength="4" class="pay-input" id="pay-input-id" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" onkeyup="changeRangeValue()">
       <img src="../../assets/icons/donate-dollar.png" alt="dollar" class="dollar">
     </form>
 
