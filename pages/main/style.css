@@ -107,6 +107,7 @@ display: none;
     }
     .blur{
         filter: blur(15px);
+        z-index: 1;
        }
 .panda-img{
     width: 1600px;
@@ -911,8 +912,12 @@ body {
 min-height: 100%;
 max-width: 1000px;
 }
+.blur{
+    filter: blur(15px);
+    z-index: 1;
+   }
 header{
-z-index: 1;
+z-index: 2;
 max-width: 1000px;
 margin: 0 auto;
 }
@@ -1187,6 +1192,10 @@ body {
 min-height: 100%;
 margin: 0px auto;margin: 0px auto;
 }
+.blur{
+    filter: blur(15px);
+    z-index: 2;
+   }
 header{
     width: 640px;
     margin: 0px auto;
@@ -1271,7 +1280,7 @@ margin-top: 0px;
     width: 640px;
     height: 329px;
     background: #FFFFFF;
-    z-index: 2;
+    z-index: 4;
     }
 
 .nav-ul, .designed-by {
@@ -1689,7 +1698,6 @@ min-height: 100%;
 header{
     margin: 0px auto;
     width: 320px;
-z-index: 1;
 height: 34px;
 position: fixed;
 }
@@ -1720,6 +1728,7 @@ height: 13px;
 top: 20px;
 left: 6px;
 }
+
 .burger{
     cursor: pointer;
 max-width: 20px;
@@ -1734,7 +1743,6 @@ position: fixed;
     width: 320px;
     height: 329px;
     background: #FFFFFF;
-    z-index: 2;
     }
 .nav-ul, .designed-by {
 display: none;
@@ -1976,13 +1984,7 @@ margin-top: 30px;
 margin-bottom: 15px;
 font-size: 24px;
 }
-.feedbacks > :last-child{
-display: none;
-}
-.feedbacks {
-flex-direction: column;
-width: 320px;
-   }
+
 .feedback-block p {
 width: 280px;
 margin-left: 0px;
@@ -2127,7 +2129,6 @@ margin: 0px auto;
 margin-left: 40px;
 margin-top:40px;
 padding: 10px;
-   z-index: 3;
     }
     .feedback-block-popup-content{
         display: block;
@@ -2178,13 +2179,12 @@ width: 180px;
 .blured-fon-show {
     display: block;
     position: absolute;
-    width: 640px;
-    height: 640px;
+    width: 300px;
+    height: 300px;
     background-color: #434d485f;
 cursor: pointer;
 margin: 0px auto;
 padding: 20px;
-   z-index: 2;
 }
 
 }
