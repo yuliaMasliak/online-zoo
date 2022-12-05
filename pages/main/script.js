@@ -245,24 +245,25 @@ let crossPopupFeedback = document.querySelectorAll(".cross-popup-feedback");
  let thirdFon = document.querySelector(".blured-fon3");
 
 
-if(window.innerWidth < 641){
+
   firstFeedback.addEventListener("click", ()=>{
-    event.preventDefault();
+    if(window.innerWidth < 641){
       firstPopup.classList.add("feedback-block-popup-show");
       firstFon.classList.add("blured-fon-show");
-    blur();
+    blur();}
   });
+
   secondFeedback.addEventListener("click", ()=>{
-    event.preventDefault();
+    if(window.innerWidth < 641){
      secondPopup.classList.add("feedback-block-popup-show");
     secondFon.classList.add("blured-fon-show");
-    blur();
+    blur();}
   });
   thirdFeedback.addEventListener("click", ()=>{
-    event.preventDefault();
+    if(window.innerWidth < 641){
      thirdPopup.classList.add("feedback-block-popup-show");
     thirdFon.classList.add("blured-fon-show");
-    blur();
+    blur();}
   });
 
   for(let cross of crossPopupFeedback){
@@ -293,6 +294,6 @@ if(window.innerWidth < 641){
     thirdPopup.classList.remove("feedback-block-popup-show");
      unBlur();
    })
-}
+
 
 
