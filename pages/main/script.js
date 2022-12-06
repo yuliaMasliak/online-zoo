@@ -28,51 +28,54 @@ let mainBlock = document.querySelector("main");
 let panda = document.querySelector(".panda-img");
 let section = document.querySelectorAll("section");
 let footer = document.querySelector("footer");
+let overlay = document.querySelector(".overlay")
 
 burger.addEventListener("click", openMenu);
 function openMenu(event){
   burgerContent.classList.add("burger-content-show");
-  blur();
+    overlay.classList.add("active");
  }
  exitBurger.addEventListener("click", closeBurger);
  function closeBurger(event){
    burgerContent.classList.remove("burger-content-show");
-   unBlur()
+   overlay.classList.remove("active");
        }
+  overlay.addEventListener("click", ()=>{burgerContent.classList.remove("burger-content-show");
+  overlay.classList.remove("active");
+})
+//  function blur(){
+//   headerBlock.classList.add("blur");
+//   mainBlock.classList.add("blur");
+//   panda.classList.add("blur");
+//   footer.classList.add("blur");
+//   burger.classList.add("blur");
+//   section.forEach((sec)=>{sec.classList.add("blur")});
+//  }
 
- function blur(){
-  headerBlock.classList.add("blur");
-  mainBlock.classList.add("blur");
-  panda.classList.add("blur");
-  footer.classList.add("blur");
-  burger.classList.add("blur");
-  section.forEach((sec)=>{sec.classList.add("blur")});
- }
+  // function unBlur(){
+  //   burgerContent.classList.remove("burger-content-show");
+  //   headerBlock.classList.remove("blur");
+  //   mainBlock.classList.remove("blur");
+  //   panda.classList.remove("blur");
+  //   footer.classList.remove("blur");
+  //   burger.classList.remove("blur");
+  //   section.forEach((sec)=>{sec.classList.remove("blur")});
+  // }
 
-  function unBlur(){
-    burgerContent.classList.remove("burger-content-show");
-    headerBlock.classList.remove("blur");
-    mainBlock.classList.remove("blur");
-    panda.classList.remove("blur");
-    footer.classList.remove("blur");
-    burger.classList.remove("blur");
-    section.forEach((sec)=>{sec.classList.remove("blur")});
-  }
+  // mainBlock.addEventListener("click", closeOutside);
+  // footer.addEventListener("click", closeOutside);
+  // panda.addEventListener("click", closeOutside);
+  // headerBlock.addEventListener("click", closeOutside);
 
-  mainBlock.addEventListener("click", closeOutside);
-  footer.addEventListener("click", closeOutside);
-  panda.addEventListener("click", closeOutside);
-  headerBlock.addEventListener("click", closeOutside);
+  // section.forEach((sec)=>{sec.addEventListener("click", closeOutside)});
 
-  section.forEach((sec)=>{sec.addEventListener("click", closeOutside)});
-
-  function closeOutside (event) {
-     if (burgerContent.classList.contains("burger-content-show")) {
-          burgerContent.classList.remove("burger-content-show");
-          mainBlock.classList.remove("blur");
- unBlur();
-        }
-      };
+//   function closeOutside (event) {
+//      if (burgerContent.classList.contains("burger-content-show")) {
+//           burgerContent.classList.remove("burger-content-show");
+//           mainBlock.classList.remove("blur");
+//  unBlur();
+//         }
+//       };
 
       //Slider gallery animal pictures
 
@@ -228,8 +231,6 @@ if(range.value == 8){
 
 //Testimonial popup
 
-let feedbackClick = document.querySelectorAll(".feedback-block");
-let feedbacksPopup = document.querySelectorAll(".feedback-block-popup");
 
 let firstFeedback = document.getElementById("first");
 let secondFeedback = document.getElementById("second");
@@ -240,60 +241,38 @@ let secondPopup = document.getElementById("second-popup");
 let thirdPopup = document.getElementById("third-popup");
 
 let crossPopupFeedback = document.querySelectorAll(".cross-popup-feedback");
- let firstFon = document.querySelector(".blured-fon1");
- let secondFon = document.querySelector(".blured-fon2");
- let thirdFon = document.querySelector(".blured-fon3");
 
-
+// if(window.innerWidth < 641){
 
   firstFeedback.addEventListener("click", ()=>{
     if(window.innerWidth < 641){
       firstPopup.classList.add("feedback-block-popup-show");
-      firstFon.classList.add("blured-fon-show");
-    blur();}
-  });
+      overlay.classList.add("active");
+  }});
 
   secondFeedback.addEventListener("click", ()=>{
     if(window.innerWidth < 641){
      secondPopup.classList.add("feedback-block-popup-show");
-    secondFon.classList.add("blured-fon-show");
-    blur();}
-  });
+     overlay.classList.add("active");
+  }});
+
   thirdFeedback.addEventListener("click", ()=>{
     if(window.innerWidth < 641){
      thirdPopup.classList.add("feedback-block-popup-show");
-    thirdFon.classList.add("blured-fon-show");
-    blur();}
-  });
+     overlay.classList.add("active");
+  }});
 
   for(let cross of crossPopupFeedback){
     cross.addEventListener("click", ()=>{
-      event.preventDefault();
     cross.closest(".feedback-block-popup").classList.remove("feedback-block-popup-show");
-    unBlur();
-    firstFon.classList.remove("blured-fon-show");
-    secondFon.classList.remove("blured-fon-show");
-    thirdFon.classList.remove("blured-fon-show");
+    overlay.classList.remove("active");
   });
   }
-  firstFon.addEventListener("click", ()=>{
-    event.preventDefault();
-    firstFon.classList.remove("blured-fon-show");
-    firstPopup.classList.remove("feedback-block-popup-show");
-    unBlur();
-  })
- secondFon.addEventListener("click", ()=>{
-  event.preventDefault();
-   secondFon.classList.remove("blured-fon-show");
-   secondPopup.classList.remove("feedback-block-popup-show");
-    unBlur();
-  })
-  thirdFon.addEventListener("click", ()=>{
-    event.preventDefault();
-    thirdFon.classList.remove("blured-fon-show");
-    thirdPopup.classList.remove("feedback-block-popup-show");
-     unBlur();
-   })
+  overlay.addEventListener("click", closeOutside);
+  function closeOutside (event) {
+         if (overlay.classList.contains("active")) {
+            overlay.classList.remove("active");
+          };}
 
 
 

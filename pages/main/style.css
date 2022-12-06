@@ -660,7 +660,7 @@ overflow: hidden;
 
    input[type="range"]{
     -webkit-appearance: none;
-    max-width: 700px;
+    width: 700px;
         margin: 0 auto;
         display: flex;
     }
@@ -719,10 +719,10 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 .square-btn-after-scroll{
     position: relative;
-    left: 185px;
+    left: 195px;
     display: block;
     margin-top: 20px;
-    max-width: 298px;
+    width: 298px;
     height: 54px;
     background: #FE9013;
     border-radius: 8px;
@@ -903,7 +903,24 @@ margin-right: 58px;
 .blured-fon1, .blured-fon1, .blured-fon1{
     display: none;
 }
+.overlay {
+    display: block;
+    z-index: 3;
+    position: fixed;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+  }
 
+  .overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
 @media screen and (max-width: 1000px) {
 html {
 height: 100%;
@@ -1041,7 +1058,7 @@ margin: 0 auto;
 .grid-wrapper{
 max-width: 940px;
 position: relative;
-top:-600px;
+
 }
 .gallery{
 max-width: 940px;
@@ -1058,7 +1075,7 @@ max-width: 292px;
 max-height: 292px;
 }
 .arrows{
-top: -1255px;
+top: -655px;
 width: 310px;
 margin: 0px auto;
 }
@@ -1069,7 +1086,7 @@ top: -80px;
 text-align: center;
 }
 .bottom-flowers{
-top: -853px;
+top: -250px;
 height: 63px;
 }
 
@@ -1652,7 +1669,7 @@ margin-bottom: 15px;
 }
 .feedback-block-popup-show{
     display: block;
-    position: absolute;
+    position: fixed;
     width: 320px;
     height: 428px;
     background-color: #F1F3F2;
