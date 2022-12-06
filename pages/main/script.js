@@ -23,11 +23,6 @@ footerBtns[i].addEventListener("click", handleClick);
 let burger = document.querySelector(".burger");
 let burgerContent = document.querySelector(".burger-content");
 let exitBurger = document.querySelector(".burger-red-cross");
-let headerBlock = document.querySelector("header");
-let mainBlock = document.querySelector("main");
-let panda = document.querySelector(".panda-img");
-let section = document.querySelectorAll("section");
-let footer = document.querySelector("footer");
 let overlay = document.querySelector(".overlay")
 
 burger.addEventListener("click", openMenu);
@@ -40,44 +35,16 @@ function openMenu(event){
    burgerContent.classList.remove("burger-content-show");
    overlay.classList.remove("active");
        }
-  overlay.addEventListener("click", ()=>{burgerContent.classList.remove("burger-content-show");
-  overlay.classList.remove("active");
-})
-//  function blur(){
-//   headerBlock.classList.add("blur");
-//   mainBlock.classList.add("blur");
-//   panda.classList.add("blur");
-//   footer.classList.add("blur");
-//   burger.classList.add("blur");
-//   section.forEach((sec)=>{sec.classList.add("blur")});
-//  }
 
-  // function unBlur(){
-  //   burgerContent.classList.remove("burger-content-show");
-  //   headerBlock.classList.remove("blur");
-  //   mainBlock.classList.remove("blur");
-  //   panda.classList.remove("blur");
-  //   footer.classList.remove("blur");
-  //   burger.classList.remove("blur");
-  //   section.forEach((sec)=>{sec.classList.remove("blur")});
-  // }
+       let blocks = document.querySelectorAll(".feedback-block");
 
-  // mainBlock.addEventListener("click", closeOutside);
-  // footer.addEventListener("click", closeOutside);
-  // panda.addEventListener("click", closeOutside);
-  // headerBlock.addEventListener("click", closeOutside);
+       overlay.addEventListener("click", ()=>{burgerContent.classList.remove("burger-content-show");
+       overlay.classList.remove("active");
+      firstPopup.classList.remove("feedback-block-popup-show");
+      secondPopup.classList.remove("feedback-block-popup-show");
+      thirdPopup.classList.remove("feedback-block-popup-show");
+          });
 
-  // section.forEach((sec)=>{sec.addEventListener("click", closeOutside)});
-
-//   function closeOutside (event) {
-//      if (burgerContent.classList.contains("burger-content-show")) {
-//           burgerContent.classList.remove("burger-content-show");
-//           mainBlock.classList.remove("blur");
-//  unBlur();
-//         }
-//       };
-
-      //Slider gallery animal pictures
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -242,22 +209,22 @@ let thirdPopup = document.getElementById("third-popup");
 
 let crossPopupFeedback = document.querySelectorAll(".cross-popup-feedback");
 
-// if(window.innerWidth < 641){
+
 
   firstFeedback.addEventListener("click", ()=>{
-    if(window.innerWidth < 641){
-      firstPopup.classList.add("feedback-block-popup-show");
-      overlay.classList.add("active");
+    if(window.screen.width < 641){
+      firstPopup.classList.toggle("feedback-block-popup-show");
+      overlay.classList.toggle("active");
   }});
 
   secondFeedback.addEventListener("click", ()=>{
-    if(window.innerWidth < 641){
+    if(window.screen.width < 641){
      secondPopup.classList.add("feedback-block-popup-show");
      overlay.classList.add("active");
   }});
 
   thirdFeedback.addEventListener("click", ()=>{
-    if(window.innerWidth < 641){
+    if(window.screen.width <= 641){
      thirdPopup.classList.add("feedback-block-popup-show");
      overlay.classList.add("active");
   }});
@@ -268,11 +235,6 @@ let crossPopupFeedback = document.querySelectorAll(".cross-popup-feedback");
     overlay.classList.remove("active");
   });
   }
-  overlay.addEventListener("click", closeOutside);
-  function closeOutside (event) {
-         if (overlay.classList.contains("active")) {
-            overlay.classList.remove("active");
-          };}
 
 
 
