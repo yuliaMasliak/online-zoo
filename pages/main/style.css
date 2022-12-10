@@ -635,10 +635,19 @@ column-gap: 10px;
 margin: 0 auto;
 margin-top: 5px;
 
-max-width: 1160px;
-overflow: hidden;
 }
+.animation{
+    transition-duration: 1.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    transition-property: all;
+ }
 
+.carousel-wrapper{
+    max-width: 1140px;
+    overflow: hidden;
+    margin: 0 auto;
+}
 .pos-1{
     grid-area: first;
 }
@@ -655,9 +664,12 @@ overflow: hidden;
     margin-right: 10px;
     margin-left: 10px;
     border-radius: 20px;
+
     }
 
-
+    .visuallyhidden {
+        animation: slide 1s 0s 1;
+      }
    input[type="range"]{
     -webkit-appearance: none;
     width: 700px;
@@ -1025,7 +1037,11 @@ font-weight: 100;
 font-size: 16px;
 line-height: 180%;
 }
-
+.carousel-wrapper{
+    max-width: 850px;
+    overflow: hidden;
+    margin: 0 auto;
+}
 .entry-text{
 margin-top: 100px;
 margin-bottom: 142px;

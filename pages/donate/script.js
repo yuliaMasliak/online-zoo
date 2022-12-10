@@ -201,6 +201,7 @@ function changeRangeValue(event){
 valueSighs[7].classList.add("item-checked");
 }
 
+
 }
 
 // for(let i of checks){
