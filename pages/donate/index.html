@@ -78,7 +78,7 @@
 <legend>Amount</legend>
 <div class="line"></div>
 <div class="line-thin"></div>
-<input type="range" min="1" max="8" step="1" list="custom-list" class="range input-range" id="range" value="6"/>
+<input type="range" min="1" max="8" step="1" list="custom-list" class="range input-range input-checked" id="range" value="6"/>
 <div>
             <div class="dots">
 
@@ -112,7 +112,7 @@
 
 
     <form action="pay">
-      <input type="number" maxlength="4" class="pay-input" id="pay-input-id" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" onkeyup="changeRangeValue()">
+      <input type="number" maxlength="4" class="pay-input" id="pay-input-id" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" onkeyup="changeRangeValue()" onkeydown="removeHighlight()">
       <img src="../../assets/icons/donate-dollar.png" alt="dollar" class="dollar">
     </form>
 

@@ -81,46 +81,55 @@ amountField.value = 100;
 let valueSighs = document.querySelectorAll(".item");
 
 value.addEventListener("change", ()=>{
-value
+
   if (value.value === "1"){amountField.value = 5000;
+    value.classList.add("input-checked");
     for(let i of valueSighs){
       i.classList.remove("item-checked");
+
     }
     valueSighs[0].classList.add("item-checked");
   }
   if (value.value === "2"){amountField.value = 2000;
+    value.classList.add("input-checked");
     for(let i of valueSighs){
       i.classList.remove("item-checked");
     }
     valueSighs[1].classList.add("item-checked");
   }
   if (value.value === "3"){amountField.value = 1000;
+    value.classList.add("input-checked");
     for(let i of valueSighs){
       i.classList.remove("item-checked");
     }
     valueSighs[2].classList.add("item-checked");}
   if (value.value === "4"){amountField.value = 500;
+    value.classList.add("input-checked");
     for(let i of valueSighs){
       i.classList.remove("item-checked");
     }
     valueSighs[3].classList.add("item-checked");}
     if (value.value === "5"){amountField.value = 250;
+      value.classList.add("input-checked");
       for(let i of valueSighs){
         i.classList.remove("item-checked");
       }
       valueSighs[4].classList.add("item-checked");}
     if (value.value === "6"){amountField.value = 100;
       value.classList.add("input-checked");
+      value.classList.add("input-checked");
       for(let i of valueSighs){
         i.classList.remove("item-checked");
       }
       valueSighs[5].classList.add("item-checked");}
     if (value.value === "7"){amountField.value = 50;
+      value.classList.add("input-checked");
       for(let i of valueSighs){
         i.classList.remove("item-checked");
       }
       valueSighs[6].classList.add("item-checked");}
     if (value.value === "8"){amountField.value = 25;
+      value.classList.add("input-checked");
 
       for(let i of valueSighs){
         i.classList.remove("item-checked");
@@ -130,14 +139,31 @@ value
 })
 
 amountField.addEventListener("click", ()=>{
-  amountField.value = "";}
+  amountField.value = "";
+}
  )
+ amountField.addEventListener("keydown", removeHighlight);
+ function removeHighlight(event){
+  if(amountField.value!==5000||
+  amountField.value!==2000||
+  amountField.value!==1000||
+  amountField.value!==500||
+  amountField.value!==250||
+  amountField.value!==100||
+  amountField.value!==50||
+  amountField.value!==25){
+ value.classList.remove("input-checked");
+  for(let i of valueSighs){
+    i.classList.remove("item-checked");
+}}}
+
 amountField.addEventListener("change", changeRangeValue);
 function changeRangeValue(event){
 
 
   if(amountField.value==="5000"){
     value.value = "1";
+    value.classList.add("input-checked");
   for(let i of valueSighs){
    i.classList.remove("item-checked");
  }
@@ -146,6 +172,7 @@ function changeRangeValue(event){
 
   if(amountField.value==="2000"){
     value.value = "2";
+    value.classList.add("input-checked");
   for(let i of valueSighs){
    i.classList.remove("item-checked");
  }
@@ -154,6 +181,7 @@ function changeRangeValue(event){
 
   if(amountField.value==="1000"){
     value.value = "3";
+    value.classList.add("input-checked");
   for(let i of valueSighs){
    i.classList.remove("item-checked");
  }
@@ -162,6 +190,7 @@ function changeRangeValue(event){
 
   if(amountField.value==="500"){
     value.value = "4";
+    value.classList.add("input-checked");
   for(let i of valueSighs){
    i.classList.remove("item-checked");
  }
@@ -171,6 +200,7 @@ function changeRangeValue(event){
 
   if(amountField.value==="250"){
     value.value = "5";
+    value.classList.add("input-checked");
   for(let i of valueSighs){
    i.classList.remove("item-checked");
  }
@@ -179,6 +209,7 @@ function changeRangeValue(event){
 
   if(amountField.value==="100"){
     value.value = "6";
+    value.classList.add("input-checked");
   for(let i of valueSighs){
    i.classList.remove("item-checked");
  }
@@ -187,6 +218,7 @@ function changeRangeValue(event){
 
   if(amountField.value==="50"){
     value.value = "7";
+    value.classList.add("input-checked");
   for(let i of valueSighs){
    i.classList.remove("item-checked");
  }
@@ -195,18 +227,13 @@ function changeRangeValue(event){
 
   if(amountField.value==="25"){
     value.value = "8";
+    value.classList.add("input-checked");
  for(let i of valueSighs){
   i.classList.remove("item-checked");
 }
 valueSighs[7].classList.add("item-checked");
 }
 
-
 }
-
-// for(let i of checks){
-//   if(i.checked){
-//     amountField.setAttribute("value", `${i.value}`);
-//   }
 
 
